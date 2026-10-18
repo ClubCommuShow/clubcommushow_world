@@ -43,6 +43,19 @@
         "start": "20:20",
         "title": "第三金曜営業",
         "weekday": 5
+      },
+      {
+        "countAsVisit": true,
+        "countStaffWork": true,
+        "duration": 70,
+        "enabled": true,
+        "exportToSheets": true,
+        "kind": "Regular",
+        "nth": 4,
+        "sourceId": "ser_94c68d034570c8b5fbd3709736a970c6",
+        "start": "20:20",
+        "title": "第四木曜営業",
+        "weekday": 4
       }
     ],
     "schemaVersion": 1,
