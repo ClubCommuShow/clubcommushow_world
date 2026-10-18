@@ -1,0 +1,157 @@
+name: Import reviewed ClubCommuShow data once
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/transfer_request.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ebk-media-275fcf6a380e5388-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+  EBK_PROJECT_ROOT: docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846
+  EBK_VENUE_ROOT: docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f
+  EBK_IMPORT_ROOT: .ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93
+jobs:
+  build:
+    if: github.repository == 'ClubCommuShow/clubcommushow_world' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    outputs:
+      publish: ${{ steps.save.outputs.publish }}
+      saved_sha: ${{ steps.save.outputs.saved_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install the existing media toolchain
+        run: |
+          python -m pip install pillow
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: Validate and transfer the pinned source assets
+        id: transfer
+        run: python "$EBK_IMPORT_ROOT/transfer.py" --request "$EBK_IMPORT_ROOT/transfer_request.json"
+      - name: Build the selected project with its existing tools
+        if: steps.transfer.outputs.import == 'true'
+        run: python "$EBK_PROJECT_ROOT/tools/build_media_root.py" --root "$EBK_PROJECT_ROOT"
+      - name: Verify generated outputs and project the selected venue
+        if: steps.transfer.outputs.import == 'true'
+        run: python "$EBK_IMPORT_ROOT/finalize.py" --request "$EBK_IMPORT_ROOT/transfer_request.json"
+      - name: Save only this import after checking main freshness
+        if: steps.transfer.outputs.import == 'true'
+        id: save
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "publish=false" >> "$GITHUB_OUTPUT"
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          remote_sha="$(git ls-remote --exit-code origin refs/heads/main | cut -f1)"
+          test "$remote_sha" = "$GITHUB_SHA"
+          test -f "$EBK_IMPORT_ROOT/IMPORT_RESULT.json"
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, os, subprocess
+          roots=[os.environ[name]+'/' for name in ('EBK_PROJECT_ROOT','EBK_VENUE_ROOT','EBK_IMPORT_ROOT')]
+          changed=subprocess.check_output(['git','diff','--name-only','-z']).split(b'\0')
+          changed+=subprocess.check_output(['git','ls-files','--others','--exclude-standard','-z']).split(b'\0')
+          assert all(any(path.decode().startswith(root) for root in roots) for path in changed if path), 'Change outside the selected import roots'
+          deleted=subprocess.check_output(['git','diff','--name-only','--diff-filter=D','-z']).split(b'\0')
+          generated=[os.environ['EBK_PROJECT_ROOT']+'/'+name+'/' for name in ('common','ebk-clubcards','ebk-room-media')]
+          assert all(any(path.decode().startswith(group) for group in generated) for path in deleted if path), 'Deletion outside owned generated output groups'
+          request=json.loads((Path(os.environ['EBK_IMPORT_ROOT'])/'transfer_request.json').read_text())
+          for name, expected in request['preservedBlobs'].items():
+              path=Path(name); assert path.is_file() and not path.is_symlink(), name
+              data=path.read_bytes()
+              assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()==expected, name
+          PY
+          git add -- "$EBK_PROJECT_ROOT" "$EBK_VENUE_ROOT" "$EBK_IMPORT_ROOT"
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, os, subprocess
+          root=Path(os.environ['EBK_IMPORT_ROOT'])
+          prepared=json.loads((root/'transfer_prepared.json').read_text())
+          index={}
+          for item in subprocess.check_output(['git','ls-files','--stage','-z']).split(b'\0'):
+              if item:
+                  header,name=item.split(b'\t',1); mode,sha,stage=header.decode().split()
+                  assert stage=='0', 'Unmerged index'
+                  index[name.decode()]=(mode,sha)
+          required=[row['path'] for row in prepared['files']]+[str(root/'transfer_prepared.json'),str(root/'IMPORT_RESULT.json')]
+          for row in prepared['assets']:
+              for name in row['destinationPaths']:
+                  assert index.get(name)==('100644',row['sourceBlobSha']), 'Asset not staged byte-exact: '+name
+                  required.append(name)
+          for name in required:
+              path=Path(name); assert path.is_file() and not path.is_symlink(), name
+              data=path.read_bytes(); sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+              assert index.get(name)==('100644',sha), 'Required output not staged exactly: '+name
+          checked=0
+          for selected in ('EBK_PROJECT_ROOT','EBK_VENUE_ROOT'):
+              for path in sorted(Path(os.environ[selected]).rglob('*')):
+                  assert not path.is_symlink(), 'Symlink in selected output: '+str(path)
+                  if not path.is_file():
+                      continue
+                  data=path.read_bytes(); sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+                  entry=index.get(path.as_posix())
+                  assert entry is not None and entry[0] in ('100644','100755') and entry[1]==sha, 'Generated or retained file omitted from index: '+str(path)
+                  checked+=1
+          print('Selected project/venue files verified in Git index:',checked)
+          PY
+          git diff --quiet
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --cached --quiet && { echo 'Expected import changes are missing'; exit 1; }
+          git commit -m "import: reviewed ClubCommuShow data into the selected EBK project"
+          saved_sha="$(git rev-parse HEAD)"
+          test "$(git rev-parse HEAD^)" = "$GITHUB_SHA"
+          remote_sha="$(git ls-remote --exit-code origin refs/heads/main | cut -f1)"
+          test "$remote_sha" = "$GITHUB_SHA"
+          git push origin HEAD:refs/heads/main
+          test "$(git ls-remote --exit-code origin refs/heads/main | cut -f1)" = "$saved_sha"
+          echo "saved_sha=$saved_sha" >> "$GITHUB_OUTPUT"
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+  deploy:
+    needs: build
+    if: needs.build.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    env:
+      EBK_SAVED_SHA: ${{ needs.build.outputs.saved_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.build.outputs.saved_sha }}
+      - name: Check the saved commit is still current
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$EBK_SAVED_SHA"
+          test "$(git ls-remote --exit-code origin refs/heads/main | cut -f1)" = "$EBK_SAVED_SHA"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Check freshness immediately before publishing
+        run: |
+          set -euo pipefail
+          test "$(git ls-remote --exit-code origin refs/heads/main | cut -f1)" = "$EBK_SAVED_SHA"
+      - uses: actions/deploy-pages@v4
+        id: publish
