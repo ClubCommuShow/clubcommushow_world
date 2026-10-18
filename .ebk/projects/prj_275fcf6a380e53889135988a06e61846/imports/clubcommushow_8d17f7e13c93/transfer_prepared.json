@@ -1,0 +1,3626 @@
+{
+  "schemaVersion": 1,
+  "status": "VERIFIED_AND_WRITTEN",
+  "sourceRepository": "ClubCommuShow/ClubCommuShow",
+  "sourceHead": "8d17f7e13c9312408fe4af231a08e873ad38eceb",
+  "destinationRepository": "ClubCommuShow/clubcommushow_world",
+  "projectRoot": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846",
+  "venueRoot": "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f",
+  "importRoot": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93",
+  "workflowHead": "eb481ec48fb800d64e4ae18be24cd2234818c924",
+  "requestSha256": "36ec9c191d691376744057826f49a676c99e2a74932b3505563799bf744c367c",
+  "preparedZipSha256": "894605589c2c73a26001cb1a687e84cb1f44e16d07b191b1ad46aa6e16fe2532",
+  "assets": [
+    {
+      "sourcePath": "images/clubcards/cards/00000.png",
+      "sourceBlobSha": "f475a7829d003b796a7d47c2b61cd3647bb257aa",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/00000.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/00000.png"
+      ],
+      "bytes": 536349,
+      "gitBlobSha": "f475a7829d003b796a7d47c2b61cd3647bb257aa",
+      "sha256": "cb1779d4128065192d52b9a74be7ea033dd342a12efc7a4494dac7c869431281",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/00010.png",
+      "sourceBlobSha": "dd6700a3555fa0f9587652890248b8b1cafd0212",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/00010.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/00010.png"
+      ],
+      "bytes": 910925,
+      "gitBlobSha": "dd6700a3555fa0f9587652890248b8b1cafd0212",
+      "sha256": "d56408bc772f123759d7edf5863667bb543e41b9a608cba1dbf573d8ad08442c",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/00011.png",
+      "sourceBlobSha": "fa82211c5d44195f4f0877b501626d3564086f6e",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/00011.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/00011.png"
+      ],
+      "bytes": 950085,
+      "gitBlobSha": "fa82211c5d44195f4f0877b501626d3564086f6e",
+      "sha256": "e2ed7122f0716f23da9d9e77b0b3168cc0e1dd87927cf6c2f42f8c6b63a17352",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/00012.png",
+      "sourceBlobSha": "97cfa02366ceb6c5c1aef20adc826ea493a3d732",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/00012.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/00012.png"
+      ],
+      "bytes": 967272,
+      "gitBlobSha": "97cfa02366ceb6c5c1aef20adc826ea493a3d732",
+      "sha256": "5a8c9ffe0afd4c394b33fa147fa62e63a3c2c75f7ec2d97b5938a9f57155d1ec",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/00013.png",
+      "sourceBlobSha": "9b40580b54d6ee31af6dd5dbed177c1d47329e1c",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/00013.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/00013.png"
+      ],
+      "bytes": 1229501,
+      "gitBlobSha": "9b40580b54d6ee31af6dd5dbed177c1d47329e1c",
+      "sha256": "a19fd58f5e37c9dba7f1dadc9dd62479bdeb66371fb668e550b43f413a429f1c",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/00014.png",
+      "sourceBlobSha": "55d95aa245fe5e937d15b61910347c1bdac0ca47",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/00014.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/00014.png"
+      ],
+      "bytes": 1272285,
+      "gitBlobSha": "55d95aa245fe5e937d15b61910347c1bdac0ca47",
+      "sha256": "5e6d1e1e37045e321574ac1b965a503e249c386676129eb5429096e3a1f8ea79",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/10010.png",
+      "sourceBlobSha": "4a6cb352ebcb7fddf44a28f7fe798c3273e3fcf1",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/10010.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/10010.png"
+      ],
+      "bytes": 893268,
+      "gitBlobSha": "4a6cb352ebcb7fddf44a28f7fe798c3273e3fcf1",
+      "sha256": "025161a777be159a2da1f84bd66697654e9e65093a51ab5c15cf7f4c9a12da2e",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/10011.png",
+      "sourceBlobSha": "cdcecfdccded08f7ac75dcbc88a08da2f500eb86",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/10011.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/10011.png"
+      ],
+      "bytes": 910508,
+      "gitBlobSha": "cdcecfdccded08f7ac75dcbc88a08da2f500eb86",
+      "sha256": "4dd6a9f0bb873e240b234748658728f14225bf90d875dae1abff5672fc6380f6",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/10012.png",
+      "sourceBlobSha": "bc0b6267cfed9367a88a4c0d14c6e73a765f194b",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/10012.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/10012.png"
+      ],
+      "bytes": 987541,
+      "gitBlobSha": "bc0b6267cfed9367a88a4c0d14c6e73a765f194b",
+      "sha256": "7d9c46662b1e52acc31926631fb501219788360d0e0cebc80c64770631b51cf0",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/10013.png",
+      "sourceBlobSha": "f63576b794d61a0bf48fbad20aaa1f38cd53df2b",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/10013.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/10013.png"
+      ],
+      "bytes": 1325352,
+      "gitBlobSha": "f63576b794d61a0bf48fbad20aaa1f38cd53df2b",
+      "sha256": "1aa69fb557a8f2ac19a2c49ab9773b5c859bbaf7648eb0154d7ad5890732d800",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/10014.png",
+      "sourceBlobSha": "7160382e0716e04c4602e78a1e65f8c2b564e81e",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/10014.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/10014.png"
+      ],
+      "bytes": 1378713,
+      "gitBlobSha": "7160382e0716e04c4602e78a1e65f8c2b564e81e",
+      "sha256": "53462aee72acc037b80c2c4243184e777d0fd41cc6b8cfe4c2e6437e7a0c2f8d",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20010.png",
+      "sourceBlobSha": "5b334db1979e90ee35632fe37a7aad9c0944929f",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20010.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20010.png"
+      ],
+      "bytes": 1054229,
+      "gitBlobSha": "5b334db1979e90ee35632fe37a7aad9c0944929f",
+      "sha256": "aac638dd705819aaf2b6f636b63e98dbac02c4148572fe6298dd8d00ec3ba119",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20011.png",
+      "sourceBlobSha": "61cf9f9bd7069d47191ea3617eb8fafa62885dc1",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20011.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20011.png"
+      ],
+      "bytes": 974843,
+      "gitBlobSha": "61cf9f9bd7069d47191ea3617eb8fafa62885dc1",
+      "sha256": "c92224534fc30359976b3eca3fa3dfa075983cf3ef921366fbf10b5e48d4ccc7",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20012.png",
+      "sourceBlobSha": "a9ce7638bd9af3f7b5252945112def5304a4432d",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20012.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20012.png"
+      ],
+      "bytes": 1116119,
+      "gitBlobSha": "a9ce7638bd9af3f7b5252945112def5304a4432d",
+      "sha256": "159d2cec7436086f2eb12adcbc807e0cd0d962aa9650bf528784cc1b50ebb9ea",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20013.png",
+      "sourceBlobSha": "57e3cfa06f21a2a9548d78c7b726cdeabd398b75",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20013.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20013.png"
+      ],
+      "bytes": 1396632,
+      "gitBlobSha": "57e3cfa06f21a2a9548d78c7b726cdeabd398b75",
+      "sha256": "102d5cb72b1e5036935efaf58fdf642423fb311a238d0bd645eae76ac4a5cd28",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20014.png",
+      "sourceBlobSha": "2d2adc407a1c25439e3b2e6b283f5e0df6d2580b",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20014.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20014.png"
+      ],
+      "bytes": 1356669,
+      "gitBlobSha": "2d2adc407a1c25439e3b2e6b283f5e0df6d2580b",
+      "sha256": "4c1e8f8f36656c704ddd4316c11b095b038717882455315505eb894127666595",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20020.png",
+      "sourceBlobSha": "1c9552d6707dc0be32ad729e5dca3a4fb11e0a41",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20020.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20020.png"
+      ],
+      "bytes": 1033371,
+      "gitBlobSha": "1c9552d6707dc0be32ad729e5dca3a4fb11e0a41",
+      "sha256": "dd48f4577feddfe36c74e82e2a3e3ebf2876f38c003973a472e37597ac33ac85",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20021.png",
+      "sourceBlobSha": "cbf35b833d4e2abe25a7729feb1e2b034ec4f529",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20021.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20021.png"
+      ],
+      "bytes": 1009733,
+      "gitBlobSha": "cbf35b833d4e2abe25a7729feb1e2b034ec4f529",
+      "sha256": "e2695f62ad5bc483643ed2bc7c1eb9dac83e410e331f06bbb17bf2c4ecb6810b",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20022.png",
+      "sourceBlobSha": "6f0b2642e38d3e49688a8b7dec9f8233f428509c",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20022.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20022.png"
+      ],
+      "bytes": 1119675,
+      "gitBlobSha": "6f0b2642e38d3e49688a8b7dec9f8233f428509c",
+      "sha256": "87603b66d64c871d594200d4f99709f38355599b1a58ef8b62735403905b0de7",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20023.png",
+      "sourceBlobSha": "412619d24fb067a84f6f61c4304b0bf949db5293",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20023.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20023.png"
+      ],
+      "bytes": 1362631,
+      "gitBlobSha": "412619d24fb067a84f6f61c4304b0bf949db5293",
+      "sha256": "197da2d51ccdb496fb95d4ead3cc2cdd6db26e18eb195ca6bf607385279c1470",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20024.png",
+      "sourceBlobSha": "157fa88aac36113b2777cea9ccf3dd5238dc44f1",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20024.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20024.png"
+      ],
+      "bytes": 1503757,
+      "gitBlobSha": "157fa88aac36113b2777cea9ccf3dd5238dc44f1",
+      "sha256": "f23aea13fa08281a8b30ffb14efa93abdb134c0e51337683ae689c0913a3a401",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20030.png",
+      "sourceBlobSha": "7ad384989c1cbbf6fde04c28c08c831a47565fb7",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20030.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20030.png"
+      ],
+      "bytes": 941991,
+      "gitBlobSha": "7ad384989c1cbbf6fde04c28c08c831a47565fb7",
+      "sha256": "4a5ffa442e70bf692af11d6c3f9b7493edadc98efc08f98b400db0e198acece1",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20031.png",
+      "sourceBlobSha": "2f6d664414ef4b2b75e5c20cca8522528f3c99f5",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20031.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20031.png"
+      ],
+      "bytes": 980501,
+      "gitBlobSha": "2f6d664414ef4b2b75e5c20cca8522528f3c99f5",
+      "sha256": "66b8ff71e9f6b94a1e721c476d23cfaf4b29ae91fa48fa775806470ea22212fa",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20032.png",
+      "sourceBlobSha": "137d2c64a3fb73de4cccf1142bacf2f3ade83585",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20032.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20032.png"
+      ],
+      "bytes": 1048800,
+      "gitBlobSha": "137d2c64a3fb73de4cccf1142bacf2f3ade83585",
+      "sha256": "74149b7ae72ce2f83f0483f9c2003e2a54f7fb4ba7b5774ae8a3596251d64516",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20033.png",
+      "sourceBlobSha": "b06e7ce53c82b9623b50814af6aef0fbadd11d3f",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20033.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20033.png"
+      ],
+      "bytes": 1437992,
+      "gitBlobSha": "b06e7ce53c82b9623b50814af6aef0fbadd11d3f",
+      "sha256": "ac26779a05505f7043d6e20d9942e3ec3a4c42021beeec768c1b04a41c2e80e8",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/20034.png",
+      "sourceBlobSha": "dce097392601f78b825d495d0aea6a10ac5f0bd1",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/20034.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/20034.png"
+      ],
+      "bytes": 1353024,
+      "gitBlobSha": "dce097392601f78b825d495d0aea6a10ac5f0bd1",
+      "sha256": "e3ff69df9452e7ba3445c8c00193f8f1f4f2786c0ca0459b0856a27885c4285e",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/30020.png",
+      "sourceBlobSha": "0989feb2d3d835c09f874ca4c76e9fb3fc06d8c8",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/30020.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/30020.png"
+      ],
+      "bytes": 1002385,
+      "gitBlobSha": "0989feb2d3d835c09f874ca4c76e9fb3fc06d8c8",
+      "sha256": "96b985851cd1c053676caf16deed99c6846acfed558f51b7977ddda1e8f429b3",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/30022.png",
+      "sourceBlobSha": "4c9c0983027a9336a635e76cf571cb437aad40ab",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/30022.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/30022.png"
+      ],
+      "bytes": 1072138,
+      "gitBlobSha": "4c9c0983027a9336a635e76cf571cb437aad40ab",
+      "sha256": "60813f16c71e747cedfdfe552987349f2cbaa4d9fd06a4c39e6864fe1a023567",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/40010.png",
+      "sourceBlobSha": "2925118e206970cbfde0b814f4cfed13cdc71b2f",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/40010.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/40010.png"
+      ],
+      "bytes": 718965,
+      "gitBlobSha": "2925118e206970cbfde0b814f4cfed13cdc71b2f",
+      "sha256": "8b1407c43c3f345c2522f42f48a194fb93db690e82c6cae6df70d4b204ecd205",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/40011.png",
+      "sourceBlobSha": "f9869b2a2897aa49b75672412a41cc15573f443a",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/40011.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/40011.png"
+      ],
+      "bytes": 866163,
+      "gitBlobSha": "f9869b2a2897aa49b75672412a41cc15573f443a",
+      "sha256": "ffbedb2da351d7a243b338cc01e65ad6302512a62019a2a1074f9ebd3dcde752",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/40012.png",
+      "sourceBlobSha": "5592560b45139a938b5da23cb77fd34ea35d4945",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/40012.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/40012.png"
+      ],
+      "bytes": 801109,
+      "gitBlobSha": "5592560b45139a938b5da23cb77fd34ea35d4945",
+      "sha256": "c49328e61b4443c899e7ec8faf6ede5549aafb5d4eef947ac2cbc457693fccca",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/40013.png",
+      "sourceBlobSha": "ec50ac61cd1bf2453420b0269321cc06be330f01",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/40013.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/40013.png"
+      ],
+      "bytes": 1221638,
+      "gitBlobSha": "ec50ac61cd1bf2453420b0269321cc06be330f01",
+      "sha256": "6954c437781f39ed679480b978f830a2343600e8bd5b6895b51f93d4c3e452e1",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/40014.png",
+      "sourceBlobSha": "e1dece9029675c9e4d609c5a8f8b6c739d3af39d",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/40014.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/40014.png"
+      ],
+      "bytes": 1313069,
+      "gitBlobSha": "e1dece9029675c9e4d609c5a8f8b6c739d3af39d",
+      "sha256": "da7eccb2d5c5e521f3b44ae9199ceafa2ef04ba362bd66c4bbfbe7bb6e78d681",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/45040.png",
+      "sourceBlobSha": "348845fa0823e5b352e9b3c1b983e64790557701",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/45040.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/45040.png"
+      ],
+      "bytes": 931455,
+      "gitBlobSha": "348845fa0823e5b352e9b3c1b983e64790557701",
+      "sha256": "b40b1c934984c83e38b54d66abcecee4d1af4168d5c290e0e6ce5187cd6c7a0d",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/45041.png",
+      "sourceBlobSha": "0c330d7f2fa913f14c517715055dffa665d858b0",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/45041.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/45041.png"
+      ],
+      "bytes": 839164,
+      "gitBlobSha": "0c330d7f2fa913f14c517715055dffa665d858b0",
+      "sha256": "3b8099adba7ca92e38965a006eb3e5c54450a4a5c640fe6f5cce0172ccf4dd1e",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/45042.png",
+      "sourceBlobSha": "beea0d627a0e9f1b053cda96694536806ef83614",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/45042.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/45042.png"
+      ],
+      "bytes": 970743,
+      "gitBlobSha": "beea0d627a0e9f1b053cda96694536806ef83614",
+      "sha256": "e265a675ed6465f978696d6c31fd0b13226bcb52f9f3018bc22d59621c9448e1",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/45043.png",
+      "sourceBlobSha": "add72d6febbd6f8d6e780ba6ef88aee673ca05cf",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/45043.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/45043.png"
+      ],
+      "bytes": 1253518,
+      "gitBlobSha": "add72d6febbd6f8d6e780ba6ef88aee673ca05cf",
+      "sha256": "2d9c6ae8e6f9f7faab43211271fd0ad48bd49577afd788b5843234b25455aa6f",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/45044.png",
+      "sourceBlobSha": "45bec26512d694b629f828360190c068a0578b8d",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/45044.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/45044.png"
+      ],
+      "bytes": 1480471,
+      "gitBlobSha": "45bec26512d694b629f828360190c068a0578b8d",
+      "sha256": "bab0c99545574e0ceba24d9457226c633722efca21487ce97a2d8118d59c463d",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/50010.png",
+      "sourceBlobSha": "c5d56a88be64994be6ad7968588624f9a4eb3c24",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/50010.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/50010.png"
+      ],
+      "bytes": 1019002,
+      "gitBlobSha": "c5d56a88be64994be6ad7968588624f9a4eb3c24",
+      "sha256": "158ffa680a05aa68f9ab24a2eb8069451ea53fc7aafd57f86e728376cc64a79c",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/50011.png",
+      "sourceBlobSha": "df12cb484c54af74e39abc3957ffdb086edeb763",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/50011.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/50011.png"
+      ],
+      "bytes": 792905,
+      "gitBlobSha": "df12cb484c54af74e39abc3957ffdb086edeb763",
+      "sha256": "e47584770b921c1cf58a451c5185fed04a4980055db98c7a04d3fcaf9cbffb4e",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/50012.png",
+      "sourceBlobSha": "8a0a0550b91fa6aa7d3472e7f309c4ecfa14b56e",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/50012.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/50012.png"
+      ],
+      "bytes": 1035664,
+      "gitBlobSha": "8a0a0550b91fa6aa7d3472e7f309c4ecfa14b56e",
+      "sha256": "302da066a482ecabf1988169ab621dcb074c7a81452bf65502d8a9219c71ad1f",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/50013.png",
+      "sourceBlobSha": "b63eb737295e262b2965052c43893a74c05fca0d",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/50013.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/50013.png"
+      ],
+      "bytes": 1258857,
+      "gitBlobSha": "b63eb737295e262b2965052c43893a74c05fca0d",
+      "sha256": "480be2f5fd3bcea01ec240963c2e6684381b8f5412b9710ce930277ddb39808b",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/50014.png",
+      "sourceBlobSha": "07d3b62f3fbc2b6860a78fa034c002c587f31aad",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/50014.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/50014.png"
+      ],
+      "bytes": 1163912,
+      "gitBlobSha": "07d3b62f3fbc2b6860a78fa034c002c587f31aad",
+      "sha256": "32f5842463ba0a7bcab4c58d1bcb2bd27b5a502bb92d92545bb9d8f3cd8683a2",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/60010.png",
+      "sourceBlobSha": "d584cf949a78cf71ea6c5fc623ddcb5c3c898fac",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/60010.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/60010.png"
+      ],
+      "bytes": 941273,
+      "gitBlobSha": "d584cf949a78cf71ea6c5fc623ddcb5c3c898fac",
+      "sha256": "cb7b9b664956897f830d3bd2b44d7ec68a16496f9c6e750b5a7a4fb0a5610655",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/60011.png",
+      "sourceBlobSha": "05a06df5a750fd923447877e8df7bfe27e70f28c",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/60011.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/60011.png"
+      ],
+      "bytes": 1008093,
+      "gitBlobSha": "05a06df5a750fd923447877e8df7bfe27e70f28c",
+      "sha256": "450fea0edb601bdf9f4b2d839231ac9641b99dea76b5d6c26b19892e9a29adb5",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/60012.png",
+      "sourceBlobSha": "86b133e0afdb26182089ce2412aa736901eda99f",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/60012.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/60012.png"
+      ],
+      "bytes": 1039872,
+      "gitBlobSha": "86b133e0afdb26182089ce2412aa736901eda99f",
+      "sha256": "c78491f2e7c17bc38c0b8015e18017f501defc8d71a200d1fb11e0059503f58c",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/60013.png",
+      "sourceBlobSha": "26aae4f9d7d6744a5a7cc161105c27bcd7b957d1",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/60013.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/60013.png"
+      ],
+      "bytes": 1356441,
+      "gitBlobSha": "26aae4f9d7d6744a5a7cc161105c27bcd7b957d1",
+      "sha256": "1733a3fc0da5efc0459d66f8b4425793d33bb2f94274dd12b1f2f72f74e8373c",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/60014.png",
+      "sourceBlobSha": "f65a2f283932316849a166c52c0e65aaaf764ea2",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/60014.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/60014.png"
+      ],
+      "bytes": 1064876,
+      "gitBlobSha": "f65a2f283932316849a166c52c0e65aaaf764ea2",
+      "sha256": "1a8a70acd93822a999078d291a4fdb81df59e0acdfde7a3d0b619f71e265b67f",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/65020.png",
+      "sourceBlobSha": "0c84926989de14ff21551fce6c8dd40846b2aee1",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/65020.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/65020.png"
+      ],
+      "bytes": 961414,
+      "gitBlobSha": "0c84926989de14ff21551fce6c8dd40846b2aee1",
+      "sha256": "d11cbbdf2b565bbfb5fd8fcf44ce7860132e0a73c6bda4a62af4e318ad0fc3b4",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/65021.png",
+      "sourceBlobSha": "f74a837c78266b00e5106fcb6af52930b1dfdea9",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/65021.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/65021.png"
+      ],
+      "bytes": 930601,
+      "gitBlobSha": "f74a837c78266b00e5106fcb6af52930b1dfdea9",
+      "sha256": "790107a39967d8667d26365919d7122a8d264a42bbcf3aec92e90bf77a949a44",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/65022.png",
+      "sourceBlobSha": "7afd879263d7f1ccbaacc7195420fcd090f8a05a",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/65022.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/65022.png"
+      ],
+      "bytes": 991160,
+      "gitBlobSha": "7afd879263d7f1ccbaacc7195420fcd090f8a05a",
+      "sha256": "f2149dadbe16f36563663a9da48c955532b2b258987a78f4ae544a4dc26889df",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/65023.png",
+      "sourceBlobSha": "5c1c78978ced239be6afa9f7d00aca89e5270de4",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/65023.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/65023.png"
+      ],
+      "bytes": 1286888,
+      "gitBlobSha": "5c1c78978ced239be6afa9f7d00aca89e5270de4",
+      "sha256": "f4deb3c3ecec4fd61b6360a299e2509101d2d6751a272c92e32316099959681e",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/65024.png",
+      "sourceBlobSha": "37f92e7d1a60ec366cdd5292d9c11938c7620b8c",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/65024.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/65024.png"
+      ],
+      "bytes": 1426748,
+      "gitBlobSha": "37f92e7d1a60ec366cdd5292d9c11938c7620b8c",
+      "sha256": "c6010e358270fc1cb21e86a62f860d8d275d59e36b67ad1264b995d02c2dc929",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/75060.png",
+      "sourceBlobSha": "cd9897b21b7265fbf677de2e286dc3f3415382af",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/75060.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/75060.png"
+      ],
+      "bytes": 993621,
+      "gitBlobSha": "cd9897b21b7265fbf677de2e286dc3f3415382af",
+      "sha256": "4b8eb691b7328d9fbf126c6b6e96c86054e7a89c204b504f523ad6ecd78f01e4",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/75061.png",
+      "sourceBlobSha": "5e6eec32daaed278ef0f9cf4c6613aa3e59001f2",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/75061.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/75061.png"
+      ],
+      "bytes": 1009985,
+      "gitBlobSha": "5e6eec32daaed278ef0f9cf4c6613aa3e59001f2",
+      "sha256": "1f5dd8e13220863c25b99c1ba321d85f18af1711b8ffd17bd00150763a54d86b",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/75062.png",
+      "sourceBlobSha": "ecfead02b6a4c500e6244a8d30acc7f62afce06d",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/75062.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/75062.png"
+      ],
+      "bytes": 1146839,
+      "gitBlobSha": "ecfead02b6a4c500e6244a8d30acc7f62afce06d",
+      "sha256": "64fc4183ad8df6b8b459d06730d4e301883bf0c743b2ade81959f48a5bfa2266",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/75063.png",
+      "sourceBlobSha": "f8acfdd12feddf40775093699e448f4a742dd598",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/75063.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/75063.png"
+      ],
+      "bytes": 1241677,
+      "gitBlobSha": "f8acfdd12feddf40775093699e448f4a742dd598",
+      "sha256": "03ec506d7fb3bfa6b1f811a586bcad344a24c7559cdbcc1a9a788d6b284563e8",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/75064.png",
+      "sourceBlobSha": "317ac410cfba16366cfb364655cadc7e76e3fb24",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/75064.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/75064.png"
+      ],
+      "bytes": 1469296,
+      "gitBlobSha": "317ac410cfba16366cfb364655cadc7e76e3fb24",
+      "sha256": "c473eb403cad22f06de9baa4424e76a90a446ac8df47b847cdc7ff051ceb16c4",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/85010.png",
+      "sourceBlobSha": "584d6b9d0d7c234be61db1279bdff0264087de0f",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/85010.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/85010.png"
+      ],
+      "bytes": 761538,
+      "gitBlobSha": "584d6b9d0d7c234be61db1279bdff0264087de0f",
+      "sha256": "be73007b0d656077fc76cfb217ce020ed396fca3139dd6c5a5004052076740dc",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/85012.png",
+      "sourceBlobSha": "0a8a211efa9386b99bfdfbe5d8f94795a4409380",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/85012.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/85012.png"
+      ],
+      "bytes": 773406,
+      "gitBlobSha": "0a8a211efa9386b99bfdfbe5d8f94795a4409380",
+      "sha256": "cdf7e3c937644c535507ae6196a04158221dea3267af083c8dd3efb5c9f4ad40",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/91025.png",
+      "sourceBlobSha": "43f788b71ac51d07c40f516848bcc1695ad6f33d",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/91025.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/91025.png"
+      ],
+      "bytes": 960606,
+      "gitBlobSha": "43f788b71ac51d07c40f516848bcc1695ad6f33d",
+      "sha256": "5992056f499308898b77d8f7c8876fcc0d8ce286e959f884e1be0598c7ce5bd2",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/92225.png",
+      "sourceBlobSha": "b3705a91846418b7ab3d2c998246f210b9bada41",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/92225.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/92225.png"
+      ],
+      "bytes": 272139,
+      "gitBlobSha": "b3705a91846418b7ab3d2c998246f210b9bada41",
+      "sha256": "823b020b57e1cba80f97317604e4b8e47f0913f7dee36685cce75fad2d4001d8",
+      "image": {
+        "format": "PNG",
+        "width": 744,
+        "height": 1039,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/clubcards/cards/99999.png",
+      "sourceBlobSha": "b2770a200d9ad48cc3142aba387129c77f6a8c35",
+      "purpose": "clubcard_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/99999.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/99999.png"
+      ],
+      "bytes": 1531584,
+      "gitBlobSha": "b2770a200d9ad48cc3142aba387129c77f6a8c35",
+      "sha256": "e81475f471c885b4aefa95ac114da4ed84c13fd2f0395f77a33d111ed45c0846",
+      "image": {
+        "format": "PNG",
+        "width": 1240,
+        "height": 1754,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": true
+      }
+    },
+    {
+      "sourcePath": "images/portraits/assistant/slot0.png",
+      "sourceBlobSha": "ca81a410730a8b9404b39a36886c74197ec345ac",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/assistant/slot0.png"
+      ],
+      "bytes": 2285328,
+      "gitBlobSha": "ca81a410730a8b9404b39a36886c74197ec345ac",
+      "sha256": "ee84f443a41208c7b1fc104da02dbd8c4300f732baab5495026145f9fe7e5401",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/assistant/slot1.png",
+      "sourceBlobSha": "9f0983617901f1818cf09d47568a246c57dcd974",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/assistant/slot1.png"
+      ],
+      "bytes": 2410797,
+      "gitBlobSha": "9f0983617901f1818cf09d47568a246c57dcd974",
+      "sha256": "c848ac9a3f0cb4d64d386595eb65053658638a198e7cacb5641160ea359ab3d4",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/castleader/slot0.png",
+      "sourceBlobSha": "0adea68909d933ffa47dad0ce9b259abe874d3d7",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/castleader/slot0.png"
+      ],
+      "bytes": 1895089,
+      "gitBlobSha": "0adea68909d933ffa47dad0ce9b259abe874d3d7",
+      "sha256": "d68f3976c28d3258ccfadf228fc61f431304a1b391042d38cdd6e1bd783b3abe",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/castleader/slot1.png",
+      "sourceBlobSha": "3e12bb6ecfc7addde1d6f8f7628a7cdcca1460d3",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/castleader/slot1.png"
+      ],
+      "bytes": 1665293,
+      "gitBlobSha": "3e12bb6ecfc7addde1d6f8f7628a7cdcca1460d3",
+      "sha256": "ac7260f40221ab36d55f040d4590b0904074a3f0d5d6a8c294dc5f1698a77614",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/condisionalcast/slot0.png",
+      "sourceBlobSha": "bf5b87960b8c7049105e22836fb97f8ed6bc34af",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/condisionalcast/slot0.png"
+      ],
+      "bytes": 1533732,
+      "gitBlobSha": "bf5b87960b8c7049105e22836fb97f8ed6bc34af",
+      "sha256": "9e286eb5a763dca96aa140a8be2249e223d265dcbddb012a11cfa7a0578aa22b",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/condisionalcast/slot1.png",
+      "sourceBlobSha": "d4982536c0a544c1fa42507ce82f78579e54b50d",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/condisionalcast/slot1.png"
+      ],
+      "bytes": 1486036,
+      "gitBlobSha": "d4982536c0a544c1fa42507ce82f78579e54b50d",
+      "sha256": "2fae958cc04e215c2c6784fae596a502215755003e5f7926270906bd275cd2a1",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/condisionalcast/slot2.png",
+      "sourceBlobSha": "9142575b0b37158fdc02daacd5a1d472954c5204",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/condisionalcast/slot2.png"
+      ],
+      "bytes": 1043849,
+      "gitBlobSha": "9142575b0b37158fdc02daacd5a1d472954c5204",
+      "sha256": "73932d36c0001eedebdd89c944f22f01f0a205963cd5792f7b7e4ed7d03d91f6",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot0.png",
+      "sourceBlobSha": "1744ba88ce6aaff6181e00e0e9bf9365e4313cee",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot0.png"
+      ],
+      "bytes": 2284269,
+      "gitBlobSha": "1744ba88ce6aaff6181e00e0e9bf9365e4313cee",
+      "sha256": "f34411f66890da94822c894fc4e721bda54ae6a03ed5c7caa55608d903e0dc2c",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot1.png",
+      "sourceBlobSha": "9f070cc09a0bb509e1aad75bd0cc393866753ea8",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot1.png"
+      ],
+      "bytes": 2200551,
+      "gitBlobSha": "9f070cc09a0bb509e1aad75bd0cc393866753ea8",
+      "sha256": "4e73fbe7fc7453e29247bdd89fb651f072470a58cc291ea1b646597c31f16acd",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot10.png",
+      "sourceBlobSha": "54379c0ffffef4c7c594afd8860c9397d4574d10",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot10.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot10.png"
+      ],
+      "bytes": 1531601,
+      "gitBlobSha": "54379c0ffffef4c7c594afd8860c9397d4574d10",
+      "sha256": "196a8d1df8422385c6a3514d1fdd7e9cd45702bdb5cc891514996e3204a7e91a",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot2.png",
+      "sourceBlobSha": "b44c274d25c24a608b557f80a18060502bd2057e",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot2.png"
+      ],
+      "bytes": 2094420,
+      "gitBlobSha": "b44c274d25c24a608b557f80a18060502bd2057e",
+      "sha256": "211c0ceb39184e011deb9fa8e0c2f54351bdb2e527d8f1ecf18f76c2e32528e6",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot3.png",
+      "sourceBlobSha": "1198676c9e672ceb2db0f89958dedd837fde08a4",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot3.png"
+      ],
+      "bytes": 1650071,
+      "gitBlobSha": "1198676c9e672ceb2db0f89958dedd837fde08a4",
+      "sha256": "e358024adce160f7ff3d8058b7cee671087abe03e0ea90267d25416352e84878",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot4.png",
+      "sourceBlobSha": "e39fb937c532a4f1d4c4aa104eed8045ed8a24ff",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot4.png"
+      ],
+      "bytes": 2316455,
+      "gitBlobSha": "e39fb937c532a4f1d4c4aa104eed8045ed8a24ff",
+      "sha256": "f12ffba23fccec802c85ce3aaf2357d2f040e58db9b17db11d958f97991172bd",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot5.png",
+      "sourceBlobSha": "8eadd245c26e9f694190558f9d0e419ff6143dd8",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot5.png"
+      ],
+      "bytes": 2016433,
+      "gitBlobSha": "8eadd245c26e9f694190558f9d0e419ff6143dd8",
+      "sha256": "09d42eec7c2843a278eaec286836e737b4bd9dfe57b285321a45b6b244acb983",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot6.png",
+      "sourceBlobSha": "ab3f64f105e3ab1f13362cfe9de0297e3dac5635",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot6.png"
+      ],
+      "bytes": 2371548,
+      "gitBlobSha": "ab3f64f105e3ab1f13362cfe9de0297e3dac5635",
+      "sha256": "6193599e37c7109fb0aca561556e3a9794d04854357e9d8380c1ee1a6bb553d7",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot7.png",
+      "sourceBlobSha": "e2e70f8addfcfa59fbe5673b57f730daf1b16908",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot7.png"
+      ],
+      "bytes": 1115104,
+      "gitBlobSha": "e2e70f8addfcfa59fbe5673b57f730daf1b16908",
+      "sha256": "f5ce88a2122b3ead27f8adf3c51be922b8c4a30bc5d07cc69b295c13ba2f17fc",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot8.png",
+      "sourceBlobSha": "59edb0b9f0cf923de6a59c163bdf20ea6d65ca9d",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot8.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot8.png"
+      ],
+      "bytes": 1355902,
+      "gitBlobSha": "59edb0b9f0cf923de6a59c163bdf20ea6d65ca9d",
+      "sha256": "00c4c6c02db7b025b21725a99ab1209059ced6c4f836b111bd474986ff9f4899",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/downercast/slot9.png",
+      "sourceBlobSha": "9cfa594de7a14f76e48f10dcf800be707a933048",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot9.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/slot9.png"
+      ],
+      "bytes": 1035154,
+      "gitBlobSha": "9cfa594de7a14f76e48f10dcf800be707a933048",
+      "sha256": "62db59bab1d6e68d94b4abc90255c4b9fd245ac1afb5db52ce42451ecec3a83d",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/manager/slot0.png",
+      "sourceBlobSha": "f71d3cd934a6c250481c53e8f9c0296e187771a6",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/manager/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/manager/slot0.png"
+      ],
+      "bytes": 2108075,
+      "gitBlobSha": "f71d3cd934a6c250481c53e8f9c0296e187771a6",
+      "sha256": "cbdadc1d5d1981c63fdfbc7ae2554f6677358c78ada0865e55d87efab3832633",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/operator/slot0.png",
+      "sourceBlobSha": "e6b94e36c88e649af4cc820a6007730cbe4bace9",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/operator/slot0.png"
+      ],
+      "bytes": 2041635,
+      "gitBlobSha": "e6b94e36c88e649af4cc820a6007730cbe4bace9",
+      "sha256": "cc810ebbbaaf01713ef5fadb5cc850d4c9d3ab2a024291950eb2baaa24a15f55",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/operator/slot1.png",
+      "sourceBlobSha": "32eed250a1c789d336db9e9719563a39943560ac",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/operator/slot1.png"
+      ],
+      "bytes": 1938548,
+      "gitBlobSha": "32eed250a1c789d336db9e9719563a39943560ac",
+      "sha256": "436eb3244743718b701e72e0f2a33ba83d322a30f4d0f2b2d0f13806a53dc493",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/operator/slot2.png",
+      "sourceBlobSha": "270115a8d54cb82771d081212d5cad2ad7a9422e",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/operator/slot2.png"
+      ],
+      "bytes": 1833108,
+      "gitBlobSha": "270115a8d54cb82771d081212d5cad2ad7a9422e",
+      "sha256": "d4f506711e230b38e58749b6de582bcd943a6ea043c92f56b775f8b24806630e",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/owner/slot0.png",
+      "sourceBlobSha": "21b6482784e4b8772d9bbb547dbb2e530b0cc604",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/owner/slot0.png"
+      ],
+      "bytes": 2040364,
+      "gitBlobSha": "21b6482784e4b8772d9bbb547dbb2e530b0cc604",
+      "sha256": "27b033eb369860c857bc62a7b293584f18aa43733a3c2ccb35fdeaf5214c1461",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staff/slot0.png",
+      "sourceBlobSha": "77bd3a07b5e13870b22b39450020c9b77302dc60",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staff/slot0.png"
+      ],
+      "bytes": 1651039,
+      "gitBlobSha": "77bd3a07b5e13870b22b39450020c9b77302dc60",
+      "sha256": "82b651b9fcd57c04b4ad16db154d908ba9a9093944e32816ba377c60ba6c33fc",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staff/slot1.png",
+      "sourceBlobSha": "25f5a6a6caffcd638eacebfedcd10add0525cecd",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staff/slot1.png"
+      ],
+      "bytes": 2194995,
+      "gitBlobSha": "25f5a6a6caffcd638eacebfedcd10add0525cecd",
+      "sha256": "bd585a57d74798951d09dcb9308a33d18eebb01f3bad944a9390e09c19afef1f",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staff/slot2.png",
+      "sourceBlobSha": "cfa911cb0df3df675075762ae0704f63487e2ba8",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staff/slot2.png"
+      ],
+      "bytes": 2359212,
+      "gitBlobSha": "cfa911cb0df3df675075762ae0704f63487e2ba8",
+      "sha256": "b6a153c4e744c63a75ba589cb6fe71b07042d01fee1183ede1d95d2e6c970cc2",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staff/slot3.png",
+      "sourceBlobSha": "b7c7e1e3e57f8936ad5dce4691421001afd2e055",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staff/slot3.png"
+      ],
+      "bytes": 1849162,
+      "gitBlobSha": "b7c7e1e3e57f8936ad5dce4691421001afd2e055",
+      "sha256": "6caad8802b019a25df2ee344236f136d9cf75e89d719f9185a161e5c6f2d5d58",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staff/slot4.png",
+      "sourceBlobSha": "b9bfe70dc1c9caa5e7bfad78f5897531520b7310",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staff/slot4.png"
+      ],
+      "bytes": 1607089,
+      "gitBlobSha": "b9bfe70dc1c9caa5e7bfad78f5897531520b7310",
+      "sha256": "2face5469df3478c38eb2c480abf7166c9941a5021808d0a3658b431578e4c3d",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staff/slot5.png",
+      "sourceBlobSha": "22cda860a9d0240023ac33f8ab061276f066fe64",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staff/slot5.png"
+      ],
+      "bytes": 1585723,
+      "gitBlobSha": "22cda860a9d0240023ac33f8ab061276f066fe64",
+      "sha256": "723605897bb524c8bb3b9a6869e9682012276a5e326e8921aca1f8c543ebcd34",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staffleader/slot0.png",
+      "sourceBlobSha": "885ef245933303fd72a5172cb05a837d664cf60a",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staffleader/slot0.png"
+      ],
+      "bytes": 1671902,
+      "gitBlobSha": "885ef245933303fd72a5172cb05a837d664cf60a",
+      "sha256": "7ebe8f5d9fa92724947961a07a38905eb4f9855b46d632378695768c7229cd9e",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/staffleader/slot1.png",
+      "sourceBlobSha": "537e9198c975bb11c9572282d888572c71c5b827",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staffleader/slot1.png"
+      ],
+      "bytes": 1851642,
+      "gitBlobSha": "537e9198c975bb11c9572282d888572c71c5b827",
+      "sha256": "27464ad864afc12ce314ac1de2f4d72d97e0f67d107d0654ae2fe2a9f4d27991",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/switchcast/slot0.png",
+      "sourceBlobSha": "763af2b833e41421278a6b658584131e07904b5b",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/switchcast/slot0.png"
+      ],
+      "bytes": 882435,
+      "gitBlobSha": "763af2b833e41421278a6b658584131e07904b5b",
+      "sha256": "411ea5e1ec775db480a4edcc1d1533d9bf866ad9c1c3dbecf3f9f99da6da9445",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/switchcast/slot1.png",
+      "sourceBlobSha": "f570d448a6bab44ccc0702821c562724e1f6643c",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/switchcast/slot1.png"
+      ],
+      "bytes": 1285003,
+      "gitBlobSha": "f570d448a6bab44ccc0702821c562724e1f6643c",
+      "sha256": "33d9abb9ee1dcab300e182cd1d34b11cedccfa07bf005ac804614aebc91026d1",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot0.png",
+      "sourceBlobSha": "4e399928a114dc4b4e552c33f5d43bda0eb4f943",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot0.png"
+      ],
+      "bytes": 2419605,
+      "gitBlobSha": "4e399928a114dc4b4e552c33f5d43bda0eb4f943",
+      "sha256": "6098518f18c4e6a0dc8da48f1bface84482f7f11fd885f57f92157a52b38ad05",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot1.png",
+      "sourceBlobSha": "3b83039b047f08cb75eb1344939c1357e0323047",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot1.png"
+      ],
+      "bytes": 1914940,
+      "gitBlobSha": "3b83039b047f08cb75eb1344939c1357e0323047",
+      "sha256": "b51f297eaf8dc1ccbf878dc744d4c6ddc8137002a4f8883e7a906c8c6c914d18",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot2.png",
+      "sourceBlobSha": "1078cc95f9520f2da433d184409c3d7bc7709952",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot2.png"
+      ],
+      "bytes": 1844836,
+      "gitBlobSha": "1078cc95f9520f2da433d184409c3d7bc7709952",
+      "sha256": "66361ad07daf07afab3a271c36a24fb3f0ff09b733b1ed000122b48b2129254d",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot3.png",
+      "sourceBlobSha": "73735c5709178ed53bfed5456fc9b93cf5fb4d63",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot3.png"
+      ],
+      "bytes": 1817985,
+      "gitBlobSha": "73735c5709178ed53bfed5456fc9b93cf5fb4d63",
+      "sha256": "c4bf8a6d4cee9f8853718e715a4f301daaa568e6108af9e094e852f573feeeb5",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot4.png",
+      "sourceBlobSha": "7742a4f2221ad64f6a6577c7342591adbe256c9f",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot4.png"
+      ],
+      "bytes": 2075199,
+      "gitBlobSha": "7742a4f2221ad64f6a6577c7342591adbe256c9f",
+      "sha256": "cdbe4ffa12c412558de8cbfda966e36b2729d53a7292bf78c10cfec711733889",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot5.png",
+      "sourceBlobSha": "6a44319ddf88f0b0bd7bf79157c1d2d92ed04f02",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot5.png"
+      ],
+      "bytes": 1410795,
+      "gitBlobSha": "6a44319ddf88f0b0bd7bf79157c1d2d92ed04f02",
+      "sha256": "a00b6274470c5c742133ebf758e5d7eb7fe806d3a799e376a2c9fd7187145815",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot6.png",
+      "sourceBlobSha": "bd5cc72f63be3e5da8de8d59c18ad893ecdef3dd",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot6.png"
+      ],
+      "bytes": 1447722,
+      "gitBlobSha": "bd5cc72f63be3e5da8de8d59c18ad893ecdef3dd",
+      "sha256": "16867385e0f809c1cd2022a9a5c101cfcd9e55220dc87f581c7adc8525af0518",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/portraits/uppercast/slot7.png",
+      "sourceBlobSha": "e8fdd16e65d58c3328188d78dce6b24224ca121d",
+      "purpose": "member_portrait",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/slot7.png"
+      ],
+      "bytes": 1791629,
+      "gitBlobSha": "e8fdd16e65d58c3328188d78dce6b24224ca121d",
+      "sha256": "5dddff0aba418af4936a23a91c4ca1598710a872ea263b5924e0660613c91f7c",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot0.png",
+      "sourceBlobSha": "78e686a1ee0bc4c5660c0be13b9a7106f4d1aeff",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot0.png"
+      ],
+      "bytes": 2261983,
+      "gitBlobSha": "78e686a1ee0bc4c5660c0be13b9a7106f4d1aeff",
+      "sha256": "f527649209503134636ef38f092ae50c31ead3bca6cf872599fc7baa68925464",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot1.png",
+      "sourceBlobSha": "5b1788eabe91f1be3a289c7c6112565a02e1131f",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot1.png"
+      ],
+      "bytes": 2274006,
+      "gitBlobSha": "5b1788eabe91f1be3a289c7c6112565a02e1131f",
+      "sha256": "7363d683ce2c6144a30c98ad665f80c3f43feab817b1c697b4f497d21303bfeb",
+      "image": {
+        "format": "PNG",
+        "width": 1240,
+        "height": 1754,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot2.png",
+      "sourceBlobSha": "38c865a4fb647cf332b2317e7215ac1311cfb706",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot2.png"
+      ],
+      "bytes": 1696251,
+      "gitBlobSha": "38c865a4fb647cf332b2317e7215ac1311cfb706",
+      "sha256": "9d13467cf93472231be9ce24798d8852b7d0dd4072633372a845bc50ef989f79",
+      "image": {
+        "format": "JPEG",
+        "width": 1200,
+        "height": 1600,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot3.png",
+      "sourceBlobSha": "bd31ed53b76ae044cdc5e60c7e03b993f23c6289",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot3.png"
+      ],
+      "bytes": 1691896,
+      "gitBlobSha": "bd31ed53b76ae044cdc5e60c7e03b993f23c6289",
+      "sha256": "b373eb2587cdf26453cedff025fbaa1e4d31e7aeebc69e91101ec5fb6d31f945",
+      "image": {
+        "format": "PNG",
+        "width": 1414,
+        "height": 2000,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot4.png",
+      "sourceBlobSha": "5bd203b8703a2d5f1d664e5322bd73286a7871a0",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot4.png"
+      ],
+      "bytes": 245193,
+      "gitBlobSha": "5bd203b8703a2d5f1d664e5322bd73286a7871a0",
+      "sha256": "90a021ab2046522a2dc11a3ce0a32336d1966abca39f19b32d995ab14745536d",
+      "image": {
+        "format": "PNG",
+        "width": 692,
+        "height": 1024,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot5.png",
+      "sourceBlobSha": "bf88de25a5cfbd528d23952f8540a7142cc4c71c",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot5.png"
+      ],
+      "bytes": 364612,
+      "gitBlobSha": "bf88de25a5cfbd528d23952f8540a7142cc4c71c",
+      "sha256": "9e1ebb50115d1ecf62f947fe5334b5328bee6b9f541be45f867a0d6c56e5eb39",
+      "image": {
+        "format": "JPEG",
+        "width": 1536,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot6.png",
+      "sourceBlobSha": "39339a96dd00c863841cdc2aea4373b1c2acb5e3",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot6.png"
+      ],
+      "bytes": 723285,
+      "gitBlobSha": "39339a96dd00c863841cdc2aea4373b1c2acb5e3",
+      "sha256": "b05fd3d5aaee4de7c03687ea249a49a2126800fe31b82cf40cc67595cfe32874",
+      "image": {
+        "format": "PNG",
+        "width": 1229,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot7.png",
+      "sourceBlobSha": "4c300ef6b3e132d5b6d788059cbe9ffb7eac495e",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot7.png"
+      ],
+      "bytes": 628402,
+      "gitBlobSha": "4c300ef6b3e132d5b6d788059cbe9ffb7eac495e",
+      "sha256": "c81cb79504a62194c3e06bcd426ff2ff33bee094eaa873d2ac23ecf2b2bb04eb",
+      "image": {
+        "format": "JPEG",
+        "width": 1024,
+        "height": 1536,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot8.png",
+      "sourceBlobSha": "ce7c5e10c474db657a617e720e203111c6b7853e",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot8.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot8.png"
+      ],
+      "bytes": 1749616,
+      "gitBlobSha": "ce7c5e10c474db657a617e720e203111c6b7853e",
+      "sha256": "c72dde5857c5a3f76add428ee6d38e6ada94a71a8d98d2ea67b57c747392553f",
+      "image": {
+        "format": "PNG",
+        "width": 1024,
+        "height": 1024,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/back/slot9.png",
+      "sourceBlobSha": "4cbd68066656ce334a128c54cda3a60226faab8e",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot9.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/slot9.png"
+      ],
+      "bytes": 403311,
+      "gitBlobSha": "4cbd68066656ce334a128c54cda3a60226faab8e",
+      "sha256": "976242eafabfc77f11329e2b5428dfcf645373fb9b1f926f97ed7fd79051767f",
+      "image": {
+        "format": "JPEG",
+        "width": 1240,
+        "height": 1754,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot0.png",
+      "sourceBlobSha": "3e52858a22157e4c08934f4d3b473d28b5fb534b",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot0.png"
+      ],
+      "bytes": 4481099,
+      "gitBlobSha": "3e52858a22157e4c08934f4d3b473d28b5fb534b",
+      "sha256": "6cea9f19ea07ab2c342d76e257499494c50b87c47f97a6e6bf0a3afc050ca44f",
+      "image": {
+        "format": "PNG",
+        "width": 1358,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot1.png",
+      "sourceBlobSha": "4cbd68066656ce334a128c54cda3a60226faab8e",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot1.png"
+      ],
+      "bytes": 403311,
+      "gitBlobSha": "4cbd68066656ce334a128c54cda3a60226faab8e",
+      "sha256": "976242eafabfc77f11329e2b5428dfcf645373fb9b1f926f97ed7fd79051767f",
+      "image": {
+        "format": "JPEG",
+        "width": 1240,
+        "height": 1754,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot10.png",
+      "sourceBlobSha": "1713be1f4f212d426bbe2f69bd5e087fcf6eb708",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot10.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot10.png"
+      ],
+      "bytes": 2530053,
+      "gitBlobSha": "1713be1f4f212d426bbe2f69bd5e087fcf6eb708",
+      "sha256": "c53bf23f4fa3135e0a2183bfeb1fc55119fa754611f92ea07035d3a5129a9c1b",
+      "image": {
+        "format": "PNG",
+        "width": 1448,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot11.png",
+      "sourceBlobSha": "b7edfc716c4cc91dd73a663a3555d20464400b55",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot11.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot11.png"
+      ],
+      "bytes": 80380,
+      "gitBlobSha": "b7edfc716c4cc91dd73a663a3555d20464400b55",
+      "sha256": "15bc5c154c61175c73256c95f98fb24b9a323a3f08da75f5f57590f6c9975f05",
+      "image": {
+        "format": "JPEG",
+        "width": 481,
+        "height": 680,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot2.png",
+      "sourceBlobSha": "51d54f7455add6e0d3637cab796be03a01216588",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot2.png"
+      ],
+      "bytes": 725663,
+      "gitBlobSha": "51d54f7455add6e0d3637cab796be03a01216588",
+      "sha256": "a4dc4ec78a76d3fb1228eb826f332c00b9ca8e13c99601dec0aa163703a45cb4",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot3.png",
+      "sourceBlobSha": "2067b00ca2d011cd9509147d0b5dae52da1231a5",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot3.png"
+      ],
+      "bytes": 680321,
+      "gitBlobSha": "2067b00ca2d011cd9509147d0b5dae52da1231a5",
+      "sha256": "13576e11b945db19f8c1f10278c613b990336af03c5f5dc05f143bf10765902c",
+      "image": {
+        "format": "JPEG",
+        "width": 1448,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot4.png",
+      "sourceBlobSha": "6b0bcecf140fb350b08871ef7424e6c7ff29f08c",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot4.png"
+      ],
+      "bytes": 2376982,
+      "gitBlobSha": "6b0bcecf140fb350b08871ef7424e6c7ff29f08c",
+      "sha256": "42009b0336a18e394bbfd4fe00e3cd20526b2261448cc49d6948f67794d5bf31",
+      "image": {
+        "format": "PNG",
+        "width": 1018,
+        "height": 1440,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot5.png",
+      "sourceBlobSha": "89fd2e46b3432120b7447cbc4dff62420ee68500",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot5.png"
+      ],
+      "bytes": 2206302,
+      "gitBlobSha": "89fd2e46b3432120b7447cbc4dff62420ee68500",
+      "sha256": "39cee6a94ce23cb219bfcb6c06194452987850fb2ca71620a5c02dd38acc08be",
+      "image": {
+        "format": "PNG",
+        "width": 1357,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot6.png",
+      "sourceBlobSha": "3b84fb92d12bddac048a359d729c651598ddc967",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot6.png"
+      ],
+      "bytes": 1573534,
+      "gitBlobSha": "3b84fb92d12bddac048a359d729c651598ddc967",
+      "sha256": "25b3af9d4fd857f56e831acf040fc68c1c4b0d2d250bd41fd7c7f554117f82da",
+      "image": {
+        "format": "PNG",
+        "width": 1344,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot7.png",
+      "sourceBlobSha": "b047c82fb64c708c9671c0670964dcc65f4bc722",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot7.png"
+      ],
+      "bytes": 158784,
+      "gitBlobSha": "b047c82fb64c708c9671c0670964dcc65f4bc722",
+      "sha256": "652fc113e28c15146cd799e4fb8f4eb596f0e02ba9af0fb9b51139e9a9c8774e",
+      "image": {
+        "format": "JPEG",
+        "width": 764,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot8.png",
+      "sourceBlobSha": "1b30399d24a70f7549fff0236947c68b9a857302",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot8.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot8.png"
+      ],
+      "bytes": 2004699,
+      "gitBlobSha": "1b30399d24a70f7549fff0236947c68b9a857302",
+      "sha256": "86cf203481b4fa295e377775c4a978837e8268f230dd28466d3647510a6ae21c",
+      "image": {
+        "format": "PNG",
+        "width": 1357,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/front/slot9.png",
+      "sourceBlobSha": "c2d5c9d61942489c9e3759b1f331b0c92cef64df",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot9.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/slot9.png"
+      ],
+      "bytes": 161085,
+      "gitBlobSha": "c2d5c9d61942489c9e3759b1f331b0c92cef64df",
+      "sha256": "02b20118cbc74bec19d0891d38a7830c46c4fde659033651342508e9d756a6cb",
+      "image": {
+        "format": "JPEG",
+        "width": 688,
+        "height": 964,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot0.png",
+      "sourceBlobSha": "b153d6872e29b35ded056cb2cade6e35d6f6237f",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot0.png"
+      ],
+      "bytes": 276853,
+      "gitBlobSha": "b153d6872e29b35ded056cb2cade6e35d6f6237f",
+      "sha256": "35dd13be2cd4f93248fb035c02fad8990a93fed919d589e77a08fab3b168f6c3",
+      "image": {
+        "format": "PNG",
+        "width": 1920,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot1.png",
+      "sourceBlobSha": "5c5330b3f8815293bb899af9f4475affb3f1bf6d",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot1.png"
+      ],
+      "bytes": 242428,
+      "gitBlobSha": "5c5330b3f8815293bb899af9f4475affb3f1bf6d",
+      "sha256": "61c29a691a00f703d9c5a5e4469165720f60ea0b606a6ac025cb3eb13f90fdaa",
+      "image": {
+        "format": "PNG",
+        "width": 1620,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot2.png",
+      "sourceBlobSha": "51067f500ba0edae1d70e7b139d13572ad5f2840",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot2.png"
+      ],
+      "bytes": 108819,
+      "gitBlobSha": "51067f500ba0edae1d70e7b139d13572ad5f2840",
+      "sha256": "423d9ce93c519c29c46c3fe687c0e744288ca76cbdb3e51c796f780028a26515",
+      "image": {
+        "format": "PNG",
+        "width": 1620,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot3.png",
+      "sourceBlobSha": "d03669bcf190266c23605a3a87db4c66728d9f8a",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot3.png"
+      ],
+      "bytes": 132044,
+      "gitBlobSha": "d03669bcf190266c23605a3a87db4c66728d9f8a",
+      "sha256": "78208e7fe7680a4c0f116100d5d16d3fd1e99fd0f537ab39ba279f30e4497570",
+      "image": {
+        "format": "PNG",
+        "width": 1620,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot4.png",
+      "sourceBlobSha": "532a9f7b75c0c33d99cb70e6d949d6528045a98b",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot4.png"
+      ],
+      "bytes": 261063,
+      "gitBlobSha": "532a9f7b75c0c33d99cb70e6d949d6528045a98b",
+      "sha256": "a425dcf12280dfe2a2958ce6482c39ec8ebaef493adcad044a4f16139d0742d9",
+      "image": {
+        "format": "PNG",
+        "width": 1920,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot5.png",
+      "sourceBlobSha": "62d35ed12135b005a501d2e5e0672dace6fd2fb7",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot5.png"
+      ],
+      "bytes": 86522,
+      "gitBlobSha": "62d35ed12135b005a501d2e5e0672dace6fd2fb7",
+      "sha256": "9f2335705060d13c06d45e3bd0c88d21de4d64f9a9228957ffe9ae7473e6f9c0",
+      "image": {
+        "format": "PNG",
+        "width": 1620,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot6.png",
+      "sourceBlobSha": "e4b4ac9da48cd87ba00490388efe476bdaa3a0ea",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot6.png"
+      ],
+      "bytes": 327729,
+      "gitBlobSha": "e4b4ac9da48cd87ba00490388efe476bdaa3a0ea",
+      "sha256": "96d00d82b4329887d6e855e2536646bf809658f59c8d4bafafe3d07f0ae1bace",
+      "image": {
+        "format": "PNG",
+        "width": 1620,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/kanpe/slot7.png",
+      "sourceBlobSha": "1d26a5535e59f14586059fcc2aa27dfc06ad6d9f",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/slot7.png"
+      ],
+      "bytes": 120007,
+      "gitBlobSha": "1d26a5535e59f14586059fcc2aa27dfc06ad6d9f",
+      "sha256": "0f79a8cb8cf85cae7cd5a336180c8dc014d840f871f5700d0cdec60e2bf9fdb3",
+      "image": {
+        "format": "PNG",
+        "width": 1620,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/main/slot0.png",
+      "sourceBlobSha": "8ae4c3e1db6a23bec8c567a754b084bc00e6cb81",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/main/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/main/slot0.png"
+      ],
+      "bytes": 1433138,
+      "gitBlobSha": "8ae4c3e1db6a23bec8c567a754b084bc00e6cb81",
+      "sha256": "342aead60c21c854593642f30881071fbcda267d321b674fbf1aeb23ae35c04a",
+      "image": {
+        "format": "PNG",
+        "width": 1240,
+        "height": 1754,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/main/slot1.png",
+      "sourceBlobSha": "04206cfab0b624ca53e8f1e9d5d7e9b4fce42de4",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/main/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/main/slot1.png"
+      ],
+      "bytes": 374660,
+      "gitBlobSha": "04206cfab0b624ca53e8f1e9d5d7e9b4fce42de4",
+      "sha256": "2bceb0dbb9fa2b225548c7a328dcf92a7f71aa4d70accf844c91972b9757d970",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot0.png",
+      "sourceBlobSha": "c4aaa58d6b0d73ea8a75275d4ee6e4a14151d846",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot0.png"
+      ],
+      "bytes": 380024,
+      "gitBlobSha": "c4aaa58d6b0d73ea8a75275d4ee6e4a14151d846",
+      "sha256": "0c86c32e0163ea78aed9e9901f500984d8a0fc45066eec82eff0a16d6d93521b",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot1.png",
+      "sourceBlobSha": "fe7f031795d532d9d26a33b36b9125e8f9006c98",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot1.png"
+      ],
+      "bytes": 523370,
+      "gitBlobSha": "fe7f031795d532d9d26a33b36b9125e8f9006c98",
+      "sha256": "af4e007a404352368b444464f879dd97a9c727c2df444e9d5d859e7520f9ebd5",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot10.png",
+      "sourceBlobSha": "b09d170e1236509a7962d09ecb47c8a4346e4a28",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot10.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot10.png"
+      ],
+      "bytes": 419787,
+      "gitBlobSha": "b09d170e1236509a7962d09ecb47c8a4346e4a28",
+      "sha256": "da3d50cb1d46a3855514688444c24978349dbfb08d73909ff47258a31d5cb3ae",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot2.png",
+      "sourceBlobSha": "9f6f8599e998a03799373ac73a6161187a6d4178",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot2.png"
+      ],
+      "bytes": 551197,
+      "gitBlobSha": "9f6f8599e998a03799373ac73a6161187a6d4178",
+      "sha256": "881cbd0e5f4526d7c2abb1df33e512538c34274dc33ef77a188bacba0149a7ba",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot3.png",
+      "sourceBlobSha": "4c0676c0d8e2fc7019c8a940098f12d4d0264cbf",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot3.png"
+      ],
+      "bytes": 866765,
+      "gitBlobSha": "4c0676c0d8e2fc7019c8a940098f12d4d0264cbf",
+      "sha256": "ad8b6f2779e057e6a7129a1a894ad4242bb414a67be29b0b8af9ccc851efcb20",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot4.png",
+      "sourceBlobSha": "409fbdb0085e8d0b830ab79bd3f2bdba54fd4391",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot4.png"
+      ],
+      "bytes": 870896,
+      "gitBlobSha": "409fbdb0085e8d0b830ab79bd3f2bdba54fd4391",
+      "sha256": "3c1a087323c96f70586a1af5c2f5eb5557a032c210f629617a362bdab9126223",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot5.png",
+      "sourceBlobSha": "f1d0f177075997736ae3baf3b7fe84d8fe0d831c",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot5.png"
+      ],
+      "bytes": 334597,
+      "gitBlobSha": "f1d0f177075997736ae3baf3b7fe84d8fe0d831c",
+      "sha256": "fc9efed3440381d347e3127873b189c64f3beb12cdbabed8596b7d762601454c",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot6.png",
+      "sourceBlobSha": "d53cb3bd60f1099c01885453f8f6935659602d06",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot6.png"
+      ],
+      "bytes": 1067180,
+      "gitBlobSha": "d53cb3bd60f1099c01885453f8f6935659602d06",
+      "sha256": "c7387a1a2b51b7d69f1020be701d8d70bea73bdc63f7985a1947f8562b65b879",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot7.png",
+      "sourceBlobSha": "76941d517eca0a93cb270e8042865747bcd9b861",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot7.png"
+      ],
+      "bytes": 1086169,
+      "gitBlobSha": "76941d517eca0a93cb270e8042865747bcd9b861",
+      "sha256": "ae8379d7c1c60a7393292ec71e9f9b96d30fc185dde85727a816e1713d03bc11",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot8.png",
+      "sourceBlobSha": "145209fddb86e227ffd8b84dcef8191d5df79299",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot8.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot8.png"
+      ],
+      "bytes": 1178262,
+      "gitBlobSha": "145209fddb86e227ffd8b84dcef8191d5df79299",
+      "sha256": "1f5ef3962f5a5cb907fa3feeea1dabcca5aa169fddf7eef83f15cc9c0ec62d66",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/menu/slot9.png",
+      "sourceBlobSha": "056fb647c0cc6ca65986112a3390b4d3667d3a63",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/slot9.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/slot9.png"
+      ],
+      "bytes": 1116900,
+      "gitBlobSha": "056fb647c0cc6ca65986112a3390b4d3667d3a63",
+      "sha256": "7528fe0864eeb03bb60303b785191ef42a7e1f633f763b644fffdb0096508cc1",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot0.png",
+      "sourceBlobSha": "da2f27b5d1a73aca31896c85efd4ba88b47b5329",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot0.png"
+      ],
+      "bytes": 479856,
+      "gitBlobSha": "da2f27b5d1a73aca31896c85efd4ba88b47b5329",
+      "sha256": "17746ae4491116664268ca71c1cd78a44eb8abbd45f24a7bd1447e341d08cb89",
+      "image": {
+        "format": "PNG",
+        "width": 1357,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot1.png",
+      "sourceBlobSha": "65af6c071e0d5e2d716b25459561862525e5c3af",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot1.png"
+      ],
+      "bytes": 233779,
+      "gitBlobSha": "65af6c071e0d5e2d716b25459561862525e5c3af",
+      "sha256": "efa187ca8004f31fb0e499611dc395f6b9552d59ed19a56d3e4813950ccf4477",
+      "image": {
+        "format": "PNG",
+        "width": 1920,
+        "height": 1440,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot2.png",
+      "sourceBlobSha": "84f0017dfcfdccc9e965c14032d2ebf7b7dc6315",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot2.png"
+      ],
+      "bytes": 1495125,
+      "gitBlobSha": "84f0017dfcfdccc9e965c14032d2ebf7b7dc6315",
+      "sha256": "5ade858cc8b4eb5dc390262bcd524a004f440adada8983debd1f08b264bd48c9",
+      "image": {
+        "format": "PNG",
+        "width": 1440,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot3.png",
+      "sourceBlobSha": "19e04d0549d04d04c8283188f6c44fd0ac4b96a9",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot3.png"
+      ],
+      "bytes": 1119230,
+      "gitBlobSha": "19e04d0549d04d04c8283188f6c44fd0ac4b96a9",
+      "sha256": "c97ed0e3bb101b5e26a9b4264328a548f6d58803aa92265ae0c29b957e728bfb",
+      "image": {
+        "format": "PNG",
+        "width": 1357,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot4.png",
+      "sourceBlobSha": "fff88b8c59add9eb648198b008247b016b4b0c7c",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot4.png"
+      ],
+      "bytes": 199579,
+      "gitBlobSha": "fff88b8c59add9eb648198b008247b016b4b0c7c",
+      "sha256": "eb0e5d100210dc3bd70eb76b6cfc1c9270dea6c94dbd018acf177566104a9945",
+      "image": {
+        "format": "PNG",
+        "width": 1920,
+        "height": 1357,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot5.png",
+      "sourceBlobSha": "9c5c45bf43d1ab7aa75e162d5a86478d90fc9f87",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot5.png"
+      ],
+      "bytes": 679462,
+      "gitBlobSha": "9c5c45bf43d1ab7aa75e162d5a86478d90fc9f87",
+      "sha256": "df53b0e889ddfbb2c5e0fd688205d4332ed52358a68a1362189411f8b4e4bfc1",
+      "image": {
+        "format": "PNG",
+        "width": 1357,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot6.png",
+      "sourceBlobSha": "37220ebdc40152ba86630bfdc608a1aaf56ab188",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot6.png"
+      ],
+      "bytes": 592994,
+      "gitBlobSha": "37220ebdc40152ba86630bfdc608a1aaf56ab188",
+      "sha256": "dd6a9970ce4323e2b8fc13303641d64b9f7c7e0c46c1ced7ff178efd666d0187",
+      "image": {
+        "format": "PNG",
+        "width": 1357,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot7.png",
+      "sourceBlobSha": "fa829fe2a18a149461ed7aa435c72090d87afad4",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot7.png"
+      ],
+      "bytes": 456130,
+      "gitBlobSha": "fa829fe2a18a149461ed7aa435c72090d87afad4",
+      "sha256": "a224bf01479131bb9c0a0393dfbb02e938374d965237e46bf7f83f135557d580",
+      "image": {
+        "format": "PNG",
+        "width": 1357,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot8.png",
+      "sourceBlobSha": "e07e89ce18c125cb56ec2ffa58441ceca57fba93",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot8.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot8.png"
+      ],
+      "bytes": 286762,
+      "gitBlobSha": "e07e89ce18c125cb56ec2ffa58441ceca57fba93",
+      "sha256": "530695b43da5b47b287297a2e7cdb13ca42500e509ba4bf5ddf848908a0a5efa",
+      "image": {
+        "format": "PNG",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/notice/slot9.png",
+      "sourceBlobSha": "1dfe4c05e3a4c73440c205fea3d7aeee7ddd2fbd",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot9.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/slot9.png"
+      ],
+      "bytes": 382630,
+      "gitBlobSha": "1dfe4c05e3a4c73440c205fea3d7aeee7ddd2fbd",
+      "sha256": "bf9a776d34bfef07c36b793c328f2f5e9ec0eb37c637dca0b1807292dc5ffbac",
+      "image": {
+        "format": "PNG",
+        "width": 1920,
+        "height": 1280,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot0.png",
+      "sourceBlobSha": "610d6602ea2a207e233c9d44d39fa7f0a8249c47",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot0.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot0.png"
+      ],
+      "bytes": 953369,
+      "gitBlobSha": "610d6602ea2a207e233c9d44d39fa7f0a8249c47",
+      "sha256": "c76133c2cebcf128318fa9fa7516b5a988b02410ba3625ec17436e24437dacce",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1620,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot1.png",
+      "sourceBlobSha": "0e98b45f6117f4a070dcf6e00daf5a3b5b42f991",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot1.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot1.png"
+      ],
+      "bytes": 125602,
+      "gitBlobSha": "0e98b45f6117f4a070dcf6e00daf5a3b5b42f991",
+      "sha256": "9cedb8964bd5076f1d40c48c138afabfa68ad5c97a8c48e3465163cdd9543bb5",
+      "image": {
+        "format": "JPEG",
+        "width": 848,
+        "height": 1264,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot2.png",
+      "sourceBlobSha": "c0f25936a2b34bcbfcc3341457bf3e26a817748f",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot2.png"
+      ],
+      "bytes": 1200249,
+      "gitBlobSha": "c0f25936a2b34bcbfcc3341457bf3e26a817748f",
+      "sha256": "835b179f8598533ffd5f02030e10b18b3300393ad40b5749f376f3424add0017",
+      "image": {
+        "format": "PNG",
+        "width": 608,
+        "height": 1080,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot3.png",
+      "sourceBlobSha": "9168ba491025f0c235a94bcbd73ce22c9c407de2",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot3.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot3.png"
+      ],
+      "bytes": 634873,
+      "gitBlobSha": "9168ba491025f0c235a94bcbd73ce22c9c407de2",
+      "sha256": "1c534d075d75878ec894f34704d1abe6e0f057293ce7d1ff184c382b2995f2c7",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot4.png",
+      "sourceBlobSha": "909b0df287fddefa7f4b48521a5f7bb0817e7589",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot4.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot4.png"
+      ],
+      "bytes": 5624063,
+      "gitBlobSha": "909b0df287fddefa7f4b48521a5f7bb0817e7589",
+      "sha256": "a3e02fea78cb44514703eb0bb3713c27bd690ee6a296252111797fd21a1cb954",
+      "image": {
+        "format": "PNG",
+        "width": 1414,
+        "height": 2000,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot5.png",
+      "sourceBlobSha": "8b8d77f4e1cb860869a0f2925d4176cb1ff7b4b4",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot5.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot5.png"
+      ],
+      "bytes": 2442996,
+      "gitBlobSha": "8b8d77f4e1cb860869a0f2925d4176cb1ff7b4b4",
+      "sha256": "385a0c3841206e0c4730352fcdd2067ba185f8a520daea8b3a6910ac312482d8",
+      "image": {
+        "format": "PNG",
+        "width": 1358,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot6.png",
+      "sourceBlobSha": "1c5f7ca0bb420ae421065a747e38897d5ee31e2b",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot6.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot6.png"
+      ],
+      "bytes": 4066838,
+      "gitBlobSha": "1c5f7ca0bb420ae421065a747e38897d5ee31e2b",
+      "sha256": "adce639e8685e9ac5be9538d842399f6906a944c6769e94c546d615a50ed0182",
+      "image": {
+        "format": "PNG",
+        "width": 1448,
+        "height": 2048,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot7.png",
+      "sourceBlobSha": "169f69c2f08278f20217cff0c1c5702664440c06",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot7.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot7.png"
+      ],
+      "bytes": 2173522,
+      "gitBlobSha": "169f69c2f08278f20217cff0c1c5702664440c06",
+      "sha256": "31f985b851f55c521e9f1f26fb36daf38ebfd7b0c4e85da8235a48e43c839790",
+      "image": {
+        "format": "PNG",
+        "width": 1447,
+        "height": 2047,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot8.png",
+      "sourceBlobSha": "f349a4aa77a5b667ab8a48c704e6ef9e089ae650",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot8.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot8.png"
+      ],
+      "bytes": 1458820,
+      "gitBlobSha": "f349a4aa77a5b667ab8a48c704e6ef9e089ae650",
+      "sha256": "9eb794ac54d53b474bb73290c6d9cf4000a833087d2cfc87c90eec798565f4cd",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "images/posters/side/slot9.png",
+      "sourceBlobSha": "a91e0f57d42f4d8480caa2679f25a3368a8aca0f",
+      "purpose": "poster_image",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot9.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/slot9.png"
+      ],
+      "bytes": 2151214,
+      "gitBlobSha": "a91e0f57d42f4d8480caa2679f25a3368a8aca0f",
+      "sha256": "e95216f862b9890ac5651ce0a12e8fa10e71cc452b7203d7b3eb83f136ab68b3",
+      "image": {
+        "format": "PNG",
+        "width": 1280,
+        "height": 1920,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    },
+    {
+      "sourcePath": "media/room-slides/サンプル/.gitkeep",
+      "sourceBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "purpose": "room_slide_source",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/media/room-slides/サンプル/.gitkeep",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/media/room-slides/サンプル/.gitkeep"
+      ],
+      "bytes": 0,
+      "gitBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "image": null
+    },
+    {
+      "sourcePath": "media/room-slides/ポチョ/.gitkeep",
+      "sourceBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "purpose": "room_slide_source",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/media/room-slides/ポチョ/.gitkeep",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/media/room-slides/ポチョ/.gitkeep"
+      ],
+      "bytes": 0,
+      "gitBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "image": null
+    },
+    {
+      "sourcePath": "media/room-slides/ポチョ/cardback2.png",
+      "sourceBlobSha": "db02910854e68c785d6e51bb5e2b7f47921f1086",
+      "purpose": "room_slide_source",
+      "destinationPaths": [
+        "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/media/room-slides/ポチョ/cardback2.png",
+        "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/media/room-slides/ポチョ/cardback2.png"
+      ],
+      "bytes": 184285,
+      "gitBlobSha": "db02910854e68c785d6e51bb5e2b7f47921f1086",
+      "sha256": "0c16aedfe094bb19d9092d2589b5bae4d0e6f76381b8bc67846b6a63e73768b6",
+      "image": {
+        "format": "PNG",
+        "width": 1080,
+        "height": 1509,
+        "frames": 1,
+        "fullDecode": true,
+        "clubcardConstraintsChecked": false
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/import_report.json",
+      "bytes": 48377,
+      "gitBlobSha": "5c09f864601eb388e0d6d56dd8da708ed886e404",
+      "sha256": "574d9e08b9763a5e162e908a057fb634709ba4a37e8cd729ab3c222c703a61d1",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/source/data/clubcard_manifest.json",
+      "bytes": 24708,
+      "gitBlobSha": "273c230275fc31bc79e4e663e0b3e37f243a3645",
+      "sha256": "2b40acf9f12bb0ab5b45c359b8f61ee4cff1c4e48bb66fe960f771d92762a435",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/source/data/content_manifest.json",
+      "bytes": 5666,
+      "gitBlobSha": "a6debb3ea13aa53e09c2db06f24ba2f64a49de06",
+      "sha256": "fa3fac3f65b8b942220f240178c1b9225767098f1b5a9eff527c72c9b1f500a4",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/source/data/room_media_slides.json",
+      "bytes": 127,
+      "gitBlobSha": "52ab9e61fd24c0bb79043964163ccd960b6573a5",
+      "sha256": "64c9c986f88c8383994d757357117c3dbba08e81d983c256e535b1a155733ca1",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/source/data/roster_frame_map.txt",
+      "bytes": 22804,
+      "gitBlobSha": "d33e2db241e8478d03bf702c6aec173602469439",
+      "sha256": "e37db3ca3659aa1014f5f5b54a16ecc9c84e9d4347eed9cfeaa48e3d37d1947f",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/source/data/roster_manifest.json",
+      "bytes": 26130,
+      "gitBlobSha": "05a4f9cd5bcb549c1d820764e95660d536ca4235",
+      "sha256": "4b24897856ea12bab78510ab04052045e88efd9f49fe45205bb000dd444e66f2",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/source/data/roster_resolved_urls.txt",
+      "bytes": 10423,
+      "gitBlobSha": "9aca40e26c6651932a3e6224c46ed8c6ed9549b4",
+      "sha256": "1c1ebd352fc6fc10a8833b3b5ec3b95eace8f0a6114e4fa160c125cb7632a9f4",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/imports/clubcommushow_8d17f7e13c93/source/ebk-room-media/manifest.json",
+      "bytes": 967,
+      "gitBlobSha": "0765651b013bd8717a2de6e4fc14358154d599e2",
+      "sha256": "4019463234c1e96e4ce9b1fc236c9943bbc612f66cba7fe831c1ef58630f796b",
+      "replacesTargetBlob": null
+    },
+    {
+      "path": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/clubcard_manifest.json",
+      "bytes": 28498,
+      "gitBlobSha": "f55b968c3a220505f25d18c2ed255422d24001d2",
+      "sha256": "4277af4f01ce44072ba34e95d9b1cff5242248a369af6cd887baed2bed00fbaa",
+      "replacesTargetBlob": "519176778fae4b819e00f74779a2a68118ea951d"
+    },
+    {
+      "path": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/content_manifest.json",
+      "bytes": 23954,
+      "gitBlobSha": "32fb11395f782b8f909b0c0814b45f0771af3982",
+      "sha256": "108b0c2c9028571b1d39f92b7c7eda59a172e0f93c62201ec3af69e45a374ebc",
+      "replacesTargetBlob": "62fda17130705e49ad47ff00da1522d3619c4913"
+    },
+    {
+      "path": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/roster_manifest.json",
+      "bytes": 76975,
+      "gitBlobSha": "40e33c3d67a949cb83afacf38d1284c4e03d50f2",
+      "sha256": "48540c303be8f1d9f87b821c27fae4f19fa000c0bdef2f391a859ea6d5403ad7",
+      "replacesTargetBlob": "7f0b000d48bbec3a31dcf293c2e85e48686f1051"
+    },
+    {
+      "path": "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/clubcard_manifest.json",
+      "bytes": 28498,
+      "gitBlobSha": "f55b968c3a220505f25d18c2ed255422d24001d2",
+      "sha256": "4277af4f01ce44072ba34e95d9b1cff5242248a369af6cd887baed2bed00fbaa",
+      "replacesTargetBlob": "519176778fae4b819e00f74779a2a68118ea951d"
+    },
+    {
+      "path": "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/content_manifest.json",
+      "bytes": 23954,
+      "gitBlobSha": "32fb11395f782b8f909b0c0814b45f0771af3982",
+      "sha256": "108b0c2c9028571b1d39f92b7c7eda59a172e0f93c62201ec3af69e45a374ebc",
+      "replacesTargetBlob": "62fda17130705e49ad47ff00da1522d3619c4913"
+    },
+    {
+      "path": "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/roster_manifest.json",
+      "bytes": 76975,
+      "gitBlobSha": "40e33c3d67a949cb83afacf38d1284c4e03d50f2",
+      "sha256": "48540c303be8f1d9f87b821c27fae4f19fa000c0bdef2f391a859ea6d5403ad7",
+      "replacesTargetBlob": "7f0b000d48bbec3a31dcf293c2e85e48686f1051"
+    }
+  ],
+  "preservedBlobs": {
+    ".ebk/projects/prj_275fcf6a380e53889135988a06e61846/installer-state.json": "566848d028e789ba43ff8fb1194a37644fae185c",
+    ".github/workflows/ebk_project_275fcf6a380e5388.yml": "03f40f5efde0a1e5222deed82a225b4b92482262",
+    ".github/workflows/ebk_publish_venue_pages.yml": "e7ceedadebb4188d1279fa6a1d72c6db4f4c0d59",
+    ".github/workflows/ebk_roles_275fcf6a380e5388.yml": "522c53f9d4ffc414b14bbb9c425b3222d224aaf1",
+    "README.md": "c5eb20cc4cc52fbeda89c9cd12445f2fedd21ea9",
+    "docs/.nojekyll": "df98c48d679bf44d2ac123259f246b927b05a9ae",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/README_EBK_CONTENT_JA.md": "30292bf2e7804e65176f3830f9896aebc9dfced4",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/README_EBK_ROSTER_JA.md": "2abfabbf0f00826b33682db2f077deb7b589fff2",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/README_EBK_SLIDES_JA.md": "cd7f5588b440f9d275096b264fa36c84123bd307",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ROLE_AND_FOLDER_MAP.md": "fa1ed81e46ffc762a9d54e72f2782af956073194",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/gobo_logo_manifest.json": "24ffbccb36051e9ecf0dd4745e7c2034bb95f5d7",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/localization_manifest.json": "8f0877fa86c121c5979d52125bc918757b8eb051",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/ops_modules.json": "8b8a06acf5260b305838990998c8d4c18907d3b8",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/room_media_slides.json": "21303d77818f9535b6199487097963b290fabf0d",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/slide_poster_manifest.json": "28f9ce8f51fc67409f07420889b759442725269a",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/90000.png": "89a5c3f0837baa2a5c79c8f10cead75f9f00df01",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/90001.png": "b2db8b56936226349547a5a34ab735d57e21c231",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/90002.png": "b3948efbeb5861a2dc75911dfcb27a5f5787646b",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/90003.png": "7e8f101713fd41b94542be01ccf9d46592d6c28f",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/90004.png": "3f51c9f7a8c6a1e27e1ee0e200899c2861924530",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/cards/90005.png": "818ccac301f43330e9e89026ed5720484eb66d7e",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/common/cardback.png": "bb254443c24988c3a050e04b1eba908bb1b329b8",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/clubcards/common/package.png": "721bd81e23ae17db6ba2dafd8c9fa986526acc24",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/entry-gate/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/event-icon.png": "1245fb6172356e1acbbd2f84736ba10352342b7c",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/gobo-default.png": "1245fb6172356e1acbbd2f84736ba10352342b7c",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/gobo/sample-dj-gobo.png": "43b8516e46e03a1c5b063dde5c921d6a94afd422",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/manager/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/kanpe/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/main/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/menu/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/room-media-idle.png": "4f48223773e242673c8aa6c70e2328d326e4d6e7",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/media/room-slides/README.txt": "32f4c8133cbc79eb4069a44752b042e761e4b3f2",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/project.json": "9e1f52902e945c6f91e2777c350ddbeed4f60b70",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/build_clubcard_video.py": "75333c11ebd996b174ca4c83c690af18d0338d94",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/build_media_root.py": "2d0bb303be60c1ded372d0b58a41f7ff4f45fd7f",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/build_room_media_slides.py": "32a9140ec6c6781b595fda7831089dcec5339ac3",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/build_theme_catalog.py": "b7891154f1520a0d50be26f82d343b852ae51a68",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/change_member_role.py": "d15f684bcf7bbcb77c6a850dcb50f1ff6bf65ba3",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/github_manifest_to_video.py": "a2a080bb45a3e4fc2731b917adb9716e6eefd50c",
+    "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/prepare_video_roster_manifest.py": "2ab4bbbc6bd9c4dbfa951b44167ce877cbbafd71",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/README_EBK_CONTENT_JA.md": "30292bf2e7804e65176f3830f9896aebc9dfced4",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/README_EBK_ROSTER_JA.md": "2abfabbf0f00826b33682db2f077deb7b589fff2",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/README_EBK_SLIDES_JA.md": "cd7f5588b440f9d275096b264fa36c84123bd307",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/ROLE_AND_FOLDER_MAP.md": "fa1ed81e46ffc762a9d54e72f2782af956073194",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/active_project.json": "b0eacaa4cd3f2acef0ea92aa9cf9e56e6e249be0",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/gobo_logo_manifest.json": "24ffbccb36051e9ecf0dd4745e7c2034bb95f5d7",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/localization_manifest.json": "8f0877fa86c121c5979d52125bc918757b8eb051",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/ops_modules.json": "8b8a06acf5260b305838990998c8d4c18907d3b8",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/room_media_slides.json": "21303d77818f9535b6199487097963b290fabf0d",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/slide_poster_manifest.json": "28f9ce8f51fc67409f07420889b759442725269a",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/90000.png": "89a5c3f0837baa2a5c79c8f10cead75f9f00df01",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/90001.png": "b2db8b56936226349547a5a34ab735d57e21c231",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/90002.png": "b3948efbeb5861a2dc75911dfcb27a5f5787646b",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/90003.png": "7e8f101713fd41b94542be01ccf9d46592d6c28f",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/90004.png": "3f51c9f7a8c6a1e27e1ee0e200899c2861924530",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/cards/90005.png": "818ccac301f43330e9e89026ed5720484eb66d7e",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/common/cardback.png": "bb254443c24988c3a050e04b1eba908bb1b329b8",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/clubcards/common/package.png": "721bd81e23ae17db6ba2dafd8c9fa986526acc24",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/entry-gate/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/event-icon.png": "1245fb6172356e1acbbd2f84736ba10352342b7c",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/gobo-default.png": "1245fb6172356e1acbbd2f84736ba10352342b7c",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/gobo/sample-dj-gobo.png": "43b8516e46e03a1c5b063dde5c921d6a94afd422",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/assistant/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/castleader/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/condisionalcast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/downercast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/manager/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/operator/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/owner/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staff/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/staffleader/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/switchcast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/portraits/uppercast/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/back/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/front/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/kanpe/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/main/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/menu/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/notice/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/posters/side/.gitkeep": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/images/room-media-idle.png": "4f48223773e242673c8aa6c70e2328d326e4d6e7",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/media/room-slides/README.txt": "32f4c8133cbc79eb4069a44752b042e761e4b3f2",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/project.json": "9e1f52902e945c6f91e2777c350ddbeed4f60b70",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/__pycache__/build_clubcard_video.cpython-311.pyc": "17fc409e1c34514557b78d5de2f9898c40bd25b7",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/__pycache__/build_room_media_slides.cpython-311.pyc": "d98b6fb13e8f55bebd214b0f81b170b3611bed76",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/__pycache__/build_theme_catalog.cpython-311.pyc": "fb7526ab48b20bbd149ac997062d7bce509ecad5",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/__pycache__/github_manifest_to_video.cpython-311.pyc": "c7eea9ec36ea153fd75ec46a484d676df378f5ce",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/__pycache__/prepare_video_roster_manifest.cpython-311.pyc": "0bf0f897db78e5b6e9bb79dadf3e8aca032b829b",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/build_clubcard_video.py": "75333c11ebd996b174ca4c83c690af18d0338d94",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/build_media_root.py": "2d0bb303be60c1ded372d0b58a41f7ff4f45fd7f",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/build_room_media_slides.py": "32a9140ec6c6781b595fda7831089dcec5339ac3",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/build_theme_catalog.py": "b7891154f1520a0d50be26f82d343b852ae51a68",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/change_member_role.py": "d15f684bcf7bbcb77c6a850dcb50f1ff6bf65ba3",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/github_manifest_to_video.py": "a2a080bb45a3e4fc2731b917adb9716e6eefd50c",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/tools/prepare_video_roster_manifest.py": "2ab4bbbc6bd9c4dbfa951b44167ce877cbbafd71",
+    "docs/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/venue.json": "a6be5e01c9742beb30474679792ffa3f51656075",
+    "docs/index.html": "117042d414d0b1dfb84818ddd58afc8dbce6deb7"
+  },
+  "counts": {
+    "assetPaths": 170,
+    "uniqueAssetBlobs": 168,
+    "assetDestinationPaths": 340,
+    "preparedInputFiles": 14,
+    "uniqueSourceBytes": 209592501,
+    "clubcardImages": 63
+  },
+  "verifiedAt": "2026-10-18T23:08:47.697070+00:00",
+  "imagesModified": false,
+  "committedOrPushed": false
+}

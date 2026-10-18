@@ -1,0 +1,182 @@
+{
+  "protocol": "EventBasicKit.ContentManifest",
+  "schemaVersion": 1,
+  "revision": "club-migration-20261002-001",
+  "updatedAt": "2026-10-02T12:39:00+09:00",
+  "contents": [
+    {
+      "contentId": "guide.title",
+      "visibility": "public",
+      "enabled": true,
+      "text": "Club Lumiere の楽しみ方"
+    },
+    {
+      "contentId": "guide.first_visit.title",
+      "visibility": "public",
+      "enabled": true,
+      "text": "はじめての楽しみ方"
+    },
+    {
+      "contentId": "guide.first_visit.body",
+      "visibility": "public",
+      "enabled": true,
+      "text": "1. プロフィールを確認・設定する\n2. 接客希望や過ごし方を選ぶ\n3. 気になる席やスタッフを選ぶ\n4. ゆっくり会話や雰囲気を楽しむ\n5. 困った時はスタッフを呼ぶ\n\n無理に会話を続けなくても大丈夫。自分のペースでゆったりお楽しみください。"
+    },
+    {
+      "contentId": "guide.photo_guide.title",
+      "visibility": "public",
+      "enabled": true,
+      "text": "写真撮影を楽しもう"
+    },
+    {
+      "contentId": "guide.photo_guide.body",
+      "visibility": "public",
+      "enabled": true,
+      "text": "1. 撮影許可設定を確認する\n2. 撮影場所を決める\n3. 名札表示や撮影表示を調整する\n4. Camera Jackやロゴ表示を使う\n5. 集合写真や記念撮影を行う\n\n撮影前に周囲の方の許可を確認すると、より安心して楽しめます。"
+    },
+    {
+      "contentId": "notice.title",
+      "visibility": "public",
+      "enabled": true,
+      "text": "注意事項"
+    },
+    {
+      "contentId": "notice.previsit.title",
+      "visibility": "public",
+      "enabled": true,
+      "text": "注意事項"
+    },
+    {
+      "contentId": "notice.previsit.body",
+      "visibility": "public",
+      "enabled": true,
+      "text": "イベントのルール・撮影・接客に関する注意事項を入力してください。"
+    },
+    {
+      "contentId": "notice.photo.title",
+      "visibility": "public",
+      "enabled": true,
+      "text": "撮影について"
+    },
+    {
+      "contentId": "notice.photo.body",
+      "visibility": "public",
+      "enabled": true,
+      "text": "撮影許可やSNS掲載ルールなどを案内できます。"
+    },
+    {
+      "contentId": "entry.rejoin_note",
+      "visibility": "public",
+      "enabled": true,
+      "text": "了承はこのインスタンスにつき1回。同じインスタンスへの再Joinでは再了承不要です。"
+    },
+    {
+      "contentId": "entry.rules",
+      "visibility": "public",
+      "enabled": true,
+      "text": "・周囲の方への思いやりを大切にお願いします。\n・強い言動や過度な接触はご遠慮ください。\n・撮影の際は周囲の許可を確認してください。\n・困ったことがあればスタッフまでお気軽にお声がけください。"
+    },
+    {
+      "contentId": "intent.title",
+      "visibility": "public",
+      "enabled": true,
+      "text": "意思表示"
+    },
+    {
+      "contentId": "intent.talk_welcome.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "会話歓迎"
+    },
+    {
+      "contentId": "intent.talk_welcome.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "たくさん話しかけてもらって大丈夫です。"
+    },
+    {
+      "contentId": "intent.slow_talk.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "ゆっくり話したい"
+    },
+    {
+      "contentId": "intent.slow_talk.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "ゆっくりしたペースで会話したいです。"
+    },
+    {
+      "contentId": "intent.silence_ok.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "沈黙OK"
+    },
+    {
+      "contentId": "intent.silence_ok.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "会話が途切れても気にしません。"
+    },
+    {
+      "contentId": "intent.topic_help.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "話題を振ってほしい"
+    },
+    {
+      "contentId": "intent.topic_help.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "話題を振ってもらえると助かります。"
+    },
+    {
+      "contentId": "intent.want_order.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "注文したい"
+    },
+    {
+      "contentId": "intent.want_order.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "注文をしたいです。"
+    },
+    {
+      "contentId": "intent.photo_ok.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "写真OK"
+    },
+    {
+      "contentId": "intent.photo_ok.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "写真撮影OKです。"
+    },
+    {
+      "contentId": "intent.photo_ask.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "写真は確認して"
+    },
+    {
+      "contentId": "intent.photo_ask.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "撮影前にひと声かけてください。"
+    },
+    {
+      "contentId": "intent.photo_ng.label",
+      "visibility": "public",
+      "enabled": true,
+      "text": "写真NG"
+    },
+    {
+      "contentId": "intent.photo_ng.description",
+      "visibility": "public",
+      "enabled": true,
+      "text": "写真撮影はご遠慮ください。"
+    }
+  ]
+}

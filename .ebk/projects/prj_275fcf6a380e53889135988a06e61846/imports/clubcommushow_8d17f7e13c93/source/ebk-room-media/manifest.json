@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "albums": [
+    {
+      "name": "サンプル",
+      "imageCount": 0,
+      "fps": 30,
+      "framesPerImage": 3,
+      "sampleFrame": 1,
+      "videoUrl": "",
+      "slideUrl": "",
+      "images": []
+    },
+    {
+      "name": "ポチョ",
+      "imageCount": 1,
+      "fps": 30,
+      "framesPerImage": 3,
+      "sampleFrame": 1,
+      "videoUrl": "https://clubcommushow.github.io/ClubCommuShow/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7.mp4",
+      "slideUrl": "https://clubcommushow.github.io/ClubCommuShow/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7.mp4?ebk-slides=3x30",
+      "images": [
+        {
+          "file": "cardback2.png",
+          "sourceBlobSha": "db02910854e68c785d6e51bb5e2b7f47921f1086",
+          "sampleFrame": 1,
+          "sampleTimeSeconds": 0.03333333333333333
+        }
+      ],
+      "frameCount": 3,
+      "sha256": "6771461f7074fca50a479677fbb78653a0fcefc184dbd76071264611215250cc"
+    }
+  ]
+}

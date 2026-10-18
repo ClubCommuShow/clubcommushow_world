@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "format": "ebk-room-media-v1",
-  "generation": "81b6fa6eccdf04165f55db918df0d0cd",
+  "generation": "e865dbfb51515b2b5c93da1ebe1b86ff",
   "albums": [
     {
       "name": "サンプル",
@@ -18,6 +18,36 @@
       "logicalHeight": 1080,
       "encodedWidth": 1920,
       "encodedHeight": 1080
+    },
+    {
+      "name": "ポチョ",
+      "imageCount": 1,
+      "fps": 30,
+      "framesPerImage": 3,
+      "sampleFrame": 1,
+      "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_1dc782575a5a02ad7bde1d1cfe1b7f9c.mp4",
+      "slideUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_1dc782575a5a02ad7bde1d1cfe1b7f9c.mp4?ebk-slides=3x30&ebk-alpha=dual-matte-sbs-srgb-v1",
+      "images": [
+        {
+          "file": "cardback2.png",
+          "sourceBlobSha": "db02910854e68c785d6e51bb5e2b7f47921f1086",
+          "sampleFrame": 1,
+          "sampleTimeSeconds": 0.03333333333333333,
+          "sourceWidth": 1080,
+          "sourceHeight": 1509,
+          "aspect": 0.7157057654075547,
+          "fit": "stretch"
+        }
+      ],
+      "format": "ebk-dual-matte-sbs-srgb-v1",
+      "alphaMode": "dual-matte-sbs-srgb-v1",
+      "logicalWidth": 1920,
+      "logicalHeight": 1080,
+      "encodedWidth": 3840,
+      "encodedHeight": 1080,
+      "generation": "1dc782575a5a02ad7bde1d1cfe1b7f9c",
+      "frameCount": 3,
+      "sha256": "9209c991204e1ad5d47d8e89bd88049a55dc4243bbb0bdd404186125d62779e1"
     }
   ]
 }

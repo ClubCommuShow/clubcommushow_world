@@ -1,0 +1,800 @@
+{
+  "status": "PREPARED_IMPORT_CANDIDATE",
+  "preparedAtUtc": "2026-10-18T22:16:18.586640Z",
+  "sourceRepository": "ClubCommuShow/ClubCommuShow",
+  "sourceHead": "8d17f7e13c9312408fe4af231a08e873ad38eceb",
+  "sourceTree": "38ceecd5c704f28eff65f3ea97ef58535bc86f14",
+  "sourceOperationalRosterBlob": "05a4f9cd5bcb549c1d820764e95660d536ca4235",
+  "destinationRepository": "ClubCommuShow/clubcommushow_world",
+  "destinationExpectedHead": "855c1b75ea042c962798c8174f8bff514563815e",
+  "destinationTree": "ab127092eb2a0d2f153746a50ded0e1ed7086214",
+  "projectId": "prj_275fcf6a380e53889135988a06e61846",
+  "venueId": "ebk_d96094eb919f487d9b1f6c0401881c5f",
+  "projectRoot": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846",
+  "publicProjectBase": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846",
+  "fixedRosterUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/roster_manifest.json",
+  "canonicalSelection": {
+    "selected": "data/roster_manifest.json",
+    "lastUpdatedCommit": "71c8499d942f8852e041f12986a3bc65bd9cdf4e",
+    "lastUpdatedUtc": "2026-10-12T03:33:27Z",
+    "excludedAlternative": "NewClubCommuShow/data/roster_manifest.json",
+    "alternativeLastUpdatedCommit": "1cb0431dcf8ef6f2f2fd0ae36b025f790f4437ce",
+    "alternativeLastUpdatedUtc": "2026-10-08T12:45:07Z",
+    "reason": "The current root publisher uses root data/images; the older NewClubCommuShow tree is a separate isolated migration. Its extra member is not imported."
+  },
+  "counts": {
+    "members": 43,
+    "authoredPosters": 52,
+    "generatedPosterKeys": 63,
+    "visiblePortraitKeys": 41,
+    "commonImageKeys": 104,
+    "cards": 63,
+    "sourceContentEntries": 29,
+    "retainedTargetContentEntries": 29,
+    "mergedContentEntries": 58
+  },
+  "roleMapping": [
+    {
+      "category": "Owner",
+      "roleType": "owner",
+      "accessLevel": 4,
+      "members": 2
+    },
+    {
+      "category": "Manager",
+      "roleType": "manager",
+      "accessLevel": 4,
+      "members": 1
+    },
+    {
+      "category": "Operator",
+      "roleType": "operator",
+      "accessLevel": 4,
+      "members": 3
+    },
+    {
+      "category": "Assistant",
+      "roleType": "assistant",
+      "accessLevel": 4,
+      "members": 3
+    },
+    {
+      "category": "StaffLeader",
+      "roleType": "staffLeader",
+      "accessLevel": 3,
+      "members": 2
+    },
+    {
+      "category": "Staff",
+      "roleType": "staff",
+      "accessLevel": 3,
+      "members": 6
+    },
+    {
+      "category": "SwitchCast",
+      "roleType": "switchCast",
+      "accessLevel": 3,
+      "members": 2
+    },
+    {
+      "category": "CastLeader",
+      "roleType": "castLeader",
+      "accessLevel": 2,
+      "members": 2
+    },
+    {
+      "category": "UpperCast",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "members": 8
+    },
+    {
+      "category": "DownerCast",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "members": 11
+    },
+    {
+      "category": "CondisionalCast",
+      "roleType": "conditionalCast",
+      "accessLevel": 2,
+      "members": 3
+    }
+  ],
+  "portraitNormalizations": [
+    {
+      "name": "星海ヒロ",
+      "category": "Staff",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot0.png",
+      "sourceImagePath": "images/portraits/staff/slot0.png",
+      "sourceImageBlobSha": "77bd3a07b5e13870b22b39450020c9b77302dc60",
+      "sourceFrameMapLine": "28|member|Staff|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=9|frames=3|sampleFrame=1|sample=0.950000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "ひなしー",
+      "category": "Staff",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot2.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot1.png",
+      "sourceImagePath": "images/portraits/staff/slot1.png",
+      "sourceImageBlobSha": "25f5a6a6caffcd638eacebfedcd10add0525cecd",
+      "sourceFrameMapLine": "31|member|Staff|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=10|frames=3|sampleFrame=1|sample=1.050000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "し ゃ ち",
+      "category": "Staff",
+      "slot": 2,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot3.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot2.png",
+      "sourceImagePath": "images/portraits/staff/slot2.png",
+      "sourceImageBlobSha": "cfa911cb0df3df675075762ae0704f63487e2ba8",
+      "sourceFrameMapLine": "34|member|Staff|2|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot2.png|1.00000000|1.00000000|0.00000000|0.00000000|page=11|frames=3|sampleFrame=1|sample=1.150000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "Yoshi33563",
+      "category": "Staff",
+      "slot": 3,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot4.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot3.png",
+      "sourceImagePath": "images/portraits/staff/slot3.png",
+      "sourceImageBlobSha": "b7c7e1e3e57f8936ad5dce4691421001afd2e055",
+      "sourceFrameMapLine": "37|member|Staff|3|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot3.png|1.00000000|1.00000000|0.00000000|0.00000000|page=12|frames=3|sampleFrame=1|sample=1.250000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "ほしあい",
+      "category": "Staff",
+      "slot": 4,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot5.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot4.png",
+      "sourceImagePath": "images/portraits/staff/slot4.png",
+      "sourceImageBlobSha": "b9bfe70dc1c9caa5e7bfad78f5897531520b7310",
+      "sourceFrameMapLine": "40|member|Staff|4|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot4.png|1.00000000|1.00000000|0.00000000|0.00000000|page=13|frames=3|sampleFrame=1|sample=1.350000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "みのりんご",
+      "category": "Staff",
+      "slot": 5,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot6.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot5.png",
+      "sourceImagePath": "images/portraits/staff/slot5.png",
+      "sourceImageBlobSha": "22cda860a9d0240023ac33f8ab061276f066fe64",
+      "sourceFrameMapLine": "43|member|Staff|5|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot5.png|1.00000000|1.00000000|0.00000000|0.00000000|page=14|frames=3|sampleFrame=1|sample=1.450000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    }
+  ],
+  "portraitMapping": [
+    {
+      "name": "ポチョLOVE",
+      "category": "Owner",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/owner/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png",
+      "sourceImagePath": "images/portraits/owner/slot0.png",
+      "sourceImageBlobSha": "21b6482784e4b8772d9bbb547dbb2e530b0cc604",
+      "sourceFrameMapLine": "1|member|Owner|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/owner/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=0|frames=3|sampleFrame=1|sample=0.050000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "Clubコミュ症公式",
+      "category": "Owner",
+      "slot": 1,
+      "originalPortraitUrl": "",
+      "newPortraitUrl": "",
+      "sourceImagePath": null,
+      "sourceImageBlobSha": null,
+      "sourceFrameMapLine": null,
+      "normalization": "keep_no_image_and_original_visibility"
+    },
+    {
+      "name": "aizawaakito0418",
+      "category": "Manager",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/manager/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/manager/slot0.png",
+      "sourceImagePath": "images/portraits/manager/slot0.png",
+      "sourceImageBlobSha": "f71d3cd934a6c250481c53e8f9c0296e187771a6",
+      "sourceFrameMapLine": "4|member|Manager|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/manager/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=1|frames=3|sampleFrame=1|sample=0.150000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ほのか_",
+      "category": "Operator",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/operator/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot0.png",
+      "sourceImagePath": "images/portraits/operator/slot0.png",
+      "sourceImageBlobSha": "e6b94e36c88e649af4cc820a6007730cbe4bace9",
+      "sourceFrameMapLine": "7|member|Operator|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/operator/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=2|frames=3|sampleFrame=1|sample=0.250000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ここらо",
+      "category": "Operator",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/operator/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot1.png",
+      "sourceImagePath": "images/portraits/operator/slot1.png",
+      "sourceImageBlobSha": "32eed250a1c789d336db9e9719563a39943560ac",
+      "sourceFrameMapLine": "10|member|Operator|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/operator/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=3|frames=3|sampleFrame=1|sample=0.350000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ごまもっち",
+      "category": "Operator",
+      "slot": 2,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/operator/slot2.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot2.png",
+      "sourceImagePath": "images/portraits/operator/slot2.png",
+      "sourceImageBlobSha": "270115a8d54cb82771d081212d5cad2ad7a9422e",
+      "sourceFrameMapLine": "13|member|Operator|2|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/operator/slot2.png|1.00000000|1.00000000|0.00000000|0.00000000|page=4|frames=3|sampleFrame=1|sample=0.450000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "rokyodragon",
+      "category": "Assistant",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/assistant/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot0.png",
+      "sourceImagePath": "images/portraits/assistant/slot0.png",
+      "sourceImageBlobSha": "ca81a410730a8b9404b39a36886c74197ec345ac",
+      "sourceFrameMapLine": "16|member|Assistant|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/assistant/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=5|frames=3|sampleFrame=1|sample=0.550000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "永遠-towa-",
+      "category": "Assistant",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/assistant/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot1.png",
+      "sourceImagePath": "images/portraits/assistant/slot1.png",
+      "sourceImageBlobSha": "9f0983617901f1818cf09d47568a246c57dcd974",
+      "sourceFrameMapLine": "19|member|Assistant|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/assistant/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=6|frames=3|sampleFrame=1|sample=0.650000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "望黛 彩晴",
+      "category": "Assistant",
+      "slot": 2,
+      "originalPortraitUrl": "",
+      "newPortraitUrl": "",
+      "sourceImagePath": null,
+      "sourceImageBlobSha": null,
+      "sourceFrameMapLine": null,
+      "normalization": "keep_no_image_and_original_visibility"
+    },
+    {
+      "name": "ストロベリーのマカ",
+      "category": "StaffLeader",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staffleader/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot0.png",
+      "sourceImagePath": "images/portraits/staffleader/slot0.png",
+      "sourceImageBlobSha": "885ef245933303fd72a5172cb05a837d664cf60a",
+      "sourceFrameMapLine": "22|member|StaffLeader|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staffleader/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=7|frames=3|sampleFrame=1|sample=0.750000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "Tixia",
+      "category": "StaffLeader",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staffleader/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot1.png",
+      "sourceImagePath": "images/portraits/staffleader/slot1.png",
+      "sourceImageBlobSha": "537e9198c975bb11c9572282d888572c71c5b827",
+      "sourceFrameMapLine": "25|member|StaffLeader|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staffleader/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=8|frames=3|sampleFrame=1|sample=0.850000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "星海ヒロ",
+      "category": "Staff",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot0.png",
+      "sourceImagePath": "images/portraits/staff/slot0.png",
+      "sourceImageBlobSha": "77bd3a07b5e13870b22b39450020c9b77302dc60",
+      "sourceFrameMapLine": "28|member|Staff|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=9|frames=3|sampleFrame=1|sample=0.950000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "ひなしー",
+      "category": "Staff",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot2.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot1.png",
+      "sourceImagePath": "images/portraits/staff/slot1.png",
+      "sourceImageBlobSha": "25f5a6a6caffcd638eacebfedcd10add0525cecd",
+      "sourceFrameMapLine": "31|member|Staff|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=10|frames=3|sampleFrame=1|sample=1.050000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "し ゃ ち",
+      "category": "Staff",
+      "slot": 2,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot3.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot2.png",
+      "sourceImagePath": "images/portraits/staff/slot2.png",
+      "sourceImageBlobSha": "cfa911cb0df3df675075762ae0704f63487e2ba8",
+      "sourceFrameMapLine": "34|member|Staff|2|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot2.png|1.00000000|1.00000000|0.00000000|0.00000000|page=11|frames=3|sampleFrame=1|sample=1.150000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "Yoshi33563",
+      "category": "Staff",
+      "slot": 3,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot4.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot3.png",
+      "sourceImagePath": "images/portraits/staff/slot3.png",
+      "sourceImageBlobSha": "b7c7e1e3e57f8936ad5dce4691421001afd2e055",
+      "sourceFrameMapLine": "37|member|Staff|3|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot3.png|1.00000000|1.00000000|0.00000000|0.00000000|page=12|frames=3|sampleFrame=1|sample=1.250000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "ほしあい",
+      "category": "Staff",
+      "slot": 4,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot5.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot4.png",
+      "sourceImagePath": "images/portraits/staff/slot4.png",
+      "sourceImageBlobSha": "b9bfe70dc1c9caa5e7bfad78f5897531520b7310",
+      "sourceFrameMapLine": "40|member|Staff|4|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot4.png|1.00000000|1.00000000|0.00000000|0.00000000|page=13|frames=3|sampleFrame=1|sample=1.350000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "みのりんご",
+      "category": "Staff",
+      "slot": 5,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/staff/slot6.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot5.png",
+      "sourceImagePath": "images/portraits/staff/slot5.png",
+      "sourceImageBlobSha": "22cda860a9d0240023ac33f8ab061276f066fe64",
+      "sourceFrameMapLine": "43|member|Staff|5|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/staff/slot5.png|1.00000000|1.00000000|0.00000000|0.00000000|page=14|frames=3|sampleFrame=1|sample=1.450000|bad=0",
+      "normalization": "canonical_slot_in_existing_live_frame_map"
+    },
+    {
+      "name": "マルヒ_Secretary",
+      "category": "SwitchCast",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/switchcast/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot0.png",
+      "sourceImagePath": "images/portraits/switchcast/slot0.png",
+      "sourceImageBlobSha": "763af2b833e41421278a6b658584131e07904b5b",
+      "sourceFrameMapLine": "46|member|SwitchCast|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/switchcast/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=15|frames=3|sampleFrame=1|sample=1.550000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "Mortar_217",
+      "category": "SwitchCast",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/switchcast/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot1.png",
+      "sourceImagePath": "images/portraits/switchcast/slot1.png",
+      "sourceImageBlobSha": "f570d448a6bab44ccc0702821c562724e1f6643c",
+      "sourceFrameMapLine": "49|member|SwitchCast|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/switchcast/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=16|frames=3|sampleFrame=1|sample=1.650000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ずっと揺れていたい。",
+      "category": "CastLeader",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/castleader/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot0.png",
+      "sourceImagePath": "images/portraits/castleader/slot0.png",
+      "sourceImageBlobSha": "0adea68909d933ffa47dad0ce9b259abe874d3d7",
+      "sourceFrameMapLine": "52|member|CastLeader|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/castleader/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=17|frames=3|sampleFrame=1|sample=1.750000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "まぼまぼ",
+      "category": "CastLeader",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/castleader/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot1.png",
+      "sourceImagePath": "images/portraits/castleader/slot1.png",
+      "sourceImageBlobSha": "3e12bb6ecfc7addde1d6f8f7628a7cdcca1460d3",
+      "sourceFrameMapLine": "55|member|CastLeader|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/castleader/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=18|frames=3|sampleFrame=1|sample=1.850000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "黒喰ぴぴ",
+      "category": "UpperCast",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot0.png",
+      "sourceImagePath": "images/portraits/uppercast/slot0.png",
+      "sourceImageBlobSha": "4e399928a114dc4b4e552c33f5d43bda0eb4f943",
+      "sourceFrameMapLine": "58|member|UpperCast|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=19|frames=3|sampleFrame=1|sample=1.950000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "青染るの",
+      "category": "UpperCast",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot1.png",
+      "sourceImagePath": "images/portraits/uppercast/slot1.png",
+      "sourceImageBlobSha": "3b83039b047f08cb75eb1344939c1357e0323047",
+      "sourceFrameMapLine": "61|member|UpperCast|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=20|frames=3|sampleFrame=1|sample=2.050000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "でらまん",
+      "category": "UpperCast",
+      "slot": 2,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot2.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png",
+      "sourceImagePath": "images/portraits/uppercast/slot2.png",
+      "sourceImageBlobSha": "1078cc95f9520f2da433d184409c3d7bc7709952",
+      "sourceFrameMapLine": "64|member|UpperCast|2|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot2.png|1.00000000|1.00000000|0.00000000|0.00000000|page=21|frames=3|sampleFrame=1|sample=2.150000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "みも77",
+      "category": "UpperCast",
+      "slot": 3,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot3.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png",
+      "sourceImagePath": "images/portraits/uppercast/slot3.png",
+      "sourceImageBlobSha": "73735c5709178ed53bfed5456fc9b93cf5fb4d63",
+      "sourceFrameMapLine": "67|member|UpperCast|3|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot3.png|1.00000000|1.00000000|0.00000000|0.00000000|page=22|frames=3|sampleFrame=1|sample=2.250000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "かざき_りわと",
+      "category": "UpperCast",
+      "slot": 4,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot4.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png",
+      "sourceImagePath": "images/portraits/uppercast/slot4.png",
+      "sourceImageBlobSha": "7742a4f2221ad64f6a6577c7342591adbe256c9f",
+      "sourceFrameMapLine": "70|member|UpperCast|4|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot4.png|1.00000000|1.00000000|0.00000000|0.00000000|page=23|frames=3|sampleFrame=1|sample=2.350000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ASU_1115",
+      "category": "UpperCast",
+      "slot": 5,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot5.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
+      "sourceImagePath": "images/portraits/uppercast/slot5.png",
+      "sourceImageBlobSha": "6a44319ddf88f0b0bd7bf79157c1d2d92ed04f02",
+      "sourceFrameMapLine": "73|member|UpperCast|5|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot5.png|1.00000000|1.00000000|0.00000000|0.00000000|page=24|frames=3|sampleFrame=1|sample=2.450000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "おおかな",
+      "category": "UpperCast",
+      "slot": 6,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot6.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
+      "sourceImagePath": "images/portraits/uppercast/slot6.png",
+      "sourceImageBlobSha": "bd5cc72f63be3e5da8de8d59c18ad893ecdef3dd",
+      "sourceFrameMapLine": "76|member|UpperCast|6|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot6.png|1.00000000|1.00000000|0.00000000|0.00000000|page=25|frames=3|sampleFrame=1|sample=2.550000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "AmakazeRin",
+      "category": "UpperCast",
+      "slot": 7,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/uppercast/slot7.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png",
+      "sourceImagePath": "images/portraits/uppercast/slot7.png",
+      "sourceImageBlobSha": "e8fdd16e65d58c3328188d78dce6b24224ca121d",
+      "sourceFrameMapLine": "79|member|UpperCast|7|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/uppercast/slot7.png|1.00000000|1.00000000|0.00000000|0.00000000|page=26|frames=3|sampleFrame=1|sample=2.650000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ZetOsan",
+      "category": "DownerCast",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot0.png",
+      "sourceImagePath": "images/portraits/downercast/slot0.png",
+      "sourceImageBlobSha": "1744ba88ce6aaff6181e00e0e9bf9365e4313cee",
+      "sourceFrameMapLine": "82|member|DownerCast|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=27|frames=3|sampleFrame=1|sample=2.750000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "まもなか",
+      "category": "DownerCast",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot1.png",
+      "sourceImagePath": "images/portraits/downercast/slot1.png",
+      "sourceImageBlobSha": "9f070cc09a0bb509e1aad75bd0cc393866753ea8",
+      "sourceFrameMapLine": "85|member|DownerCast|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=28|frames=3|sampleFrame=1|sample=2.850000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "なす_；",
+      "category": "DownerCast",
+      "slot": 2,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot2.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot2.png",
+      "sourceImagePath": "images/portraits/downercast/slot2.png",
+      "sourceImageBlobSha": "b44c274d25c24a608b557f80a18060502bd2057e",
+      "sourceFrameMapLine": "88|member|DownerCast|2|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot2.png|1.00000000|1.00000000|0.00000000|0.00000000|page=29|frames=3|sampleFrame=1|sample=2.950000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "笠っち0123",
+      "category": "DownerCast",
+      "slot": 3,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot3.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot3.png",
+      "sourceImagePath": "images/portraits/downercast/slot3.png",
+      "sourceImageBlobSha": "1198676c9e672ceb2db0f89958dedd837fde08a4",
+      "sourceFrameMapLine": "91|member|DownerCast|3|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot3.png|1.00000000|1.00000000|0.00000000|0.00000000|page=30|frames=3|sampleFrame=1|sample=3.050000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "yuki_snow8",
+      "category": "DownerCast",
+      "slot": 4,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot4.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot4.png",
+      "sourceImagePath": "images/portraits/downercast/slot4.png",
+      "sourceImageBlobSha": "e39fb937c532a4f1d4c4aa104eed8045ed8a24ff",
+      "sourceFrameMapLine": "94|member|DownerCast|4|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot4.png|1.00000000|1.00000000|0.00000000|0.00000000|page=31|frames=3|sampleFrame=1|sample=3.150000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "おろし生姜",
+      "category": "DownerCast",
+      "slot": 5,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot5.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot5.png",
+      "sourceImagePath": "images/portraits/downercast/slot5.png",
+      "sourceImageBlobSha": "8eadd245c26e9f694190558f9d0e419ff6143dd8",
+      "sourceFrameMapLine": "97|member|DownerCast|5|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot5.png|1.00000000|1.00000000|0.00000000|0.00000000|page=32|frames=3|sampleFrame=1|sample=3.250000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "aster_oct",
+      "category": "DownerCast",
+      "slot": 6,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot6.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot6.png",
+      "sourceImagePath": "images/portraits/downercast/slot6.png",
+      "sourceImageBlobSha": "ab3f64f105e3ab1f13362cfe9de0297e3dac5635",
+      "sourceFrameMapLine": "100|member|DownerCast|6|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot6.png|1.00000000|1.00000000|0.00000000|0.00000000|page=33|frames=3|sampleFrame=1|sample=3.350000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ケイバス",
+      "category": "DownerCast",
+      "slot": 7,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot7.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot7.png",
+      "sourceImagePath": "images/portraits/downercast/slot7.png",
+      "sourceImageBlobSha": "e2e70f8addfcfa59fbe5673b57f730daf1b16908",
+      "sourceFrameMapLine": "103|member|DownerCast|7|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot7.png|1.00000000|1.00000000|0.00000000|0.00000000|page=34|frames=3|sampleFrame=1|sample=3.450000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "てれてれほわいと",
+      "category": "DownerCast",
+      "slot": 8,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot8.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot8.png",
+      "sourceImagePath": "images/portraits/downercast/slot8.png",
+      "sourceImageBlobSha": "59edb0b9f0cf923de6a59c163bdf20ea6d65ca9d",
+      "sourceFrameMapLine": "106|member|DownerCast|8|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot8.png|1.00000000|1.00000000|0.00000000|0.00000000|page=35|frames=3|sampleFrame=1|sample=3.550000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "kamenno_megia",
+      "category": "DownerCast",
+      "slot": 9,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot9.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot9.png",
+      "sourceImagePath": "images/portraits/downercast/slot9.png",
+      "sourceImageBlobSha": "9cfa594de7a14f76e48f10dcf800be707a933048",
+      "sourceFrameMapLine": "109|member|DownerCast|9|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot9.png|1.00000000|1.00000000|0.00000000|0.00000000|page=36|frames=3|sampleFrame=1|sample=3.650000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ZERONOSU",
+      "category": "DownerCast",
+      "slot": 10,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/downercast/slot10.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot10.png",
+      "sourceImagePath": "images/portraits/downercast/slot10.png",
+      "sourceImageBlobSha": "54379c0ffffef4c7c594afd8860c9397d4574d10",
+      "sourceFrameMapLine": "112|member|DownerCast|10|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/downercast/slot10.png|1.00000000|1.00000000|0.00000000|0.00000000|page=37|frames=3|sampleFrame=1|sample=3.750000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "プニキ（Aspire_K4）",
+      "category": "CondisionalCast",
+      "slot": 0,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/condisionalcast/slot0.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot0.png",
+      "sourceImagePath": "images/portraits/condisionalcast/slot0.png",
+      "sourceImageBlobSha": "bf5b87960b8c7049105e22836fb97f8ed6bc34af",
+      "sourceFrameMapLine": "115|member|CondisionalCast|0|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/condisionalcast/slot0.png|1.00000000|1.00000000|0.00000000|0.00000000|page=38|frames=3|sampleFrame=1|sample=3.850000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "ごえさん",
+      "category": "CondisionalCast",
+      "slot": 1,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/condisionalcast/slot1.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot1.png",
+      "sourceImagePath": "images/portraits/condisionalcast/slot1.png",
+      "sourceImageBlobSha": "d4982536c0a544c1fa42507ce82f78579e54b50d",
+      "sourceFrameMapLine": "118|member|CondisionalCast|1|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/condisionalcast/slot1.png|1.00000000|1.00000000|0.00000000|0.00000000|page=39|frames=3|sampleFrame=1|sample=3.950000|bad=0",
+      "normalization": "same_image_new_project_url"
+    },
+    {
+      "name": "錆びた鯖",
+      "category": "CondisionalCast",
+      "slot": 2,
+      "originalPortraitUrl": "https://clubcommushow.github.io/ClubCommuShow/images/portraits/condisionalcast/slot2.png",
+      "newPortraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot2.png",
+      "sourceImagePath": "images/portraits/condisionalcast/slot2.png",
+      "sourceImageBlobSha": "9142575b0b37158fdc02daacd5a1d472954c5204",
+      "sourceFrameMapLine": "121|member|CondisionalCast|2|https://raw.githubusercontent.com/ClubCommuShow/ClubCommuShow/main/images/portraits/condisionalcast/slot2.png|1.00000000|1.00000000|0.00000000|0.00000000|page=40|frames=3|sampleFrame=1|sample=4.050000|bad=0",
+      "normalization": "same_image_new_project_url"
+    }
+  ],
+  "imageSchemaPolicy": "Use the canonical category/slot photo for both portraitUrl and images.portrait.url. Preserve full-image portrait and standee, legacy profile source=portrait, and legacy icon portraitCrop defaults. Keep missing hidden portraits empty; do not invent images.",
+  "sourceVideoReferencesRetainedInInput": {
+    "enabled": true,
+    "fps": 30,
+    "frameMapUrl": "https://clubcommushow.github.io/ClubCommuShow/data/roster_frame_map.txt",
+    "framesPerPortrait": 3,
+    "sampleFrame": 1,
+    "videoUrl": "https://clubcommushow.github.io/ClubCommuShow/videos/roster.mp4"
+  },
+  "sourceCardVideoReferencesRetainedInInput": {
+    "status": "planned",
+    "videoUrl": "",
+    "frameMapUrl": ""
+  },
+  "sourceContentMetadata": {
+    "protocol": "EventBasicKit.ContentManifest",
+    "schemaVersion": 1,
+    "revision": "club-migration-20261002-001",
+    "updatedAt": "2026-10-02T12:39:00+09:00"
+  },
+  "targetContentMetadataBeforeMerge": {
+    "protocol": "EventBasicKit.ContentManifest",
+    "schemaVersion": 1,
+    "revision": "starter-content-v3",
+    "updatedAt": "2026-10-18T21:42:25.8202439Z"
+  },
+  "preservedTargetSettings": [
+    "eventSchedule (all fields and sourceId)",
+    "roleTypes",
+    "project.json (projectId/name/root/base)",
+    "venue.json (deploymentId/name/worldId)",
+    "active_project.json binding",
+    "installer-state.json original installation ledger",
+    "ops_modules.json",
+    "localization_manifest.json",
+    "gobo_logo_manifest.json",
+    "slide_poster_manifest.json",
+    "data/room_media_slides.json",
+    "themes and branding images",
+    "ClubCard commonTextures and sheetLayout when absent from source"
+  ],
+  "preservedSourceFields": [
+    "Every member field except normalized portraitUrl; roleType/accessLevel/images are added",
+    "Every poster row unchanged",
+    "Every card field except relocated imageUrl",
+    "All original source JSON and frame-map text saved alongside this report",
+    "Content IDs, source texts, flags and previous timestamps preserved in the source snapshot/report"
+  ],
+  "conversionChecks": {
+    "exactBaselineBlobChecks": 38,
+    "memberOriginalFields": "PASS",
+    "memberRoleLevels": "PASS",
+    "memberSlotsAndNames": "PASS",
+    "sixPortraitSlotNormalizationsBackedByExistingFrameMap": "PASS",
+    "all104FrameMapKeysAndImageBlobPaths": "PASS",
+    "targetEventSchedule": "PASS",
+    "targetRoleTypes": "PASS",
+    "sourceCardRulesAndNumbers": "PASS",
+    "exactTargetCardValidator63Cards": "PASS",
+    "uniqueCardSheetPlacements": 63,
+    "cardSheetCount": 17,
+    "targetContentRowsUnchanged": "PASS",
+    "sourceContentRowsUnchanged": "PASS"
+  },
+  "pendingVerification": [
+    "Binary uploads: verify every returned destination Git blob SHA against the pinned source tree",
+    "Run the existing ebk_project_275fcf6a380e5388.yml generation and Pages deployment",
+    "Read generated common/manifest.json, ClubCard and slide manifests from the same generation commit",
+    "Check active fixed-venue projection and all normalized public image URLs",
+    "Verify 43 members/role levels, eventSchedule and 63 cards on deployed Pages",
+    "VRChat/OPS live reload against the fixed new venue URL is not yet observed"
+  ],
+  "generationBoundary": "Input temporarily retains the proven source roster video/frame-map pair. Existing destination build replaces only generated manifests/video URLs with a mutually consistent new generation. The generated common manifest must preserve the same 104 semantic image keys and source bytes. Do not label old source videos as newly generated.",
+  "noPermissionExpansion": true,
+  "noSourceRepositoryChanges": true,
+  "initiallyReviewedDestinationHead": "25d666ef48f46d47bb18fab2e04737f74b5c4c07",
+  "initiallyReviewedDestinationTree": "e1c19f20556c7cdf3a2b05ac066a85e7321c06cb",
+  "destinationRefresh": {
+    "reason": "Destination calendar changed while import assets were being prepared.",
+    "rosterBlob": "7f0b000d48bbec3a31dcf293c2e85e48686f1051",
+    "onlyChangedRosterField": "eventSchedule",
+    "previousRuleCount": 1,
+    "preservedRuleCount": 4,
+    "preservedEventSchedule": {
+      "exceptions": [],
+      "projectId": "prj_275fcf6a380e53889135988a06e61846",
+      "rotationMinutes": 15,
+      "rules": [
+        {
+          "countAsVisit": true,
+          "countStaffWork": true,
+          "duration": 70,
+          "enabled": true,
+          "exportToSheets": true,
+          "fromDate": "2026-10-19",
+          "kind": "Regular",
+          "nth": 1,
+          "sourceId": "ser_002957a1996ebe2f98dfa639efd918fc",
+          "start": "20:20",
+          "title": "第一日曜営業",
+          "weekday": 0
+        },
+        {
+          "countAsVisit": true,
+          "countStaffWork": true,
+          "duration": 70,
+          "enabled": true,
+          "exportToSheets": true,
+          "kind": "Regular",
+          "nth": 2,
+          "sourceId": "ser_e9fc835e98bd36796ce630e33f7c2d76",
+          "start": "20:20",
+          "title": "第二土曜営業",
+          "weekday": 6
+        },
+        {
+          "countAsVisit": true,
+          "countStaffWork": true,
+          "duration": 70,
+          "enabled": true,
+          "exportToSheets": true,
+          "kind": "Regular",
+          "nth": 3,
+          "sourceId": "ser_6d8ab4a147aac4d57b8fe5625a8d9b65",
+          "start": "20:20",
+          "title": "第三金曜営業",
+          "weekday": 5
+        },
+        {
+          "countAsVisit": true,
+          "countStaffWork": true,
+          "duration": 70,
+          "enabled": true,
+          "exportToSheets": true,
+          "kind": "Regular",
+          "nth": 4,
+          "sourceId": "ser_94c68d034570c8b5fbd3709736a970c6",
+          "start": "20:20",
+          "title": "第四木曜営業",
+          "weekday": 4
+        }
+      ],
+      "schemaVersion": 1,
+      "source": "ebk-project-calendar",
+      "utcOffsetHours": 9
+    },
+    "unrelatedChangesPreservedInBaseTree": [
+      "active_project.json timestamp",
+      "five generated Python cache files"
+    ],
+    "assetCollisionsAdded": 0,
+    "sourceDataChanged": false
+  }
+}

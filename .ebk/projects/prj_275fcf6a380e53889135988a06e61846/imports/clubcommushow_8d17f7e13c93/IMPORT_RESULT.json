@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "status": "GENERATED_VERIFIED_PENDING_GIT_PUSH_AND_PAGES",
+  "sourceRepository": "ClubCommuShow/ClubCommuShow",
+  "sourceHead": "8d17f7e13c9312408fe4af231a08e873ad38eceb",
+  "destinationRepository": "ClubCommuShow/clubcommushow_world",
+  "projectId": "prj_275fcf6a380e53889135988a06e61846",
+  "venueId": "ebk_d96094eb919f487d9b1f6c0401881c5f",
+  "workflowHead": "eb481ec48fb800d64e4ae18be24cd2234818c924",
+  "workflowRunId": "39175218656",
+  "requestSha256": "36ec9c191d691376744057826f49a676c99e2a74932b3505563799bf744c367c",
+  "preparedZipSha256": "894605589c2c73a26001cb1a687e84cb1f44e16d07b191b1ad46aa6e16fe2532",
+  "counts": {
+    "members": 43,
+    "authoredPosters": 52,
+    "generatedPosters": 63,
+    "commonKeys": 104,
+    "cards": 63,
+    "cardSheets": 17,
+    "contents": 58,
+    "scheduleRules": 4,
+    "assetPaths": 170
+  },
+  "preservedBlobs": 112,
+  "projectedFiles": 240,
+  "commonGeneration": "3366f743e41097f057bf75b8767d0520",
+  "cardGeneration": "92b0ae4f8b1e284d7541d32d0338fb14",
+  "roomGeneration": "e865dbfb51515b2b5c93da1ebe1b86ff",
+  "fixedRosterSha256": "5e0ea31bd93e8fdb4a00791ca76d99662ed3a10cac56da6b1050e8a758639f95",
+  "fixedRosterUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/venues/ebk_d96094eb919f487d9b1f6c0401881c5f/data/roster_manifest.json",
+  "videoChecks": [
+    {
+      "path": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/roster_3366f743e41097f057bf75b8767d0520.mp4",
+      "sha256": "fab232c046a25180685c7c918a96287398e1c49ca092bb7cfa189bcb753ffcfb",
+      "frames": 315,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "generationMarker": "PASS"
+    },
+    {
+      "path": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/roster.mp4",
+      "sha256": "dddf39826289a55ea4d12f9c1a2d8a1a07257c1332fef80dce7d5f47f11570a2",
+      "frames": 312,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "generationMarker": "NOT_APPLICABLE"
+    },
+    {
+      "path": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-clubcards/cards.mp4",
+      "sha256": "1e56e9c7c128003cdeafb43555be6ff9f27905bf691deebcfd5ec2c15245f2de",
+      "frames": 60,
+      "width": 1280,
+      "height": 768,
+      "fps": 30,
+      "generationMarker": "PASS"
+    },
+    {
+      "path": "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/ポチョ_1dc782575a5a02ad7bde1d1cfe1b7f9c.mp4",
+      "sha256": "9209c991204e1ad5d47d8e89bd88049a55dc4243bbb0bdd404186125d62779e1",
+      "frames": 3,
+      "width": 3840,
+      "height": 1080,
+      "fps": 30,
+      "generationMarker": "NOT_APPLICABLE"
+    }
+  ],
+  "checks": [
+    "all original source asset blobs retained",
+    "43 members and permission fields retained",
+    "104 semantic image keys match original frame map",
+    "63 cards and 17 unique sheets",
+    "4 current calendar rules retained",
+    "58 content entries retained",
+    "video checksums and frame counts",
+    "common/card generation markers decoded from video",
+    "selected fixed venue projection equals project generation",
+    "all unrelated target settings retained"
+  ],
+  "pending": [
+    "Git push readback",
+    "GitHub Pages deployment",
+    "live OPS/VRChat acceptance"
+  ]
+}

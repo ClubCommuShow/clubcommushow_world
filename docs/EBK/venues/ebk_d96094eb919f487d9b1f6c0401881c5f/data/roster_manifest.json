@@ -65,63 +65,2747 @@
   "imageSchemaVersion": 1,
   "members": [
     {
-      "accessLevel": 4,
       "category": "Owner",
       "enabled": true,
       "hasPermission": true,
-      "images": {
-        "icon": {
-          "crop": {
-            "height": 0.6,
-            "width": 0.6,
-            "x": 0.2,
-            "y": 0.36
-          },
-          "source": "portraitCrop",
-          "url": ""
-        },
-        "portrait": {
-          "crop": {
-            "height": 0.5,
-            "width": 0.5,
-            "x": 0.25,
-            "y": 0.5
-          },
-          "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png"
-        },
-        "profile": {
-          "crop": {
-            "height": 0.8,
-            "width": 0.8,
-            "x": 0.1,
-            "y": 0.16
-          },
-          "source": "portraitCrop",
-          "url": ""
-        },
-        "standee": {
-          "crop": {
-            "height": 1,
-            "width": 1,
-            "x": 0,
-            "y": 0
-          },
-          "source": "portrait",
-          "url": ""
-        }
-      },
-      "name": "YOUR_VRC_DISPLAY_NAME",
+      "name": "ポチョLOVE",
       "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png",
-      "roleType": "owner",
       "showArmband": true,
       "showName": true,
       "showPortrait": true,
       "slot": 0,
-      "spawnKey": "staff_room"
+      "spawnKey": "staff_room",
+      "roleType": "owner",
+      "accessLevel": 4,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Owner",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "Clubコミュ症公式",
+      "showArmband": true,
+      "showName": false,
+      "showPortrait": false,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "owner",
+      "accessLevel": 4,
+      "portraitUrl": "",
+      "images": {
+        "portrait": {
+          "url": "",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Manager",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "aizawaakito0418",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/manager/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "manager",
+      "accessLevel": 4,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/manager/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Operator",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ほのか_",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "operator",
+      "accessLevel": 4,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Operator",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ここらо",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "operator",
+      "accessLevel": 4,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Operator",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ごまもっち",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot2.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 2,
+      "spawnKey": "staff_room",
+      "roleType": "operator",
+      "accessLevel": 4,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/operator/slot2.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Assistant",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "rokyodragon",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "assistant",
+      "accessLevel": 4,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Assistant",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "永遠-towa-",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "assistant",
+      "accessLevel": 4,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/assistant/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Assistant",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "望黛 彩晴",
+      "showArmband": true,
+      "showName": false,
+      "showPortrait": false,
+      "slot": 2,
+      "spawnKey": "staff_room",
+      "roleType": "assistant",
+      "accessLevel": 4,
+      "portraitUrl": "",
+      "images": {
+        "portrait": {
+          "url": "",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "StaffLeader",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ストロベリーのマカ",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "staffLeader",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "StaffLeader",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "Tixia",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "staffLeader",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Staff",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "星海ヒロ",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "staff",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Staff",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ひなしー",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "staff",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Staff",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "し ゃ ち",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot2.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 2,
+      "spawnKey": "staff_room",
+      "roleType": "staff",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot2.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Staff",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "Yoshi33563",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot3.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 3,
+      "spawnKey": "staff_room",
+      "roleType": "staff",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot3.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Staff",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ほしあい",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot4.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 4,
+      "spawnKey": "staff_room",
+      "roleType": "staff",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot4.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "Staff",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "みのりんご",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot5.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 5,
+      "spawnKey": "staff_room",
+      "roleType": "staff",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staff/slot5.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "SwitchCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "マルヒ_Secretary",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "switchCast",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "SwitchCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "Mortar_217",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "switchCast",
+      "accessLevel": 3,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/switchcast/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "CastLeader",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ずっと揺れていたい。",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "castLeader",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "CastLeader",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "まぼまぼ",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "castLeader",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/castleader/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "黒喰ぴぴ",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "青染るの",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "でらまん",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 2,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "みも77",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 3,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "かざき_りわと",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 4,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ASU_1115",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 5,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "おおかな",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 6,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "UpperCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "AmakazeRin",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 7,
+      "spawnKey": "staff_room",
+      "roleType": "upperCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ZetOsan",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "まもなか",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "なす_；",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot2.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 2,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot2.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "笠っち0123",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot3.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 3,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot3.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "yuki_snow8",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot4.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 4,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot4.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "おろし生姜",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot5.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 5,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot5.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "aster_oct",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot6.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 6,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot6.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ケイバス",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot7.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 7,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot7.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "てれてれほわいと",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot8.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 8,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot8.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "kamenno_megia",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot9.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 9,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot9.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "DownerCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ZERONOSU",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot10.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 10,
+      "spawnKey": "staff_room",
+      "roleType": "downerCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot10.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "CondisionalCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "プニキ（Aspire_K4）",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot0.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 0,
+      "spawnKey": "staff_room",
+      "roleType": "conditionalCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot0.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "CondisionalCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "ごえさん",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot1.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 1,
+      "spawnKey": "staff_room",
+      "roleType": "conditionalCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot1.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
+    },
+    {
+      "category": "CondisionalCast",
+      "enabled": true,
+      "hasPermission": true,
+      "name": "錆びた鯖",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot2.png",
+      "showArmband": true,
+      "showName": true,
+      "showPortrait": true,
+      "slot": 2,
+      "spawnKey": "staff_room",
+      "roleType": "conditionalCast",
+      "accessLevel": 2,
+      "images": {
+        "portrait": {
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/condisionalcast/slot2.png",
+          "framing": "custom",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "standee": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          }
+        },
+        "profile": {
+          "url": "",
+          "source": "portrait",
+          "crop": {
+            "x": 0.1,
+            "y": 0.16,
+            "width": 0.8,
+            "height": 0.8
+          }
+        },
+        "icon": {
+          "url": "",
+          "source": "portraitCrop",
+          "crop": {
+            "x": 0.2,
+            "y": 0.36,
+            "width": 0.6,
+            "height": 0.6
+          }
+        }
+      }
     }
   ],
-  "posters": [],
+  "posters": [
+    {
+      "category": "EventPoster",
+      "enabled": true,
+      "slot": 0
+    },
+    {
+      "category": "EventPoster",
+      "enabled": true,
+      "slot": 1
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 0
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 1
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 2
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 3
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 4
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 5
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 6
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 7
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 8
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 9
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 10
+    },
+    {
+      "category": "FrontPoster",
+      "enabled": true,
+      "slot": 11
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 0
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 1
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 2
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 3
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 4
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 5
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 6
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 7
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 8
+    },
+    {
+      "category": "SidePoster",
+      "enabled": true,
+      "slot": 9
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 0
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 1
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 2
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 3
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 4
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 5
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 6
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 7
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 8
+    },
+    {
+      "category": "BackPoster",
+      "enabled": true,
+      "slot": 9
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 0
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 1
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 2
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 3
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 4
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 5
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 6
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 7
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 8
+    },
+    {
+      "category": "Notice",
+      "enabled": true,
+      "slot": 9
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 0,
+      "text": "こんばんは！ようこそclubコミュ症へ！\n\n当イベントはトークが苦手なキャストが個室でお客様をお迎えするClubイベントです。沈黙は仕様、会話はお客様のペースでOKです。\n\n15分ごとにキャストが入れ替わります。\nカウンターにはトークができるスタッフがお迎えします。\n\n始まりましたらトークが苦手なキャストが接客する個室希望の方は向かって右へ\nトークができるスタッフが接客するカウンター希望の方は向かって左へとお進みください\n\n個室8席カウンター5席となっておりますので満席になりましたら\n空いてる席へのご案内となりますので予めご了承ください。\n\n落ちてもリクインして戻ってきてください。席は確保しておきます。\n※個室で落ちた場合は【1ローテ】待ちます。\nローテ時間内に戻れない場合はカウンターへ切り替える可能性があります。\n\n中に入りましたらBGMが聞こえる程度にワールド音量を上げてください。\n個室と個室が近いのでイヤーマフモードを3m目安でお付けください。",
+      "title": "開場・イベント説明"
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 1,
+      "text": "こんばんは！ようこそクラブコミュ症へ！\n本日は個室（カウンタ）ご希望でよろしかったでしょうか？\n\n個室（カウンタ）ご希望のお客様ですね、それでは\nこちらのカードをお持ちになって\n奥の中央ホールへとお進みください\n（人数確定次第ご案内いたしますので今しばらくこちらでお待ちください）※5人そろってから↓\n（お待たせしました。人数確認できましたので奥の中央ホールへとお進みください）\n\n申し訳ございません個室（カウンタ）満席となりましたので\nここからはカウンター（個室）へのご案内となります\nご了承ください",
+      "title": "受付・席種確認"
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 2,
+      "text": "個室希望のお客様でお間違いないですか？\nカードの方確認させていただきます。\nでは向かって一番右側のキャストの前までお願いいたします。\n人数揃い次第順番にご案内いたしますので\nそのままお待ちください。",
+      "title": "個室待機列"
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 3,
+      "text": "大変お待たせしました人数揃いましたので\n個室のほうへご案内いたします\nこちらの待機列のかた私についてきてください\n（※アバターライトの看板で説明してから個室）\n\nカウンター希望のお客様ですね、そのまま\n両側の階段を上ってメインホールまでお進みください。",
+      "title": "個室・カウンターへの誘導"
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 4,
+      "text": "集合写真を撮りますので\n小さい方は前へ大きい方は後ろへお願いします\nなるだけ中央へ寄ってください\n\n2回5秒カウントダウンしてはいって言いますので、\n皆様「はいチーズ」の代わりに「コミュ症」でお願いします。\n※集合写真※\n写真を撮り終わった方からカメラしまってくださいね\n#は#Clubコミュ症です。コミュ症の症は症状の症でお願いします。\n\n本日のクラブコミュ症はこれで終了です！次回もお待ちしております。\nありがとうございました！\nまた、もしよろしければイベントをお友達に紹介していただけると助かります。\nご意見等ありましたらXの公式アカウントへDMをお送りください。\n\nこの後のお時間はアフターがございますので、\nアフターご希望のお客様は、ここ中央ホールか先ほどのメインホールにて、\nアフタータイムをお楽しみください。",
+      "title": "集合写真・終了・アフター"
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 5,
+      "text": "こちらの看板よりアバターライトとsit判定のon/offができます。\nアバターライトは2段階調整できます。\nこちらsit判定はデフォルトでONになっておりますので、\nOFFにする際は1度押してください。",
+      "title": "アバターライト・Sit判定"
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 6,
+      "text": "お客様は奥のソファーへお座りください。\n※お客様が座ってから※　失礼します（手前の席へ座る）\n\nまずはメニューのご説明をします。VRのかたは左トリガーを2回押す\n（デスクトップのかたはTabキーを押す）とメニューが出ます。\nVRのかたは右トリガ短押しで次ページ長押しで前ページ\n（デスクトップのかたはEで次ページQで前ページ）になります。\n\n口頭にてご注文を承ります。注文は巡回スタッフがお伺いします。\n\n注文をご希望の方はテーブル中央のこちらをUSEしていただき、\nカーソルを注文希望にしていただくと後ほどスタッフが注文をお伺いに参ります。\n\nもう一度USEしていただくと沈黙に耐えられない表記に変わりますので、\n沈黙に耐えられなくなった際は、ご利用ください。\n押したらお助けアイテムが出てきたりおしゃべりなスタッフがかけつけたりします\n1ローテ担当いたします〇〇と申しますよろしくお願いします。\nお時間となりましたので移動させていただきますありがとうございました。",
+      "title": "個室での接客・注文案内"
+    },
+    {
+      "category": "Kanpe",
+      "enabled": true,
+      "slot": 7,
+      "text": "※着席されたら※\nまずはメニューのご説明をします。VRのかたは左トリガーを2回押す\n（デスクトップのかたはTabキーを押す）とメニューが出ます。\nVRのかたは右トリガ短押しで次ページ長押しで前ページ\n（デスクトップのかたはEで次ページQで前ページ）になります。\n\n口頭にてご注文を承ります。",
+      "title": "カウンターのメニュー案内"
+    },
+    {
+      "category": "Menu",
+      "slot": 0,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 1,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 2,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 3,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 4,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 5,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 6,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 7,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 8,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 9,
+      "enabled": true
+    },
+    {
+      "category": "Menu",
+      "slot": 10,
+      "enabled": true
+    }
+  ],
   "roleTypes": [
     {
       "accessLevel": 0,
@@ -205,10 +2889,17 @@
   "schemaVersion": 2,
   "videoRoster": {
     "enabled": true,
+    "status": "ready",
+    "generation": "3366f743e41097f057bf75b8767d0520",
+    "format": "ebk-roster-v1",
     "fps": 30,
-    "frameMapUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/roster_frame_map.txt",
-    "framesPerPortrait": 3,
+    "framesPerEntry": 3,
     "sampleFrame": 1,
-    "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/videos/roster.mp4"
-  }
+    "generationMarkerFrame": 1,
+    "frameCount": 315,
+    "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/roster_3366f743e41097f057bf75b8767d0520.mp4",
+    "frameMapUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/frame_map_3366f743e41097f057bf75b8767d0520.txt",
+    "sha256": "fab232c046a25180685c7c918a96287398e1c49ca092bb7cfa189bcb753ffcfb"
+  },
+  "posterTextEnabled": true
 }
