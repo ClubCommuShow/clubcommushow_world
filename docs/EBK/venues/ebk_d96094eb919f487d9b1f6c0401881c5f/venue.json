@@ -1,0 +1,9 @@
+{
+  "deploymentId": "ebk_d96094eb919f487d9b1f6c0401881c5f",
+  "generatedAtUtc": "2026-10-18T21:47:26.6113964Z",
+  "protocol": "EventBasicKit.VenueBootstrap",
+  "schemaVersion": 3,
+  "status": "awaiting_project",
+  "venueName": "ClubCommuShow_World",
+  "vrchatWorldId": ""
+}
