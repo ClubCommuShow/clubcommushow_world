@@ -1,38 +1,80 @@
 {
-  "schemaVersion": 2,
+  "eventSchedule": {
+    "exceptions": [],
+    "projectId": "prj_275fcf6a380e53889135988a06e61846",
+    "rotationMinutes": 15,
+    "rules": [
+      {
+        "countAsVisit": true,
+        "countStaffWork": true,
+        "duration": 70,
+        "enabled": true,
+        "exportToSheets": true,
+        "fromDate": "2026-10-19",
+        "kind": "Regular",
+        "nth": 1,
+        "sourceId": "ser_002957a1996ebe2f98dfa639efd918fc",
+        "start": "20:20",
+        "title": "第一日曜営業",
+        "weekday": 0
+      }
+    ],
+    "schemaVersion": 1,
+    "source": "ebk-project-calendar",
+    "utcOffsetHours": 9
+  },
   "imageSchemaVersion": 1,
-  "roleTypes": [{"id":"guest","label":"Guest","accessLevel":0,"styleId":"guest"},{"id":"regular","label":"Regular","accessLevel":1,"styleId":"regular"},{"id":"castLeader","label":"CastLeader","accessLevel":2,"styleId":"castLeader"},{"id":"upperCast","label":"UpperCast","accessLevel":2,"styleId":"upperCast"},{"id":"downerCast","label":"DownerCast","accessLevel":2,"styleId":"downerCast"},{"id":"conditionalCast","label":"ConditionalCast","accessLevel":2,"styleId":"conditionalCast"},{"id":"staffLeader","label":"StaffLeader","accessLevel":3,"styleId":"staffLeader"},{"id":"staff","label":"Staff","accessLevel":3,"styleId":"staff"},{"id":"switchCast","label":"SwitchCast","accessLevel":3,"styleId":"switchCast"},{"id":"owner","label":"Owner","accessLevel":4,"styleId":"owner"},{"id":"manager","label":"Manager","accessLevel":4,"styleId":"manager"},{"id":"operator","label":"Operator","accessLevel":4,"styleId":"operator"},{"id":"assistant","label":"Assistant","accessLevel":4,"styleId":"assistant"}],
   "members": [
     {
-      "category": "Owner",
-      "roleType": "owner",
       "accessLevel": 4,
+      "category": "Owner",
       "enabled": true,
       "hasPermission": true,
-      "name": "YOUR_VRC_DISPLAY_NAME",
-      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png",
       "images": {
-        "portrait": {
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png",
-          "framing": "bust",
-          "crop": { "x": 0.25, "y": 0.5, "width": 0.5, "height": 0.5 }
+        "icon": {
+          "crop": {
+            "height": 0.6,
+            "width": 0.6,
+            "x": 0.2,
+            "y": 0.36
+          },
+          "source": "portraitCrop",
+          "url": ""
         },
-        "standee": {
-          "source": "portrait",
-          "url": "",
-          "crop": { "x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0 }
+        "portrait": {
+          "crop": {
+            "height": 0.5,
+            "width": 0.5,
+            "x": 0.25,
+            "y": 0.5
+          },
+          "framing": "bust",
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png"
         },
         "profile": {
+          "crop": {
+            "height": 0.8,
+            "width": 0.8,
+            "x": 0.1,
+            "y": 0.16
+          },
           "source": "portraitCrop",
-          "url": "",
-          "crop": { "x": 0.1, "y": 0.16, "width": 0.8, "height": 0.8 }
+          "url": ""
         },
-        "icon": {
-          "source": "portraitCrop",
-          "url": "",
-          "crop": { "x": 0.2, "y": 0.36, "width": 0.6, "height": 0.6 }
+        "standee": {
+          "crop": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "source": "portrait",
+          "url": ""
         }
       },
+      "name": "YOUR_VRC_DISPLAY_NAME",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/owner/slot0.png",
+      "roleType": "owner",
       "showArmband": true,
       "showName": true,
       "showPortrait": true,
@@ -41,12 +83,93 @@
     }
   ],
   "posters": [],
+  "roleTypes": [
+    {
+      "accessLevel": 0,
+      "id": "guest",
+      "label": "Guest",
+      "styleId": "guest"
+    },
+    {
+      "accessLevel": 1,
+      "id": "regular",
+      "label": "Regular",
+      "styleId": "regular"
+    },
+    {
+      "accessLevel": 2,
+      "id": "castLeader",
+      "label": "CastLeader",
+      "styleId": "castLeader"
+    },
+    {
+      "accessLevel": 2,
+      "id": "upperCast",
+      "label": "UpperCast",
+      "styleId": "upperCast"
+    },
+    {
+      "accessLevel": 2,
+      "id": "downerCast",
+      "label": "DownerCast",
+      "styleId": "downerCast"
+    },
+    {
+      "accessLevel": 2,
+      "id": "conditionalCast",
+      "label": "ConditionalCast",
+      "styleId": "conditionalCast"
+    },
+    {
+      "accessLevel": 3,
+      "id": "staffLeader",
+      "label": "StaffLeader",
+      "styleId": "staffLeader"
+    },
+    {
+      "accessLevel": 3,
+      "id": "staff",
+      "label": "Staff",
+      "styleId": "staff"
+    },
+    {
+      "accessLevel": 3,
+      "id": "switchCast",
+      "label": "SwitchCast",
+      "styleId": "switchCast"
+    },
+    {
+      "accessLevel": 4,
+      "id": "owner",
+      "label": "Owner",
+      "styleId": "owner"
+    },
+    {
+      "accessLevel": 4,
+      "id": "manager",
+      "label": "Manager",
+      "styleId": "manager"
+    },
+    {
+      "accessLevel": 4,
+      "id": "operator",
+      "label": "Operator",
+      "styleId": "operator"
+    },
+    {
+      "accessLevel": 4,
+      "id": "assistant",
+      "label": "Assistant",
+      "styleId": "assistant"
+    }
+  ],
+  "schemaVersion": 2,
   "videoRoster": {
     "enabled": true,
     "fps": 30,
+    "frameMapUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/roster_frame_map.txt",
     "framesPerPortrait": 3,
     "sampleFrame": 1,
-    "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/videos/roster.mp4",
-    "frameMapUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/roster_frame_map.txt"
+    "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/videos/roster.mp4"
   }
 }
