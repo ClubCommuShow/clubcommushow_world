@@ -1,0 +1,22 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EBK スライドアルバム</title><style>
+body{font:16px system-ui,sans-serif;max-width:1080px;margin:40px auto;padding:0 20px;background:#f6f7fa;color:#182334}
+table{width:100%;border-collapse:collapse;background:white}th,td{padding:16px;text-align:left;border-bottom:1px solid #ddd}
+input{box-sizing:border-box;width:100%;padding:10px;margin-bottom:8px}button{padding:8px 14px;cursor:pointer}
+</style><h1>EBK スライドアルバム</h1>
+<p>リンクをコピーして、部屋別メディアボードのURL欄へ貼り付けて読み込みます。<br>
+対応版EBKはスライド方式（1枚3フレーム・30fps）へ自動で切り替わります。</p>
+<table><thead><tr><th>アルバム</th><th>枚数</th><th>メディアボード用リンク</th></tr></thead><tbody>
+<tr><th>サンプル</th><td>0</td><td>画像待ち</td></tr></tbody></table><p id="message" role="status"></p>
+<p>画像の更新後は動画生成と公開の完了を待ち、同じURLを読み込み直してください。</p>
+<script>
+document.querySelectorAll('button[data-url]').forEach(button => {
+ button.addEventListener('click', async () => {
+  const message = document.getElementById('message');
+  try { await navigator.clipboard.writeText(button.dataset.url); message.textContent = 'リンクをコピーしました。'; }
+  catch (_) { const input=button.parentElement.querySelector('input'); input.focus(); input.select();
+   message.textContent = 'URLを選択しました。コピー操作をしてください。'; }
+ });
+});
+</script></html>

@@ -3,25 +3,23 @@
   "format": "ebk-media-root-v1",
   "modules": [
     {
-      "id": "common",
-      "manifestPath": "data/roster_manifest.json",
-      "format": "ebk-roster-v1"
-    },
-    {
       "id": "clubcards",
       "manifestPath": "ebk-clubcards/manifest.json",
       "videoPath": "ebk-clubcards/cards.mp4",
-      "format": "ebk-clubcards-v2"
-    },
-    {
-      "id": "themes",
-      "manifestPath": "themes/theme_catalog.json",
-      "format": "ebk-theme-catalog-v1"
+      "format": "ebk-clubcards-v2",
+      "generation": "5100b062b330d7a6c8660e7ffc2601d2"
     },
     {
       "id": "roomMedia",
       "manifestPath": "ebk-room-media/manifest.json",
-      "format": "ebk-room-media-v1"
+      "format": "ebk-room-media-v1",
+      "generation": "81b6fa6eccdf04165f55db918df0d0cd"
+    },
+    {
+      "id": "themes",
+      "manifestPath": "themes/theme_catalog.json",
+      "format": "ebk-theme-catalog-v1",
+      "generation": "77db6d24d48fb60189d1503b22ef5fb0"
     }
   ]
 }

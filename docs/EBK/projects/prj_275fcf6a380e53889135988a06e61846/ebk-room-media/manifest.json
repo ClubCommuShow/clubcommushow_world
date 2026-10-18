@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "format": "ebk-room-media-v1",
+  "generation": "81b6fa6eccdf04165f55db918df0d0cd",
+  "albums": [
+    {
+      "name": "サンプル",
+      "imageCount": 0,
+      "fps": 30,
+      "framesPerImage": 3,
+      "sampleFrame": 1,
+      "videoUrl": "",
+      "slideUrl": "",
+      "images": [],
+      "format": "ebk-room-slides-rgb-v1",
+      "alphaMode": "opaque",
+      "logicalWidth": 1920,
+      "logicalHeight": 1080,
+      "encodedWidth": 1920,
+      "encodedHeight": 1080
+    }
+  ]
+}
