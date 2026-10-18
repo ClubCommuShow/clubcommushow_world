@@ -1,0 +1,6 @@
+{
+  "protocol": "EventBasicKit.SlidePosterManifest",
+  "schemaVersion": 1,
+  "boards": [],
+  "displayCatalog": {"schemaVersion":1,"boards":[{"boardId":"world-poster-gallery","kind":"click","title":"相互ポスター","sourceKind":"posterGallery","enabled":true,"images":[]}]}
+}
