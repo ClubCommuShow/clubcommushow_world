@@ -218,14 +218,19 @@ def read_prepared_inputs(root, request):
     return result
 
 
-def inspect_png(path, clubcard):
+def inspect_image(path, clubcard):
     from PIL import Image
     if clubcard:
         require(path.stat().st_size <= 50 * 1024 * 1024, "ClubCard exceeds 50 MiB")
     with warnings.catch_warnings():
         warnings.simplefilter("error", Image.DecompressionBombWarning)
         with Image.open(path) as image:
-            require(image.format == "PNG", "Expected actual PNG bytes")
+            image_format = image.format
+            if clubcard:
+                require(image_format == "PNG", "Expected actual PNG bytes for ClubCard")
+            else:
+                require(image_format in ("PNG", "JPEG"),
+                        "Unsupported source image format: " + str(image_format))
             image.verify()
         with Image.open(path) as image:
             width, height = image.size
@@ -236,7 +241,7 @@ def inspect_png(path, clubcard):
             for index in range(frames):
                 image.seek(index)
                 image.load()
-    return {"format": "PNG", "width": width, "height": height, "frames": frames,
+    return {"format": image_format, "width": width, "height": height, "frames": frames,
             "fullDecode": True, "clubcardConstraintsChecked": clubcard}
 
 
@@ -269,8 +274,8 @@ def download_blob(rows, cache, opener=urlopen):
     hashes = file_hashes(target)
     require(hashes["bytes"] == row["sourceBytes"] and hashes["gitBlobSha"] == row["sourceBlobSha"],
             "Source blob bytes/Git SHA mismatch: " + row["sourcePath"])
-    png = inspect_png(target, any(item["purpose"] == "clubcard_image" for item in rows)) if row["sourceBytes"] else None
-    return target, {**hashes, "png": png}
+    image = inspect_image(target, any(item["purpose"] == "clubcard_image" for item in rows)) if row["sourceBytes"] else None
+    return target, {**hashes, "image": image}
 
 
 def atomic_write(path, source=None, data=None):

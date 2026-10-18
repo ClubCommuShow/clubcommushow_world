@@ -2740,5 +2740,147 @@
   },
   "independentReviewSha256": "a8708bf6a91cdc6a2ddaf9379c17a73d1545cdb31f0f5b60d469e19dffc0c87c",
   "scheduleRefreshReviewSha256": "bd03911664b240adf55d7cad763c53ddcf1108b80cb0fa57ceed91ec1dc569c2",
-  "scope": "One existing EBK project and its explicitly selected fixed venue. Copy pinned source assets and reviewed EBK manifests, generate media, validate and publish in one data commit. Preserve all unrelated settings and original source files."
+  "scope": "One existing EBK project and its explicitly selected fixed venue. Copy pinned source assets and reviewed EBK manifests, generate media, validate and publish in one data commit. Preserve all unrelated settings and original source files.",
+  "transferValidationRevision": 2,
+  "sourceImageFormatVerification": {
+    "initialRun": 39174463650,
+    "initialHead": "8ffb3d91148d8883eca93d4221493beccc550837",
+    "initialStop": "Before any destination data write: nine unique poster blobs had JPEG bytes under existing .png paths.",
+    "formats": {
+      "sourceHead": "8d17f7e13c9312408fe4af231a08e873ad38eceb",
+      "imagesModified": false,
+      "uniqueBlobs": 9,
+      "paths": 10,
+      "images": [
+        {
+          "sourceBlobSha": "38c865a4fb647cf332b2317e7215ac1311cfb706",
+          "sourcePaths": [
+            "images/posters/back/slot2.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 1696251,
+          "sha256": "9d13467cf93472231be9ce24798d8852b7d0dd4072633372a845bc50ef989f79",
+          "format": "JPEG",
+          "width": 1200,
+          "height": 1600,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "bf88de25a5cfbd528d23952f8540a7142cc4c71c",
+          "sourcePaths": [
+            "images/posters/back/slot5.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 364612,
+          "sha256": "9e1ebb50115d1ecf62f947fe5334b5328bee6b9f541be45f867a0d6c56e5eb39",
+          "format": "JPEG",
+          "width": 1536,
+          "height": 2048,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "4c300ef6b3e132d5b6d788059cbe9ffb7eac495e",
+          "sourcePaths": [
+            "images/posters/back/slot7.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 628402,
+          "sha256": "c81cb79504a62194c3e06bcd426ff2ff33bee094eaa873d2ac23ecf2b2bb04eb",
+          "format": "JPEG",
+          "width": 1024,
+          "height": 1536,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "4cbd68066656ce334a128c54cda3a60226faab8e",
+          "sourcePaths": [
+            "images/posters/back/slot9.png",
+            "images/posters/front/slot1.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 403311,
+          "sha256": "976242eafabfc77f11329e2b5428dfcf645373fb9b1f926f97ed7fd79051767f",
+          "format": "JPEG",
+          "width": 1240,
+          "height": 1754,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "b7edfc716c4cc91dd73a663a3555d20464400b55",
+          "sourcePaths": [
+            "images/posters/front/slot11.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 80380,
+          "sha256": "15bc5c154c61175c73256c95f98fb24b9a323a3f08da75f5f57590f6c9975f05",
+          "format": "JPEG",
+          "width": 481,
+          "height": 680,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "2067b00ca2d011cd9509147d0b5dae52da1231a5",
+          "sourcePaths": [
+            "images/posters/front/slot3.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 680321,
+          "sha256": "13576e11b945db19f8c1f10278c613b990336af03c5f5dc05f143bf10765902c",
+          "format": "JPEG",
+          "width": 1448,
+          "height": 2048,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "b047c82fb64c708c9671c0670964dcc65f4bc722",
+          "sourcePaths": [
+            "images/posters/front/slot7.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 158784,
+          "sha256": "652fc113e28c15146cd799e4fb8f4eb596f0e02ba9af0fb9b51139e9a9c8774e",
+          "format": "JPEG",
+          "width": 764,
+          "height": 1080,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "c2d5c9d61942489c9e3759b1f331b0c92cef64df",
+          "sourcePaths": [
+            "images/posters/front/slot9.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 161085,
+          "sha256": "02b20118cbc74bec19d0891d38a7830c46c4fde659033651342508e9d756a6cb",
+          "format": "JPEG",
+          "width": 688,
+          "height": 964,
+          "frames": 1,
+          "fullDecode": true
+        },
+        {
+          "sourceBlobSha": "0e98b45f6117f4a070dcf6e00daf5a3b5b42f991",
+          "sourcePaths": [
+            "images/posters/side/slot1.png"
+          ],
+          "purpose": "poster_image",
+          "bytes": 125602,
+          "sha256": "9cedb8964bd5076f1d40c48c138afabfa68ad5c97a8c48e3465163cdd9543bb5",
+          "format": "JPEG",
+          "width": 848,
+          "height": 1264,
+          "frames": 1,
+          "fullDecode": true
+        }
+      ]
+    },
+    "policy": "Preserve every original byte and path. Verify actual PNG/JPEG for non-card raster images; retain PNG and size/static checks for cards. All hashes, full decode, preservation and publication gates remain."
+  }
 }
