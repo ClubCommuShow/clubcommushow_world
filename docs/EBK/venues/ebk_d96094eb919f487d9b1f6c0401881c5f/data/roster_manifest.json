@@ -30,6 +30,19 @@
         "start": "20:20",
         "title": "第二土曜営業",
         "weekday": 6
+      },
+      {
+        "countAsVisit": true,
+        "countStaffWork": true,
+        "duration": 70,
+        "enabled": true,
+        "exportToSheets": true,
+        "kind": "Regular",
+        "nth": 3,
+        "sourceId": "ser_6d8ab4a147aac4d57b8fe5625a8d9b65",
+        "start": "20:20",
+        "title": "第三金曜営業",
+        "weekday": 5
       }
     ],
     "schemaVersion": 1,
