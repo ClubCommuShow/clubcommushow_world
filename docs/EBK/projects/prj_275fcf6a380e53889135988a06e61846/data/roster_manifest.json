@@ -17,6 +17,19 @@
         "start": "20:20",
         "title": "第一日曜営業",
         "weekday": 0
+      },
+      {
+        "countAsVisit": true,
+        "countStaffWork": true,
+        "duration": 70,
+        "enabled": true,
+        "exportToSheets": true,
+        "kind": "Regular",
+        "nth": 2,
+        "sourceId": "ser_e9fc835e98bd36796ce630e33f7c2d76",
+        "start": "20:20",
+        "title": "第二土曜営業",
+        "weekday": 6
       }
     ],
     "schemaVersion": 1,
