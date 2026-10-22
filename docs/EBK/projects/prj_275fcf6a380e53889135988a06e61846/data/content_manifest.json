@@ -327,175 +327,292 @@
       "contentId": "guide.title",
       "visibility": "public",
       "enabled": true,
-      "text": "Club Lumiere の楽しみ方"
+      "text": "Club Lumiere の楽しみ方",
+      "textJa": "Club Lumiere の楽しみ方",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "guide.first_visit.title",
       "visibility": "public",
       "enabled": true,
-      "text": "はじめての楽しみ方"
+      "text": "はじめての楽しみ方",
+      "textJa": "はじめての楽しみ方",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "guide.first_visit.body",
       "visibility": "public",
       "enabled": true,
-      "text": "1. プロフィールを確認・設定する\n2. 接客希望や過ごし方を選ぶ\n3. 気になる席やスタッフを選ぶ\n4. ゆっくり会話や雰囲気を楽しむ\n5. 困った時はスタッフを呼ぶ\n\n無理に会話を続けなくても大丈夫。自分のペースでゆったりお楽しみください。"
+      "text": "1. プロフィールを確認・設定する\n2. 接客希望や過ごし方を選ぶ\n3. 気になる席やスタッフを選ぶ\n4. ゆっくり会話や雰囲気を楽しむ\n5. 困った時はスタッフを呼ぶ\n\n無理に会話を続けなくても大丈夫。自分のペースでゆったりお楽しみください。",
+      "textJa": "1. プロフィールを確認・設定する\n2. 接客希望や過ごし方を選ぶ\n3. 気になる席やスタッフを選ぶ\n4. ゆっくり会話や雰囲気を楽しむ\n5. 困った時はスタッフを呼ぶ\n\n無理に会話を続けなくても大丈夫。自分のペースでゆったりお楽しみください。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "guide.photo_guide.title",
       "visibility": "public",
       "enabled": true,
-      "text": "写真撮影を楽しもう"
+      "text": "写真撮影を楽しもう",
+      "textJa": "写真撮影を楽しもう",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "guide.photo_guide.body",
       "visibility": "public",
       "enabled": true,
-      "text": "1. 撮影許可設定を確認する\n2. 撮影場所を決める\n3. 名札表示や撮影表示を調整する\n4. Camera Jackやロゴ表示を使う\n5. 集合写真や記念撮影を行う\n\n撮影前に周囲の方の許可を確認すると、より安心して楽しめます。"
+      "text": "1. 撮影許可設定を確認する\n2. 撮影場所を決める\n3. 名札表示や撮影表示を調整する\n4. Camera Jackやロゴ表示を使う\n5. 集合写真や記念撮影を行う\n\n撮影前に周囲の方の許可を確認すると、より安心して楽しめます。",
+      "textJa": "1. 撮影許可設定を確認する\n2. 撮影場所を決める\n3. 名札表示や撮影表示を調整する\n4. Camera Jackやロゴ表示を使う\n5. 集合写真や記念撮影を行う\n\n撮影前に周囲の方の許可を確認すると、より安心して楽しめます。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "notice.title",
       "visibility": "public",
       "enabled": true,
-      "text": "注意事項"
+      "text": "注意事項",
+      "textJa": "注意事項",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "notice.previsit.title",
       "visibility": "public",
       "enabled": true,
-      "text": "注意事項"
+      "text": "注意事項",
+      "textJa": "注意事項",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "notice.previsit.body",
       "visibility": "public",
       "enabled": true,
-      "text": "イベントのルール・撮影・接客に関する注意事項を入力してください。"
+      "text": "イベントのルール・撮影・接客に関する注意事項を入力してください。",
+      "textJa": "イベントのルール・撮影・接客に関する注意事項を入力してください。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "notice.photo.title",
       "visibility": "public",
       "enabled": true,
-      "text": "撮影について"
+      "text": "撮影について",
+      "textJa": "撮影について",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "notice.photo.body",
       "visibility": "public",
       "enabled": true,
-      "text": "撮影許可やSNS掲載ルールなどを案内できます。"
+      "text": "撮影許可やSNS掲載ルールなどを案内できます。",
+      "textJa": "撮影許可やSNS掲載ルールなどを案内できます。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "entry.rejoin_note",
       "visibility": "public",
       "enabled": true,
-      "text": "了承はこのインスタンスにつき1回。同じインスタンスへの再Joinでは再了承不要です。"
+      "text": "了承はこのインスタンスにつき1回。同じインスタンスへの再Joinでは再了承不要です。",
+      "textJa": "了承はこのインスタンスにつき1回。同じインスタンスへの再Joinでは再了承不要です。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "entry.rules",
       "visibility": "public",
       "enabled": true,
-      "text": "・周囲の方への思いやりを大切にお願いします。\n・強い言動や過度な接触はご遠慮ください。\n・撮影の際は周囲の許可を確認してください。\n・困ったことがあればスタッフまでお気軽にお声がけください。"
+      "text": "・周囲の方への思いやりを大切にお願いします。\n・強い言動や過度な接触はご遠慮ください。\n・撮影の際は周囲の許可を確認してください。\n・困ったことがあればスタッフまでお気軽にお声がけください。",
+      "textJa": "・周囲の方への思いやりを大切にお願いします。\n・強い言動や過度な接触はご遠慮ください。\n・撮影の際は周囲の許可を確認してください。\n・困ったことがあればスタッフまでお気軽にお声がけください。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.title",
       "visibility": "public",
       "enabled": true,
-      "text": "意思表示"
+      "text": "意思表示",
+      "textJa": "意思表示",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.talk_welcome.label",
       "visibility": "public",
       "enabled": true,
-      "text": "会話歓迎"
+      "text": "会話歓迎",
+      "textJa": "会話歓迎",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.talk_welcome.description",
       "visibility": "public",
       "enabled": true,
-      "text": "たくさん話しかけてもらって大丈夫です。"
+      "text": "たくさん話しかけてもらって大丈夫です。",
+      "textJa": "たくさん話しかけてもらって大丈夫です。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.slow_talk.label",
       "visibility": "public",
       "enabled": true,
-      "text": "ゆっくり話したい"
+      "text": "ゆっくり話したい",
+      "textJa": "ゆっくり話したい",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.slow_talk.description",
       "visibility": "public",
       "enabled": true,
-      "text": "ゆっくりしたペースで会話したいです。"
+      "text": "ゆっくりしたペースで会話したいです。",
+      "textJa": "ゆっくりしたペースで会話したいです。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.silence_ok.label",
       "visibility": "public",
       "enabled": true,
-      "text": "沈黙OK"
+      "text": "沈黙OK",
+      "textJa": "沈黙OK",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.silence_ok.description",
       "visibility": "public",
       "enabled": true,
-      "text": "会話が途切れても気にしません。"
+      "text": "会話が途切れても気にしません。",
+      "textJa": "会話が途切れても気にしません。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.topic_help.label",
       "visibility": "public",
       "enabled": true,
-      "text": "話題を振ってほしい"
+      "text": "話題を振ってほしい",
+      "textJa": "話題を振ってほしい",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.topic_help.description",
       "visibility": "public",
       "enabled": true,
-      "text": "話題を振ってもらえると助かります。"
+      "text": "話題を振ってもらえると助かります。",
+      "textJa": "話題を振ってもらえると助かります。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.want_order.label",
       "visibility": "public",
       "enabled": true,
-      "text": "注文したい"
+      "text": "注文したい",
+      "textJa": "注文したい",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.want_order.description",
       "visibility": "public",
       "enabled": true,
-      "text": "注文をしたいです。"
+      "text": "注文をしたいです。",
+      "textJa": "注文をしたいです。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.photo_ok.label",
       "visibility": "public",
       "enabled": true,
-      "text": "写真OK"
+      "text": "写真OK",
+      "textJa": "写真OK",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.photo_ok.description",
       "visibility": "public",
       "enabled": true,
-      "text": "写真撮影OKです。"
+      "text": "写真撮影OKです。",
+      "textJa": "写真撮影OKです。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.photo_ask.label",
       "visibility": "public",
       "enabled": true,
-      "text": "写真は確認して"
+      "text": "写真は確認して",
+      "textJa": "写真は確認して",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.photo_ask.description",
       "visibility": "public",
       "enabled": true,
-      "text": "撮影前にひと声かけてください。"
+      "text": "撮影前にひと声かけてください。",
+      "textJa": "撮影前にひと声かけてください。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.photo_ng.label",
       "visibility": "public",
       "enabled": true,
-      "text": "写真NG"
+      "text": "写真NG",
+      "textJa": "写真NG",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     },
     {
       "contentId": "intent.photo_ng.description",
       "visibility": "public",
       "enabled": true,
-      "text": "写真撮影はご遠慮ください。"
+      "text": "写真撮影はご遠慮ください。",
+      "textJa": "写真撮影はご遠慮ください。",
+      "textEn": "",
+      "textZh": "",
+      "textKo": ""
     }
-  ]
+  ],
+  "displayContentVersion": 1
 }
