@@ -31,6 +31,31 @@ def main():
     a=ap.parse_args()
 
     src=json.loads(Path(a.manifest).read_text(encoding='utf-8'))
+    # Explicit GitHub selections are authoritative, including an empty list and
+    # disabled rows. Files left in sample folders must not silently enable posters.
+    if 'posters' in src:
+        if not isinstance(src['posters'],list):
+            raise ValueError('posters must be an array')
+        aliases={folder:category for folder,category in POSTER_FOLDERS}
+        aliases.update({category.lower():category for _,category in POSTER_FOLDERS})
+        posters=[]
+        seen=set()
+        for item in src['posters']:
+            if not isinstance(item,dict): raise ValueError('poster row must be an object')
+            row=dict(item)
+            category=str(row.get('category',''))
+            row['category']=aliases.get(category.lower(),category)
+            slot=row.get('slot')
+            if type(slot) is not int or slot<0: raise ValueError('poster slot must be non-negative')
+            key=(row['category'],slot)
+            if key in seen: raise ValueError(f'duplicate poster: {key}')
+            seen.add(key)
+            posters.append(row)
+        out=dict(src);out['posters']=posters
+        Path(a.output).parent.mkdir(parents=True,exist_ok=True)
+        Path(a.output).write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        print('generated from explicit poster settings:',len(posters))
+        return
     known={c.lower() for _,c in POSTER_FOLDERS}
     posters=[]
     for item in src.get('posters',[]):

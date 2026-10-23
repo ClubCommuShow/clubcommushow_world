@@ -66,15 +66,31 @@ def generation_marker(path, generation, width, height):
         draw.rectangle((x0, y0, x1, y1), fill='white' if bit == '1' else 'black')
     image.save(path)
 
+def slide_records(root):
+    return slides.slide_records(root)
+
+
 def build_common(root, output, base):
     manifest = read_json(root / 'data/roster_manifest.json')
+    delivery = slides.delivery_settings(root)
+    columns,rows = (5,2) if delivery['layout']=='tile' else (1,1)
+    dual_matte = delivery['alphaMode']=='dual-matte'
+    video_format = 'ebk-dual-matte-sbs-srgb-v1' if dual_matte else 'ebk-roster-v1'
+    if not delivery['enabled']:
+        result=copy.deepcopy(manifest)
+        result['videoRoster']={'enabled':False,'status':'individual-images'}
+        write_json(output/'manifest.json',result)
+        return {'id':'common','manifestPath':'common/manifest.json','videoPath':'','format':'ebk-roster-v1'},[]
     from prepare_video_roster_manifest import discover, POSTER_FOLDERS
     posters = list(manifest.get('posters', []))
     known = {(r.get('category'), r.get('slot')) for r in posters if isinstance(r, dict)}
-    for folder, category in POSTER_FOLDERS:
-        for slot in discover(root / 'images/posters' / folder):
-            if (category, slot) not in known:
-                posters.append({'category': category, 'slot': slot, 'enabled': True})
+    # A saved list (including []) is authoritative. Folder discovery is only for
+    # legacy inputs that have no poster configuration at all.
+    if 'posters' not in manifest:
+        for folder, category in POSTER_FOLDERS:
+            for slot in discover(root / 'images/posters' / folder):
+                if (category, slot) not in known:
+                    posters.append({'category': category, 'slot': slot, 'enabled': True})
     manifest['posters'] = posters
     records = []
     skipped = []
@@ -102,31 +118,35 @@ def build_common(root, output, base):
                 skipped.append(key)
                 continue  # Missing keys use the Wizard's local image.
             records.append((key, path))
+    slide_images,missing_slides=slide_records(root)
+    records+=slide_images;skipped+=missing_slides
     if len(records) > 128:
         raise ValueError('共通画像は128枠までです')
     output.mkdir(parents=True, exist_ok=True)
     if not records:
         return None, skipped
     with tempfile.TemporaryDirectory(prefix='ebk-common-') as tmp:
+        logical_width,logical_height=1920,1080
         frames = []
         legacy_lines = []
         generation_lines = []
         hashes = []
+        frames,geometry=slides.contact_sheets([path for key,path in records],Path(tmp)/'sheets',logical_width,logical_height,columns,rows)
         for i, (key, path) in enumerate(records):
-            with Image.open(path) as image:
-                image = ImageOps.exif_transpose(image)
-                width, height = image.size
-                frame = Path(tmp) / f'{i:04}.png'
-                image.convert('RGB').resize((1280, 720), Image.Resampling.LANCZOS).save(frame)
-            frames.append(frame)
+            item=geometry[i];width=item['sourceWidth'];height=item['sourceHeight']
             address = base + '/' + quote(path.relative_to(root).as_posix(), safe='/')
-            legacy_frame = i * 3 + 1
-            generation_frame = (i + 1) * 3 + 1
-            legacy_lines.append(f'{legacy_frame}|{key}|{address}|aspect={width/height:.8f}|width={width}|height={height}|fit=stretch|sample={legacy_frame/30:.8f}|bad=0')
-            generation_lines.append(f'{generation_frame}|{key}|{address}|aspect={width/height:.8f}|width={width}|height={height}|fit=stretch|sample={generation_frame/30:.8f}|bad=0')
+            legacy_frame = item['sheet'] * 3 + 1
+            generation_frame = (item['sheet'] + 1) * 3 + 1
+            x,y,w,h=item['uv']
+            metadata=f'{w:.8f}|{h:.8f}|{x:.8f}|{y:.8f}|aspect={width/height:.8f}|width={width}|height={height}|fit=contain|tile={item["tile"]}|sheet={item["sheet"]}|bad=0'
+            legacy_lines.append(f'{legacy_frame}|{key}|{address}|{metadata}|sample={(legacy_frame+.5)/30:.8f}')
+            generation_lines.append(f'{generation_frame}|{key}|{address}|{metadata}|sample={(generation_frame+.5)/30:.8f}')
             hashes.append(hashlib.sha256(path.read_bytes()).hexdigest())
         generation_payload = {
-            'format': 'ebk-roster-v1',
+            'format': video_format,
+            'sheetColumns':columns,'sheetRows':rows,
+            'layoutVersion':2,'deduplicatePixels':True,
+            'logicalWidth':logical_width,'logicalHeight':logical_height,
             'fps': 30,
             'framesPerEntry': 3,
             'sampleFrame': 1,
@@ -139,13 +159,13 @@ def build_common(root, output, base):
         video_name = 'roster_' + generation + '.mp4'
         frame_map_name = 'frame_map_' + generation + '.txt'
         marker = Path(tmp) / 'generation.png'
-        generation_marker(marker, generation, 1280, 720)
+        generation_marker(marker, generation, logical_width, logical_height)
         # New immutable URL: 3 marker frames first, then the ordinary 3-frame entries.
-        slides.encode([marker] + frames, output / video_name, 1280, 720)
+        slides.encode([marker] + frames, output / video_name, logical_width, logical_height, dual_matte)
         video_sha256 = hashlib.sha256((output / video_name).read_bytes()).hexdigest()
         # Fixed compatibility URL deliberately keeps the old frame layout without the
         # marker. Existing worlds using roster.mp4 + frame_map.txt therefore do not shift.
-        slides.encode(frames, output / 'roster.mp4', 1280, 720)
+        slides.encode(frames, output / 'roster.mp4', logical_width, logical_height, dual_matte)
     result = copy.deepcopy(manifest)
     for row in result.get('members', []):
         if not isinstance(row, dict) or type(row.get('slot')) is not int or not row.get('category'):
@@ -153,9 +173,12 @@ def build_common(root, output, base):
         path = source_image(root, row, 'member', base)
         row['portraitUrl'] = '' if path is None else base + '/' + quote(path.relative_to(root).as_posix(), safe='/')
     result['videoRoster'] = {
-        'enabled': True, 'status': 'ready', 'generation': generation, 'format': 'ebk-roster-v1',
+        'enabled': True, 'status': 'ready', 'generation': generation, 'format': video_format,
         'fps': 30, 'framesPerEntry': 3, 'sampleFrame': 1,
-        'generationMarkerFrame': 1, 'frameCount': (len(records) + 1) * 3,
+        'generationMarkerFrame': 1, 'frameCount': (len(frames) + 1) * 3,
+        'sheetColumns':columns,'sheetRows':rows,'sheetCount':len(frames),
+        'logicalWidth':logical_width,'logicalHeight':logical_height,
+        'encodedWidth':logical_width*(2 if dual_matte else 1),'encodedHeight':logical_height,
         'videoUrl': base + '/common/' + video_name,
         'frameMapUrl': base + '/common/' + frame_map_name,
         'sha256': video_sha256
