@@ -38009,6 +38009,96 @@
       "en": "(* Required) marks essential Core features.\nThey remain ON even when disabling a pack or all features.",
       "zh": "（＊必需）表示Core基本功能。\n单独关闭或整包关闭时仍保持开启。",
       "ko": "(* 필수)는 Core 기본 기능입니다.\nOFF 조작이나 팩 전체 OFF에도 유지됩니다."
+    },
+    {
+      "key": "clubcard.exchange.not_ready",
+      "category": "ClubCard",
+      "ja": "交換の準備ができていません",
+      "en": "Exchange is not ready",
+      "zh": "兑换尚未准备就绪",
+      "ko": "교환 준비가 되지 않았습니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.loading",
+      "category": "ClubCard",
+      "ja": "セーブデータを読み込み中です",
+      "en": "Loading save data...",
+      "zh": "正在读取存档...",
+      "ko": "저장 데이터를 불러오는 중입니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.reveal_pending",
+      "category": "ClubCard",
+      "ja": "ガチャの開封完了後に交換できます",
+      "en": "Finish opening the cards before exchanging",
+      "zh": "请先完成卡包开封再兑换",
+      "ko": "카드 개봉을 마친 후 교환할 수 있습니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.card_missing",
+      "category": "ClubCard",
+      "ja": "カードが見つかりません",
+      "en": "Card not found",
+      "zh": "未找到卡片",
+      "ko": "카드를 찾을 수 없습니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.invalid_price",
+      "category": "ClubCard",
+      "ja": "交換ポイントの設定を確認してください",
+      "en": "Check the exchange point settings",
+      "zh": "请检查兑换点数设置",
+      "ko": "교환 포인트 설정을 확인해 주세요",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.insufficient",
+      "category": "ClubCard",
+      "ja": "ポイントが不足しています",
+      "en": "Not enough points",
+      "zh": "点数不足",
+      "ko": "포인트가 부족합니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.refunded",
+      "category": "ClubCard",
+      "ja": "所持済みのため、ポイントを返却しました",
+      "en": "Already owned. Points refunded.",
+      "zh": "已拥有此卡，点数已退还",
+      "ko": "이미 보유한 카드이므로 포인트를 반환했습니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.completed",
+      "category": "ClubCard",
+      "ja": "交換しました",
+      "en": "Exchanged",
+      "zh": "兑换完成",
+      "ko": "교환했습니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.database_missing",
+      "category": "ClubCard",
+      "ja": "カードデータが未設定です",
+      "en": "Card database is not set",
+      "zh": "尚未设置卡片数据",
+      "ko": "카드 데이터가 설정되지 않았습니다",
+      "enabled": true
+    },
+    {
+      "key": "clubcard.exchange.points_summary",
+      "category": "ClubCard",
+      "ja": "必要 {required} pt  /  所持 {available} pt",
+      "en": "Need {required} pt  /  Have {available} pt",
+      "zh": "需要 {required} pt  /  持有 {available} pt",
+      "ko": "필요 {required} pt  /  보유 {available} pt",
+      "enabled": true
     }
   ],
   "revision": "ui-localization-20261023"
