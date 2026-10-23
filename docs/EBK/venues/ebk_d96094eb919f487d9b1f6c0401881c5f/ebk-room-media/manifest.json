@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "format": "ebk-room-media-v1",
-  "generation": "e865dbfb51515b2b5c93da1ebe1b86ff",
+  "generation": "a3c8af67b29751c3ef469c28fc4e70ae",
   "albums": [
     {
       "name": "サンプル",
@@ -12,11 +12,11 @@
       "videoUrl": "",
       "slideUrl": "",
       "images": [],
-      "format": "ebk-room-slides-rgb-v1",
-      "alphaMode": "opaque",
+      "format": "ebk-dual-matte-sbs-srgb-v1",
+      "alphaMode": "dual-matte-sbs-srgb-v1",
       "logicalWidth": 1920,
       "logicalHeight": 1080,
-      "encodedWidth": 1920,
+      "encodedWidth": 3840,
       "encodedHeight": 1080
     },
     {
@@ -25,18 +25,24 @@
       "fps": 30,
       "framesPerImage": 3,
       "sampleFrame": 1,
-      "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_1dc782575a5a02ad7bde1d1cfe1b7f9c.mp4",
-      "slideUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_1dc782575a5a02ad7bde1d1cfe1b7f9c.mp4?ebk-slides=3x30&ebk-alpha=dual-matte-sbs-srgb-v1",
+      "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_e261731136b8cd58b11f95f2ec62d46c.mp4",
+      "slideUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_e261731136b8cd58b11f95f2ec62d46c.mp4?ebk-slides=3x30&ebk-cols=5&ebk-rows=2&ebk-images=1&ebk-width=1920&ebk-height=1080&ebk-alpha=dual-matte-sbs-srgb-v1",
       "images": [
         {
           "file": "cardback2.png",
           "sourceBlobSha": "db02910854e68c785d6e51bb5e2b7f47921f1086",
           "sampleFrame": 1,
-          "sampleTimeSeconds": 0.03333333333333333,
+          "sampleTimeSeconds": 0.05,
           "sourceWidth": 1080,
           "sourceHeight": 1509,
           "aspect": 0.7157057654075547,
-          "fit": "stretch"
+          "fit": "contain",
+          "uv": [
+            0.0010416666666666667,
+            0.5046296296296297,
+            0.19791666666666666,
+            0.49166666666666664
+          ]
         }
       ],
       "format": "ebk-dual-matte-sbs-srgb-v1",
@@ -45,9 +51,12 @@
       "logicalHeight": 1080,
       "encodedWidth": 3840,
       "encodedHeight": 1080,
-      "generation": "1dc782575a5a02ad7bde1d1cfe1b7f9c",
+      "generation": "e261731136b8cd58b11f95f2ec62d46c",
       "frameCount": 3,
-      "sha256": "9209c991204e1ad5d47d8e89bd88049a55dc4243bbb0bdd404186125d62779e1"
+      "sheetCount": 1,
+      "sheetColumns": 5,
+      "sheetRows": 2,
+      "sha256": "612fba0bedc0b0018a0ead706048d83bb849d2c46a7b646ed05c99a5f843590d"
     }
   ]
 }

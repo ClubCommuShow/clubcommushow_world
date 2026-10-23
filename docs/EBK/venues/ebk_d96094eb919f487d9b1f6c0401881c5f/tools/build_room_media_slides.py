@@ -103,6 +103,78 @@ def discover(source: Path):
     return albums
 
 
+def delivery_settings(root):
+    path=Path(root)/'data/video_delivery_settings.json'
+    value=json.loads(path.read_text(encoding='utf-8-sig')) if path.is_file() else {}
+    if value.get('schemaVersion',1)!=1 or type(value.get('enabled',True)) is not bool:
+        raise ValueError('Invalid video delivery settings')
+    if value.get('layout','tile') not in ('tile','single') or value.get('alphaMode','dual-matte') not in ('dual-matte','opaque'):
+        raise ValueError('Unknown video layout or alpha mode')
+    return {'enabled':value.get('enabled',True),'layout':value.get('layout','tile'),'alphaMode':value.get('alphaMode','dual-matte')}
+
+
+def slide_records(root):
+    path=root/'data/slide_poster_manifest.json'
+    if not path.is_file(): return [],[]
+    manifest=json.loads(path.read_text(encoding='utf-8-sig'))
+    settings={row['boardId']:row for row in manifest.get('boards',[]) if isinstance(row,dict) and isinstance(row.get('boardId'),str)}
+    records=[];missing=[];seen=set()
+    for board in manifest.get('displayCatalog',{}).get('boards',[]):
+        board_id=board.get('boardId','');setting=settings.get(board_id)
+        if setting is None or not setting.get('enabled',True): continue
+        if not board_id or '|' in board_id: raise ValueError('Invalid slide board key')
+        images=[] if board.get('sourceKind')=='posterGallery' else list(board.get('images',[]))
+        images+=list(setting.get('additionalImages',[]))
+        for image in images:
+            if not image.get('enabled',True): continue
+            index=image.get('index');relative=image.get('imagePath','')
+            if type(index) is not int or not 0<=index<2112: raise ValueError('Invalid slide image index')
+            key=f'slide|{board_id}|{index}'
+            if key in seen: raise ValueError('Duplicate slide image key: '+key)
+            seen.add(key)
+            if not relative: continue
+            candidate=root/relative
+            if not candidate.resolve().is_relative_to(root.resolve()): raise ValueError('Slide image escapes media root')
+            if candidate.is_file():records.append((key,candidate))
+            else:missing.append(key)
+    return records,missing
+
+
+def contact_sheets(paths, folder, width=1920, height=1080, columns=5, rows=2,deduplicate=True):
+    """RGBA sheets and exact per-image crops in Unity's bottom-left UV space."""
+    folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
+    frames=[];geometry=[];per_sheet=columns*rows
+    unique=[];mapping=[];seen={}
+    for path in paths:
+        if not deduplicate:
+            mapping.append(len(unique));unique.append(path);continue
+        with Image.open(path) as source:
+            image=ImageOps.exif_transpose(source).convert('RGBA')
+            digest=hashlib.sha256(image.width.to_bytes(4,'big')+image.height.to_bytes(4,'big')+image.tobytes()).digest()
+        if digest not in seen:seen[digest]=len(unique);unique.append(path)
+        mapping.append(seen[digest])
+    paths=unique
+    if not 1<=columns<=8 or not 1<=rows<=8: raise ValueError('Invalid tile layout')
+    for first in range(0,len(paths),per_sheet):
+        sheet=Image.new('RGBA',(width,height),(0,0,0,0))
+        for tile,path in enumerate(paths[first:first+per_sheet]):
+            left=(tile%columns)*width//columns;right=(tile%columns+1)*width//columns
+            top=(tile//columns)*height//rows;bottom=(tile//columns+1)*height//rows
+            with Image.open(path) as source:
+                if getattr(source,'n_frames',1)!=1: raise ValueError('Static images required')
+                image=ImageOps.exif_transpose(source).convert('RGBA')
+                sw,sh=image.size
+                # A transparent gutter prevents filtering from sampling another tile.
+                image.thumbnail((right-left-4,bottom-top-4),Image.Resampling.LANCZOS)
+                x=left+(right-left-image.width)//2;y=top+(bottom-top-image.height)//2
+                sheet.paste(image,(x,y))
+                geometry.append({'sheet':len(frames),'tile':tile,'aspect':sw/sh,
+                    'sourceWidth':sw,'sourceHeight':sh,
+                    'uv':[x/width,(height-y-image.height)/height,image.width/width,image.height/height]})
+        target=folder/f'sheet_{len(frames):04d}.png';sheet.save(target);frames.append(target)
+    return frames,[dict(geometry[index]) for index in mapping]
+
+
 def frame_bytes(path: Path, width: int, height: int, dual_matte=False):
     with Image.open(path) as source:
         if getattr(source, "n_frames", 1) != 1:
@@ -212,6 +284,8 @@ def build(root: Path, config_path: Path):
     config = json.loads(config_path.read_text(encoding="utf-8-sig"))
     if config.get("schemaVersion") != 1:
         raise ValueError("room_media_slides.jsonのschemaVersionは1を指定してください")
+    delivery = delivery_settings(root)
+    columns,rows = (5,2) if delivery["layout"] == "tile" else (1,1)
     alpha_mode = config.get("alphaMode", "opaque")
     if alpha_mode not in ("opaque", "auto", "dual-matte"):
         raise ValueError("alphaModeはopaque/auto/dual-matteを指定してください")
@@ -241,7 +315,7 @@ def build(root: Path, config_path: Path):
         videos.mkdir(parents=True)
         result = []
         for name, images in albums:
-            dual_matte = alpha_mode == "dual-matte" or (alpha_mode == "auto" and has_alpha(images))
+            dual_matte = delivery["alphaMode"] == "dual-matte"
             media_format = "ebk-dual-matte-sbs-srgb-v1" if dual_matte else "ebk-room-slides-rgb-v1"
             entry = {"name": name, "imageCount": len(images), "fps": FPS,
                      "framesPerImage": FRAMES, "sampleFrame": 1, "videoUrl": "", "slideUrl": "",
@@ -250,6 +324,7 @@ def build(root: Path, config_path: Path):
                      "logicalWidth": width, "logicalHeight": height,
                      "encodedWidth": width * 2 if dual_matte else width, "encodedHeight": height}
             if images:
+                sheet_frames,tile_geometry=contact_sheets(images,Path(temporary)/'sheets',width,height,columns,rows,deduplicate=False)
                 image_rows = []
                 for i, p in enumerate(images):
                     with Image.open(p) as source:
@@ -258,15 +333,17 @@ def build(root: Path, config_path: Path):
                         oriented = ImageOps.exif_transpose(source)
                         source_width, source_height = oriented.size
                     image_rows.append({"file": p.name, "sourceBlobSha": git_blob_sha(p),
-                                       "sampleFrame": i * FRAMES + 1,
-                                       "sampleTimeSeconds": (i * FRAMES + 1) / FPS,
+                                       "sampleFrame": tile_geometry[i]['sheet'] * FRAMES + 1,
+                                       "sampleTimeSeconds": (tile_geometry[i]['sheet'] * FRAMES + 1.5) / FPS,
                                        "sourceWidth": source_width, "sourceHeight": source_height,
                                        "aspect": source_width / source_height,
-                                       "fit": "stretch"})
+                                       "fit": "contain", "uv":tile_geometry[i]['uv']})
                 generation_payload = {
                     "name": name, "format": media_format, "fps": FPS,
                     "framesPerImage": FRAMES, "sampleFrame": 1,
                     "logicalWidth": width, "logicalHeight": height,
+                    "sheetColumns":columns,"sheetRows":rows,
+                    "layoutVersion":2,"deduplicatePixels":False,
                     "images": [{"file": row["file"], "sourceBlobSha": row["sourceBlobSha"]}
                                for row in image_rows]
                 }
@@ -275,15 +352,16 @@ def build(root: Path, config_path: Path):
                 ).encode("utf-8")).hexdigest()[:32]
                 generated_name = name + "_" + generation + ".mp4"
                 video = videos / generated_name
-                encode(images, video, width, height, dual_matte)
+                encode(sheet_frames, video, width, height, dual_matte)
                 # Keep the old fixed name for existing worlds. New manifests use the
                 # content-addressed URL so a cached old video cannot be paired with new metadata.
                 shutil.copyfile(video, videos / (name + ".mp4"))
                 url = base + "/ebk-room-media/videos/" + quote(generated_name, safe="")
-                slide_url = url + "?ebk-slides=3x30" + ("&ebk-alpha=dual-matte-sbs-srgb-v1" if dual_matte else "")
+                slide_url = url + f"?ebk-slides=3x30&ebk-cols={columns}&ebk-rows={rows}&ebk-images={len(images)}&ebk-width={width}&ebk-height={height}" + ("&ebk-alpha=dual-matte-sbs-srgb-v1" if dual_matte else "")
                 entry.update(videoUrl=url, slideUrl=slide_url,
                              generation=generation,
-                             frameCount=len(images) * FRAMES,
+                             frameCount=len(sheet_frames) * FRAMES,
+                             sheetCount=len(sheet_frames),sheetColumns=5,sheetRows=2,
                              sha256=hashlib.sha256(video.read_bytes()).hexdigest())
                 entry["images"] = image_rows
             result.append(entry)

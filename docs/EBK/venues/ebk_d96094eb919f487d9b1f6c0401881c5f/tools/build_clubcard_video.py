@@ -165,7 +165,7 @@ def sheet_image(paths, width=SHEET_WIDTH, height=SHEET_HEIGHT):
     cell UV back onto the normal card surface, restoring the card's display aspect
     while allowing ten cards to share one captured VideoRoster texture.
     """
-    image = Image.new('RGB', (width, height), 'black')
+    image = Image.new('RGBA', (width, height), (0,0,0,0))
     resampling = getattr(Image, 'Resampling', Image).LANCZOS
     for index, path in enumerate(paths):
         if index >= CARDS_PER_SHEET:
@@ -180,9 +180,7 @@ def sheet_image(paths, width=SHEET_WIDTH, height=SHEET_HEIGHT):
         y1 = (row + 1) * height // SHEET_ROWS
         with Image.open(path) as source:
             frame = ImageOps.exif_transpose(source).convert('RGBA').resize((x1 - x0, y1 - y0), resampling)
-            cell = Image.new('RGB', (x1 - x0, y1 - y0), 'black')
-            cell.paste(frame, (0, 0), frame)
-            image.paste(cell, (x0, y0))
+            image.paste(frame, (x0, y0))
     return image
 
 
@@ -285,6 +283,7 @@ def build(root, base_url):
         'commonTextures': common_hashes,
         'revision': manifest['revision'],
         'format': 'ebk-clubcards-v2',
+        'encoding': 'ebk-dual-matte-sbs-srgb-v1',
         'sheetLayout': normalized_layout
     }, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()[:32]
     result = copy.deepcopy(manifest)
@@ -302,6 +301,8 @@ def build(root, base_url):
             'sampleTimeSeconds': sample_frame / 30
         }
     result['videoRoster'] = {'status': 'ready', 'generation': generation, 'format': 'ebk-clubcards-v2',
+                            'encoding': 'ebk-dual-matte-sbs-srgb-v1',
+                            'encodedWidth': SHEET_WIDTH*2, 'encodedHeight': SHEET_HEIGHT,
                             'videoUrl': base_url + '/ebk-clubcards/cards.mp4',
                             'frameMapUrl': base_url + '/ebk-clubcards/frame_map.txt',
                             'fps': 30, 'framesPerEntry': 3, 'sampleFrame': 1,
@@ -327,7 +328,7 @@ def build(root, base_url):
             sheet_image(sheet_paths[sheet]).save(target_sheet)
             sheet_frames.append(target_sheet)
         encode([header] + sheet_frames + [item[3] for item in common_images],
-               stage / 'cards.mp4', SHEET_WIDTH, SHEET_HEIGHT)
+               stage / 'cards.mp4', SHEET_WIDTH, SHEET_HEIGHT, True)
         result['videoRoster']['sha256'] = hashlib.sha256((stage / 'cards.mp4').read_bytes()).hexdigest()
         (stage / 'manifest.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         lines = ['1|clubcard|generation|0|generation|1|1|0|0|frames=3|sampleFrame=1|sample=0.033333|bad=0']

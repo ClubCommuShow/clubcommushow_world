@@ -1354,8 +1354,11 @@
   ],
   "videoRoster": {
     "status": "ready",
-    "generation": "92b0ae4f8b1e284d7541d32d0338fb14",
+    "generation": "3f72b34d48f2ad387823b225f17ca011",
     "format": "ebk-clubcards-v2",
+    "encoding": "ebk-dual-matte-sbs-srgb-v1",
+    "encodedWidth": 2560,
+    "encodedHeight": 768,
     "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-clubcards/cards.mp4",
     "frameMapUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-clubcards/frame_map.txt",
     "fps": 30,
@@ -1405,7 +1408,7 @@
         "sampleTimeSeconds": 1.9333333333333333
       }
     },
-    "sha256": "1e56e9c7c128003cdeafb43555be6ff9f27905bf691deebcfd5ec2c15245f2de"
+    "sha256": "b7d8a2cc77e5bf1aecd109c31d24416ec64e20879fe982b4d24671c13f96b73b"
   },
   "sheetLayout": {
     "columns": 5,

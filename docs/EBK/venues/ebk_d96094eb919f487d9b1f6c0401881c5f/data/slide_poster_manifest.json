@@ -1,6 +1,55 @@
 {
   "protocol": "EventBasicKit.SlidePosterManifest",
   "schemaVersion": 1,
-  "boards": [],
-  "displayCatalog": {"schemaVersion":1,"boards":[{"boardId":"world-poster-gallery","kind":"click","title":"相互ポスター","sourceKind":"posterGallery","enabled":true,"images":[]}]}
+  "boards": [
+    {
+      "boardId": "FeedPoster",
+      "enabled": true,
+      "title": "ポスター一覧",
+      "autoPlay": true,
+      "transition": "paper",
+      "displaySeconds": 6,
+      "transitionSeconds": 1.2,
+      "stripCount": 3,
+      "stripDelaySeconds": 0.18,
+      "direction": "up",
+      "showControls": false,
+      "presentationOnly": true,
+      "order": [],
+      "additionalImages": []
+    },
+    {
+      "boardId": "FadePoster",
+      "enabled": true,
+      "title": "スタッフキャスト一覧",
+      "autoPlay": true,
+      "transition": "fade",
+      "displaySeconds": 6,
+      "transitionSeconds": 0.8,
+      "stripCount": 3,
+      "stripDelaySeconds": 0.18,
+      "direction": "up",
+      "showControls": false,
+      "presentationOnly": true,
+      "order": [],
+      "additionalImages": []
+    },
+    {
+      "boardId": "ClickPoster",
+      "enabled": true,
+      "title": "ポスター一覧",
+      "autoPlay": false,
+      "transition": "fade",
+      "displaySeconds": 6,
+      "transitionSeconds": 1.2,
+      "stripCount": 3,
+      "stripDelaySeconds": 0.18,
+      "direction": "up",
+      "showControls": true,
+      "presentationOnly": false,
+      "order": [],
+      "additionalImages": []
+    }
+  ],
+  "displayCatalog": {"schemaVersion":1,"boards":[{"boardId":"FeedPoster","kind":"slide","title":"ポスター一覧","sourceKind":"localImages","enabled":true,"images":[]},{"boardId":"FadePoster","kind":"slide","title":"スタッフキャスト一覧","sourceKind":"localImages","enabled":true,"images":[]},{"boardId":"ClickPoster","kind":"slide","title":"ポスター一覧","sourceKind":"localImages","enabled":true,"images":[]},{"boardId":"world-poster-gallery","kind":"click","title":"相互ポスター","sourceKind":"posterGallery","enabled":false,"images":[]}]}
 }

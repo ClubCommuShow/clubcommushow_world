@@ -5,22 +5,22 @@
     {
       "id": "common",
       "manifestPath": "common/manifest.json",
-      "videoPath": "common/roster_3366f743e41097f057bf75b8767d0520.mp4",
+      "videoPath": "common/roster_b6f81c23180367bdb704a8d30fd7adee.mp4",
       "format": "ebk-roster-v1",
-      "generation": "3366f743e41097f057bf75b8767d0520"
+      "generation": "b6f81c23180367bdb704a8d30fd7adee"
     },
     {
       "id": "clubcards",
       "manifestPath": "ebk-clubcards/manifest.json",
       "videoPath": "ebk-clubcards/cards.mp4",
       "format": "ebk-clubcards-v2",
-      "generation": "92b0ae4f8b1e284d7541d32d0338fb14"
+      "generation": "3f72b34d48f2ad387823b225f17ca011"
     },
     {
       "id": "roomMedia",
       "manifestPath": "ebk-room-media/manifest.json",
       "format": "ebk-room-media-v1",
-      "generation": "e865dbfb51515b2b5c93da1ebe1b86ff"
+      "generation": "a3c8af67b29751c3ef469c28fc4e70ae"
     },
     {
       "id": "themes",
