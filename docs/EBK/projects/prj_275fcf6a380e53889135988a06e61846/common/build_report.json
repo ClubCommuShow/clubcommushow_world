@@ -1,5 +1,5 @@
 {
-  "captured": 93,
+  "captured": 92,
   "fallbackKeys": [],
   "sourceHashes": [
     "27b033eb369860c857bc62a7b293584f18aa43733a3c2ccb35fdeaf5214c1461",
@@ -28,7 +28,6 @@
     "cdbe4ffa12c412558de8cbfda966e36b2729d53a7292bf78c10cfec711733889",
     "a00b6274470c5c742133ebf758e5d7eb7fe806d3a799e376a2c9fd7187145815",
     "16867385e0f809c1cd2022a9a5c101cfcd9e55220dc87f581c7adc8525af0518",
-    "5dddff0aba418af4936a23a91c4ca1598710a872ea263b5924e0660613c91f7c",
     "f34411f66890da94822c894fc4e721bda54ae6a03ed5c7caa55608d903e0dc2c",
     "4e73fbe7fc7453e29247bdd89fb651f072470a58cc291ea1b646597c31f16acd",
     "211c0ceb39184e011deb9fa8e0c2f54351bdb2e527d8f1ecf18f76c2e32528e6",
@@ -96,7 +95,38 @@
     "96d00d82b4329887d6e855e2536646bf809658f59c8d4bafafe3d07f0ae1bace",
     "0f79a8cb8cf85cae7cd5a336180c8dc014d840f871f5700d0cdec60e2bf9fdb3"
   ],
-  "ignoredPortraitUrls": [],
-  "generation": "b6f81c23180367bdb704a8d30fd7adee",
-  "videoSha256": "fcc1c6316ae8c942cf9867c072ee22ffe1afa8369e1861ec0378ed7ed0d40877"
+  "ignoredPortraitUrls": [
+    {
+      "key": "member|UpperCast|1",
+      "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png",
+      "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot1.png"
+    },
+    {
+      "key": "member|UpperCast|2",
+      "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png",
+      "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png"
+    },
+    {
+      "key": "member|UpperCast|3",
+      "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png",
+      "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png"
+    },
+    {
+      "key": "member|UpperCast|4",
+      "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
+      "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png"
+    },
+    {
+      "key": "member|UpperCast|5",
+      "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
+      "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png"
+    },
+    {
+      "key": "member|UpperCast|6",
+      "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png",
+      "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png"
+    }
+  ],
+  "generation": "97b28b0074430c5267bde12815b0c28e",
+  "videoSha256": "615f8b6ca03f31130c18fa7d944300d45a2ed0e92a5e1b3354d530b6a70bcde0"
 }
