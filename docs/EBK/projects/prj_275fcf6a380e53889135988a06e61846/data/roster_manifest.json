@@ -587,12 +587,12 @@
         },
         "portrait": {
           "crop": {
-            "height": 1,
-            "width": 1,
-            "x": 0,
-            "y": 0
+            "height": 0.5,
+            "width": 0.5,
+            "x": 0.25,
+            "y": 0.4
           },
-          "framing": "bust",
+          "framing": "custom",
           "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/staffleader/slot0.png"
         },
         "profile": {
@@ -1880,7 +1880,7 @@
             "x": 0,
             "y": 0
           },
-          "framing": "custom",
+          "framing": "bust",
           "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot4.png"
         },
         "profile": {
@@ -1936,7 +1936,7 @@
             "x": 0,
             "y": 0
           },
-          "framing": "custom",
+          "framing": "bust",
           "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/downercast/slot5.png"
         },
         "profile": {
