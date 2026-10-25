@@ -349,7 +349,7 @@
           "enabled": true
         }
       ],
-      "sourceKind": "localImages"
+      "sourceKind": "posterGallery"
     },
     {
       "boardId": "ClickPoster",
