@@ -5,9 +5,9 @@
     {
       "id": "common",
       "manifestPath": "common/manifest.json",
-      "videoPath": "common/roster_97b28b0074430c5267bde12815b0c28e.mp4",
+      "videoPath": "common/roster_5850f7d26d42730bd5ea82c45f85784b.mp4",
       "format": "ebk-roster-v1",
-      "generation": "97b28b0074430c5267bde12815b0c28e"
+      "generation": "5850f7d26d42730bd5ea82c45f85784b"
     },
     {
       "id": "clubcards",

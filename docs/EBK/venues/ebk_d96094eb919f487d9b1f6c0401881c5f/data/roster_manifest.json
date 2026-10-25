@@ -2877,7 +2877,7 @@
   "videoRoster": {
     "enabled": true,
     "status": "ready",
-    "generation": "97b28b0074430c5267bde12815b0c28e",
+    "generation": "5850f7d26d42730bd5ea82c45f85784b",
     "format": "ebk-dual-matte-sbs-srgb-v1",
     "fps": 30,
     "framesPerEntry": 3,
@@ -2891,8 +2891,8 @@
     "logicalHeight": 1080,
     "encodedWidth": 3840,
     "encodedHeight": 1080,
-    "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/roster_97b28b0074430c5267bde12815b0c28e.mp4",
-    "frameMapUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/frame_map_97b28b0074430c5267bde12815b0c28e.txt",
-    "sha256": "615f8b6ca03f31130c18fa7d944300d45a2ed0e92a5e1b3354d530b6a70bcde0"
+    "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/roster_5850f7d26d42730bd5ea82c45f85784b.mp4",
+    "frameMapUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/common/frame_map_5850f7d26d42730bd5ea82c45f85784b.txt",
+    "sha256": "9d7c51c28d72aa180dd5dfce4d2c0bfe1f81de69e614e3b8cee893585c9706b3"
   }
 }
