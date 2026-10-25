@@ -11,6 +11,7 @@ import argparse
 import copy
 import hashlib
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -29,6 +30,18 @@ def read_json(path):
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+
+def retain_common_generations(previous, generated):
+    # Published worlds keep immutable generation URLs until they are reuploaded.
+    # Retain only versioned video/map pairs, never old active manifests or aliases.
+    if not previous.is_dir():
+        return
+    for old in previous.iterdir():
+        if (old.is_file() and not old.is_symlink()
+                and re.fullmatch(r'(roster_[0-9a-f]{32}\.mp4|frame_map_[0-9a-f]{32}\.txt)', old.name)
+                and not (generated / old.name).exists()):
+            shutil.copy2(old, generated / old.name)
 
 
 def source_image(root, row, kind, base):
@@ -68,6 +81,39 @@ def generation_marker(path, generation, width, height):
 
 def slide_records(root):
     return slides.slide_records(root)
+
+
+def content_category(key):
+    parts = key.split('|')
+    if parts[0] == 'member':
+        return 'portrait'
+    if parts[0] == 'poster' and parts[1] == 'Notice':
+        return 'notice'
+    if parts[0] == 'poster' and parts[1] == 'Kanpe':
+        return 'cue'
+    if parts[0] in ('poster', 'slide'):
+        return 'poster'
+    return 'other'
+
+
+def category_sheets(records, folder, width, height, columns, rows):
+    # Keep semantic record order while preventing pixel deduplication or packing
+    # from joining different content categories onto the same sheet.
+    frames, geometry = [], [None] * len(records)
+    for category in ('notice', 'poster', 'cue', 'portrait', 'other'):
+        indexes = [i for i, (key, _) in enumerate(records)
+                   if content_category(key) == category]
+        if not indexes:
+            continue
+        grouped_frames, grouped_geometry = slides.contact_sheets(
+            [records[i][1] for i in indexes], Path(folder) / category,
+            width, height, columns, rows)
+        offset = len(frames)
+        for i, item in zip(indexes, grouped_geometry):
+            geometry[i] = dict(item, sheet=item['sheet'] + offset,
+                               contentCategory=category)
+        frames.extend(grouped_frames)
+    return frames, geometry
 
 
 def build_common(root, output, base):
@@ -120,8 +166,9 @@ def build_common(root, output, base):
             records.append((key, path))
     slide_images,missing_slides=slide_records(root)
     records+=slide_images;skipped+=missing_slides
-    if len(records) > 128:
-        raise ValueError('共通画像は128枠までです')
+    record_limit = 2048 if dual_matte else 128
+    if len(records) > record_limit:
+        raise ValueError(f'共通画像は{record_limit}枠までです')
     output.mkdir(parents=True, exist_ok=True)
     if not records:
         return None, skipped
@@ -131,21 +178,24 @@ def build_common(root, output, base):
         legacy_lines = []
         generation_lines = []
         hashes = []
-        frames,geometry=slides.contact_sheets([path for key,path in records],Path(tmp)/'sheets',logical_width,logical_height,columns,rows)
+        frames,geometry=category_sheets(records,Path(tmp)/'sheets',logical_width,logical_height,columns,rows)
+        if len(frames) > 128:
+            raise ValueError('共通動画のタイルシートは128枚までです。タイル方式を使用するか画像数を減らしてください')
         for i, (key, path) in enumerate(records):
             item=geometry[i];width=item['sourceWidth'];height=item['sourceHeight']
             address = base + '/' + quote(path.relative_to(root).as_posix(), safe='/')
             legacy_frame = item['sheet'] * 3 + 1
             generation_frame = (item['sheet'] + 1) * 3 + 1
             x,y,w,h=item['uv']
-            metadata=f'{w:.8f}|{h:.8f}|{x:.8f}|{y:.8f}|aspect={width/height:.8f}|width={width}|height={height}|fit=contain|tile={item["tile"]}|sheet={item["sheet"]}|bad=0'
+            metadata=f'{w:.8f}|{h:.8f}|{x:.8f}|{y:.8f}|aspect={width/height:.8f}|width={width}|height={height}|fit=contain|tile={item["tile"]}|sheet={item["sheet"]}|bad=0|contentCategory={item["contentCategory"]}'
             legacy_lines.append(f'{legacy_frame}|{key}|{address}|{metadata}|sample={(legacy_frame+.5)/30:.8f}')
             generation_lines.append(f'{generation_frame}|{key}|{address}|{metadata}|sample={(generation_frame+.5)/30:.8f}')
             hashes.append(hashlib.sha256(path.read_bytes()).hexdigest())
         generation_payload = {
             'format': video_format,
             'sheetColumns':columns,'sheetRows':rows,
-            'layoutVersion':2,'deduplicatePixels':True,
+            'layoutVersion':3,'deduplicatePixels':True,
+            'sheetGrouping':'content-category-v1',
             'logicalWidth':logical_width,'logicalHeight':logical_height,
             'fps': 30,
             'framesPerEntry': 3,
@@ -256,6 +306,8 @@ def build(root):
             if not src.exists():
                 continue
             target = root / directory
+            if directory == 'common':
+                retain_common_generations(target, src)
             if target.exists():
                 shutil.rmtree(target)
             shutil.copytree(src, target)
