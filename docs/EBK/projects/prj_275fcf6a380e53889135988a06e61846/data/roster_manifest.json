@@ -1928,7 +1928,7 @@
       "spawnKey": "staff_room"
     },
     {
-      "accessLevel": 2,
+      "accessLevel": 3,
       "category": "CastLeader",
       "enabled": true,
       "hasPermission": true,
@@ -1984,7 +1984,7 @@
       "spawnKey": "staff_room"
     },
     {
-      "accessLevel": 2,
+      "accessLevel": 3,
       "category": "CastLeader",
       "enabled": true,
       "hasPermission": true,
@@ -3605,7 +3605,7 @@
       "styleId": "regular"
     },
     {
-      "accessLevel": 2,
+      "accessLevel": 3,
       "id": "castLeader",
       "label": "CastLeader",
       "styleId": "castLeader"
