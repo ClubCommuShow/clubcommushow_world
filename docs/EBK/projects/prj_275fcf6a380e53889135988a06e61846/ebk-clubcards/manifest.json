@@ -1563,7 +1563,7 @@
     "overrideFlag": "manualRarityWeightOverride",
     "unmappedDigits": "requiresOverride"
   },
-  "revision": 2,
+  "revision": 3,
   "schemaVersion": 1,
   "sheetLayout": {
     "columns": 5,
@@ -1574,7 +1574,7 @@
   "title": "Clubコミュ症 ClubCard",
   "videoRoster": {
     "status": "ready",
-    "generation": "2146d9ee9707b2d415078c7be5298822",
+    "generation": "2e990af4482380e4971e780759859b24",
     "format": "ebk-clubcards-v2",
     "encoding": "ebk-dual-matte-sbs-srgb-v1",
     "encodedWidth": 2560,
@@ -1630,6 +1630,7 @@
         "sampleTimeSeconds": 2.1333333333333333
       }
     },
-    "sha256": "688f199b38c3919786c94d31a1409b9f8d11a93a5738d30e6f56d2d6e957f592"
-  }
+    "sha256": "93d7f1d1512b7c65c1d9775c8ab0a4b024c8ac2df112513a837e645d4717d504"
+  },
+  "contentFingerprint": "773e219b4500dacd824554d17a52a975b59d64648d46e4bdb215eb98accbdac3"
 }

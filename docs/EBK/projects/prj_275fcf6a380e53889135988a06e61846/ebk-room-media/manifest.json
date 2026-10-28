@@ -25,14 +25,14 @@
       "fps": 30,
       "framesPerImage": 3,
       "sampleFrame": 1,
-      "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_e261731136b8cd58b11f95f2ec62d46c.mp4",
-      "slideUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7_e261731136b8cd58b11f95f2ec62d46c.mp4?ebk-slides=3x30&ebk-cols=5&ebk-rows=2&ebk-images=1&ebk-width=1920&ebk-height=1080&ebk-alpha=dual-matte-sbs-srgb-v1",
+      "videoUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7.mp4",
+      "slideUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/ebk-room-media/videos/%E3%83%9D%E3%83%81%E3%83%A7.mp4",
       "images": [
         {
           "file": "cardback2.png",
           "sourceBlobSha": "db02910854e68c785d6e51bb5e2b7f47921f1086",
-          "sampleFrame": 1,
-          "sampleTimeSeconds": 0.05,
+          "sampleFrame": 4,
+          "sampleTimeSeconds": 0.15,
           "sourceWidth": 1080,
           "sourceHeight": 1509,
           "aspect": 0.7157057654075547,
@@ -51,12 +51,14 @@
       "logicalHeight": 1080,
       "encodedWidth": 3840,
       "encodedHeight": 1080,
+      "liveMapVersion": 1,
+      "generationMarkerFrame": 1,
       "generation": "e261731136b8cd58b11f95f2ec62d46c",
-      "frameCount": 3,
+      "frameCount": 6,
       "sheetCount": 1,
       "sheetColumns": 5,
       "sheetRows": 2,
-      "sha256": "612fba0bedc0b0018a0ead706048d83bb849d2c46a7b646ed05c99a5f843590d"
+      "sha256": "2f684707d4a68f6ee24413ca1422124403b91034996039d1e71370a4973c677a"
     }
   ]
 }
