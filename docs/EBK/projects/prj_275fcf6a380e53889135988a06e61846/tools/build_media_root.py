@@ -32,6 +32,19 @@ def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
+def write_common_cache_manifest(path, manifest):
+    # Bind the flag to every consumer's data, including text-only/card/album edits.
+    # Exclude our own revision so a rebuild of identical input keeps the same flag.
+    content = copy.deepcopy(manifest)
+    content.pop('cacheRevision', None)
+    revision = hashlib.sha256(json.dumps(
+        content, ensure_ascii=False, sort_keys=True, separators=(',', ':')
+    ).encode('utf-8')).hexdigest()[:32]
+    content['cacheRevision'] = revision
+    write_json(path, content)
+    (path.parent / 'revision.txt').write_text('ebk-media-cache-v1|' + revision + '\n', encoding='utf-8')
+
+
 def retain_common_generations(previous, generated):
     # Published worlds keep immutable generation URLs until they are reuploaded.
     # Retain only versioned video/map pairs, never old active manifests or aliases.
@@ -42,6 +55,17 @@ def retain_common_generations(previous, generated):
                 and re.fullmatch(r'(roster_[0-9a-f]{32}\.mp4|frame_map_[0-9a-f]{32}\.txt)', old.name)
                 and not (generated / old.name).exists()):
             shutil.copy2(old, generated / old.name)
+
+
+def synchronize_roster_video_source(root, common_manifest):
+    # Keep the authoring roster usable by its existing URL without stale video/map paths.
+    # Copy the complete generated descriptor so map, video and generation stay paired.
+    roster_path = root / 'data/roster_manifest.json'
+    if not roster_path.is_file():
+        return
+    roster = read_json(roster_path)
+    roster['videoRoster'] = copy.deepcopy(common_manifest['videoRoster'])
+    write_json(roster_path, roster)
 
 
 def source_image(root, row, kind, base):
@@ -405,7 +429,7 @@ def build(root):
             common_manifest['roomMedia']=room_manifest
             if card_manifest.is_file() and read_json(card_manifest).get('cards'):
                 common_manifest['clubCards']=built_cards
-            write_json(common_manifest_path,common_manifest)
+            write_common_cache_manifest(common_manifest_path,common_manifest)
         modules.append({'id': 'roomMedia', 'manifestPath': 'ebk-room-media/manifest.json',
                         'format': 'ebk-room-media-v1', 'generation': str(room_manifest.get('generation', ''))})
         themes.build(stage / 'themes')
@@ -439,6 +463,8 @@ def build(root):
         (root / 'themes').mkdir(exist_ok=True)
         shutil.copyfile(stage / 'themes/theme_catalog.json', root / 'themes/theme_catalog.json')
         shutil.copyfile(generated / 'ebk_media_root.json', root / 'ebk_media_root.json')
+        if common_manifest_path.is_file():
+            synchronize_roster_video_source(root, read_json(common_manifest_path))
     print('Built isolated media root:', root.name)
 
 
