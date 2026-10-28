@@ -8,7 +8,7 @@ on:
       - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/media/**"
       - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/themes/**"
       - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/**"
-      - ".github/workflows/ebk_media_275fcf6a380e5388.yml"
+      - ".github/workflows/ebk_project_275fcf6a380e5388.yml"
   workflow_dispatch:
 permissions:
   contents: read
@@ -75,6 +75,15 @@ jobs:
                   roster_target=venue_root/'data/roster_manifest.json'
                   roster_target.parent.mkdir(parents=True,exist_ok=True)
                   shutil.copyfile(roster,roster_target)
+                  import re
+                  for old in venue_root.rglob('*'):
+                      relative=old.relative_to(venue_root)
+                      opaque=(re.fullmatch(r'roster_[0-9a-f]{32}\.mp4',old.name)
+                              or re.fullmatch(r'frame_map_[0-9a-f]{32}\.txt',old.name)
+                              or re.fullmatch(r'.+_[0-9a-f]{32}\.mp4',old.name)
+                              or ('images/products' in relative.as_posix() and re.fullmatch(r'[0-9a-f]{24,64}(-icon)?\.png',old.name)))
+                      if old.is_file() and opaque and not (source_root/relative).exists():
+                          old.unlink()
                   print('updated full venue projection:',venue_root,'files=',copied)
           PY
       - name: Commit generated files with input freshness check
@@ -87,6 +96,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           base_sha="$(git rev-parse HEAD)"
+          git add -- "$EBK_MEDIA_ROOT/data" "$EBK_MEDIA_ROOT/images"
           git add -- "$EBK_MEDIA_ROOT/ebk_media_root.json" "$EBK_MEDIA_ROOT/themes/theme_catalog.json"
           if [ -d docs/EBK/venues ]; then git add -- docs/EBK/venues; fi
           for group in common ebk-clubcards ebk-room-media; do
@@ -95,7 +105,7 @@ jobs:
           if ! git diff --cached --quiet; then git commit -m "build: isolated EBK media docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846"; fi
           for attempt in 1 2 3; do
             git fetch origin "$EBK_BRANCH"
-            if ! git diff --quiet "$base_sha" "origin/$EBK_BRANCH" -- "$EBK_MEDIA_ROOT/data" "$EBK_MEDIA_ROOT/images" "$EBK_MEDIA_ROOT/media" "$EBK_MEDIA_ROOT/themes" "$EBK_MEDIA_ROOT/tools" ".github/workflows/ebk_media_275fcf6a380e5388.yml"; then
+            if ! git diff --quiet "$base_sha" "origin/$EBK_BRANCH" -- "$EBK_MEDIA_ROOT/data" "$EBK_MEDIA_ROOT/images" "$EBK_MEDIA_ROOT/media" "$EBK_MEDIA_ROOT/themes" "$EBK_MEDIA_ROOT/tools" ".github/workflows/ebk_project_275fcf6a380e5388.yml"; then
               echo "New input detected; a newer build will publish."
               echo "publish=false" >> "$GITHUB_OUTPUT"
               exit 0

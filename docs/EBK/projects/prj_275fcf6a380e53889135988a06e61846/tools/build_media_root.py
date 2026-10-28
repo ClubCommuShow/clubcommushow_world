@@ -164,6 +164,38 @@ def build_common(root, output, base):
                 skipped.append(key)
                 continue  # Missing keys use the Wizard's local image.
             records.append((key, path))
+    # Menu images share the same MP4, decode material, geometry and generation.
+    catalog = manifest.get('catalogGuide') or {}
+    for field, kind in [('products', 'product'), ('guidePages', 'guide')]:
+        for index, row in enumerate(catalog.get(field, [])):
+            if not isinstance(row, dict) or not row.get('enabled', True) or not row.get('imageUrl'):
+                continue
+            category = str(row.get('id', '')) if kind == 'product' else 'Pages'
+            slot = 0 if kind == 'product' else index
+            if not category or '|' in category:
+                raise ValueError('Invalid menu image identity')
+            key = f'{kind}|{category}|{slot}'
+            if key in keys:
+                raise ValueError('Duplicate key: ' + key)
+            keys.add(key)
+            # Venue projections retain project URLs; resolve only their local images
+            # suffix. No network fetch or traversal outside this media root.
+            address = urlsplit(row['imageUrl'])
+            relative = unquote(address.path).split('/images/', 1)
+            if address.scheme != 'https' or len(relative) != 2 or address.query or address.fragment:
+                raise ValueError('Invalid menu image URL: ' + key)
+            path = root / 'images' / relative[1]
+            if not path.resolve().is_relative_to((root / 'images').resolve()):
+                raise ValueError('Menu image escapes media root')
+            if not path.is_file():
+                raise ValueError('Missing configured menu image: ' + key)
+            fixed = root / 'images' / ('menu' if kind == 'product' else 'guide') / f'slot{index}.png'
+            fixed.parent.mkdir(parents=True, exist_ok=True)
+            if path.resolve() != fixed.resolve():
+                with Image.open(path) as source:
+                    ImageOps.exif_transpose(source).convert('RGBA').save(fixed)
+            records.append((key, fixed))
+            row['imageUrl'] = base + '/' + fixed.relative_to(root).as_posix()
     slide_images,missing_slides=slide_records(root)
     records+=slide_images;skipped+=missing_slides
     record_limit = 2048 if dual_matte else 128
@@ -206,16 +238,13 @@ def build_common(root, output, base):
         generation = hashlib.sha256(json.dumps(
             generation_payload, ensure_ascii=False, sort_keys=True, separators=(',', ':')
         ).encode('utf-8')).hexdigest()[:32]
-        video_name = 'roster_' + generation + '.mp4'
-        frame_map_name = 'frame_map_' + generation + '.txt'
+        video_name = 'roster.mp4'
+        frame_map_name = 'frame_map.txt'
         marker = Path(tmp) / 'generation.png'
         generation_marker(marker, generation, logical_width, logical_height)
         # New immutable URL: 3 marker frames first, then the ordinary 3-frame entries.
         slides.encode([marker] + frames, output / video_name, logical_width, logical_height, dual_matte)
         video_sha256 = hashlib.sha256((output / video_name).read_bytes()).hexdigest()
-        # Fixed compatibility URL deliberately keeps the old frame layout without the
-        # marker. Existing worlds using roster.mp4 + frame_map.txt therefore do not shift.
-        slides.encode(frames, output / 'roster.mp4', logical_width, logical_height, dual_matte)
     result = copy.deepcopy(manifest)
     for row in result.get('members', []):
         if not isinstance(row, dict) or type(row.get('slot')) is not int or not row.get('category'):
@@ -229,15 +258,17 @@ def build_common(root, output, base):
         'sheetColumns':columns,'sheetRows':rows,'sheetCount':len(frames),
         'logicalWidth':logical_width,'logicalHeight':logical_height,
         'encodedWidth':logical_width*(2 if dual_matte else 1),'encodedHeight':logical_height,
-        'videoUrl': base + '/common/' + video_name,
-        'frameMapUrl': base + '/common/' + frame_map_name,
+        'videoUrl': base + '/common/roster.mp4',
+        'frameMapUrl': base + '/common/frame_map.txt',
+        'captureMap': '\n'.join(generation_lines) + '\n',
+        'liveMapVersion': 1,
         'sha256': video_sha256
     }
     write_json(output / 'manifest.json', result)
     generation_map_text = '\n'.join(generation_lines) + '\n'
     legacy_map_text = '\n'.join(legacy_lines) + '\n'
     (output / frame_map_name).write_text(generation_map_text, encoding='utf-8')
-    (output / 'frame_map.txt').write_text(legacy_map_text, encoding='utf-8')
+    (output / 'frame_map.txt').write_text(generation_map_text, encoding='utf-8')
     write_json(output / 'build_report.json', {
         'captured': len(records), 'fallbackKeys': skipped, 'sourceHashes': hashes,
         'ignoredPortraitUrls': ignored_portrait_urls, 'generation': generation,
@@ -245,9 +276,84 @@ def build_common(root, output, base):
     })
     return {
         'id': 'common', 'manifestPath': 'common/manifest.json',
-        'videoPath': 'common/' + video_name, 'format': 'ebk-roster-v1',
+        'videoPath': 'common/roster.mp4', 'format': 'ebk-roster-v1',
         'generation': generation
     }, skipped
+
+
+def normalize_product_sources(root, base):
+    # Migrate only known product-image references. IDs, prices, roles and stock
+    # remain authoring data; a filename is never used as a product identity.
+    files = sorted((root / 'data').glob('*.json'))
+    documents = {path: read_json(path) for path in files}
+    authority = documents.get(root / 'data/roster_manifest.json', {}).get('catalogGuide', {}).get('products', [])
+    slots = {str(row.get('id', '')): i for i, row in enumerate(authority)
+             if isinstance(row, dict) and row.get('id')}
+    def product_rows(node):
+        if isinstance(node, dict):
+            for row in node.get('products', []) if isinstance(node.get('products'), list) else []:
+                if isinstance(row, dict):
+                    yield row
+            for child in node.values():
+                if isinstance(child, (dict, list)):
+                    yield from product_rows(child)
+        elif isinstance(node, list):
+            for child in node:
+                yield from product_rows(child)
+    replacements = {}
+    candidates = set()
+    for document in documents.values():
+        for row in product_rows(document):
+            identity = str(row.get('id') or row.get('productId') or row.get('sku') or '')
+            if not identity:
+                continue
+            if identity not in slots:
+                slots[identity] = len(slots)
+            for key in ('imageUrl', 'iconUrl'):
+                address = row.get(key, '')
+                if not isinstance(address, str) or not address:
+                    continue
+                parsed = urlsplit(address)
+                suffix = unquote(parsed.path).split('/images/', 1)
+                if parsed.scheme != 'https' or len(suffix) != 2:
+                    continue
+                source = root / 'images' / suffix[1]
+                if not source.resolve().is_relative_to((root / 'images').resolve()) or not source.is_file():
+                    raise ValueError('Missing product image during fixed-slot migration: ' + identity)
+                relative = 'images/menu/slot' + str(slots[identity]) + ('-icon' if key == 'iconUrl' else '') + '.png'
+                fixed = root / relative
+                fixed.parent.mkdir(parents=True, exist_ok=True)
+                if fixed.resolve() != source.resolve():
+                    with Image.open(source) as image:
+                        image = ImageOps.exif_transpose(image).convert('RGBA')
+                        image.thumbnail((2048,2048),Image.Resampling.LANCZOS)
+                        image.save(fixed)
+                canonical = base + '/' + relative
+                replacements[address] = canonical
+                replacements[source.relative_to(root).as_posix()] = relative
+                if re.fullmatch(r'[0-9a-fA-F]{24,64}(-icon)?\.png', source.name) and source.parent == root / 'images/products':
+                    candidates.add(source.relative_to(root).as_posix())
+    def replace(node):
+        if isinstance(node, dict):
+            return {key: replace(value) for key, value in node.items()}
+        if isinstance(node, list):
+            return [replace(value) for value in node]
+        return replacements.get(node, node) if isinstance(node, str) else node
+    changed = []
+    for path, document in documents.items():
+        updated = replace(document)
+        if updated != document:
+            write_json(path, updated)
+            changed.append(path.relative_to(root).as_posix())
+        documents[path] = updated
+    serialized = '\n'.join(json.dumps(value, ensure_ascii=False) for value in documents.values())
+    removed = []
+    for relative in sorted(candidates):
+        if relative in serialized:
+            continue
+        (root / relative).unlink()
+        removed.append(relative)
+    return changed, removed
 
 
 def build(root):
@@ -267,6 +373,7 @@ def build(root):
         for directory in ['data', 'images', 'media', 'themes']:
             if (root / directory).is_dir():
                 shutil.copytree(root / directory, stage / directory)
+        product_data_edits, obsolete_products = normalize_product_sources(stage, base)
         (stage / 'themes').mkdir(exist_ok=True)
         (stage / 'media/room-slides').mkdir(parents=True, exist_ok=True)
         generated = stage / 'generated'
@@ -278,6 +385,9 @@ def build(root):
                 modules.append(common)
         card_manifest = stage / 'data/clubcard_manifest.json'
         if card_manifest.is_file() and read_json(card_manifest).get('cards'):
+            previous_cards=root/'ebk-clubcards/manifest.json'
+            if previous_cards.is_file():
+                shutil.copy2(previous_cards,stage/'.ebk_previous_clubcards.json')
             cards.build(stage, base)
             built_cards = read_json(stage / 'docs/ebk-clubcards/manifest.json')
             card_generation = str(built_cards.get('videoRoster', {}).get('generation', ''))
@@ -289,6 +399,13 @@ def build(root):
                             'generation': card_generation})
         slides.build(stage, stage / 'data/room_media_slides.json')
         room_manifest = read_json(stage / 'docs/ebk-room-media/manifest.json')
+        common_manifest_path=generated/'common/manifest.json'
+        if common_manifest_path.is_file():
+            common_manifest=read_json(common_manifest_path)
+            common_manifest['roomMedia']=room_manifest
+            if card_manifest.is_file() and read_json(card_manifest).get('cards'):
+                common_manifest['clubCards']=built_cards
+            write_json(common_manifest_path,common_manifest)
         modules.append({'id': 'roomMedia', 'manifestPath': 'ebk-room-media/manifest.json',
                         'format': 'ebk-room-media-v1', 'generation': str(room_manifest.get('generation', ''))})
         themes.build(stage / 'themes')
@@ -306,11 +423,19 @@ def build(root):
             if not src.exists():
                 continue
             target = root / directory
-            if directory == 'common':
-                retain_common_generations(target, src)
             if target.exists():
                 shutil.rmtree(target)
             shutil.copytree(src, target)
+        for relative in product_data_edits:
+            shutil.copy2(stage / relative, root / relative)
+        for relative in obsolete_products:
+            target = root / relative
+            if target.resolve().is_relative_to((root / 'images/products').resolve()) and target.is_file():
+                target.unlink()
+        for image_group in ['menu', 'guide']:
+            fixed_images = stage / 'images' / image_group
+            if fixed_images.is_dir():
+                shutil.copytree(fixed_images, root / 'images' / image_group, dirs_exist_ok=True)
         (root / 'themes').mkdir(exist_ok=True)
         shutil.copyfile(stage / 'themes/theme_catalog.json', root / 'themes/theme_catalog.json')
         shutil.copyfile(generated / 'ebk_media_root.json', root / 'ebk_media_root.json')
