@@ -1,0 +1,55 @@
+name: EBK rotation table (prj_275fcf6a380e53889135988a06e61846)
+on:
+  schedule:
+    - cron: '7 15 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ebk-rotation-prj_275fcf6a380e53889135988a06e61846
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.publish.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: "main"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publish rotation only
+        id: publish
+        env:
+          EBK_ROTATION_RELAY: ${{ secrets.EBK_ROTATION_27135A130E5A9BBA }}
+          GH_TOKEN: ${{ github.token }}
+          EBK_BRANCH: "main"
+          EBK_ROOT: "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846"
+        run: python .github/ebk/rotation_prj_275fcf6a380e53889135988a06e61846.py
+  deploy:
+    needs: sync
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: "main"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - uses: actions/deploy-pages@v4
+        id: publish
