@@ -2,6 +2,9 @@ name: EBK rotation table (prj_275fcf6a380e53889135988a06e61846)
 on:
   schedule:
     - cron: '7 15 * * *'
+    - cron: '12 11 * * *'
+    - cron: '22 11 * * *'
+    - cron: '42 11 * * *'
   workflow_dispatch:
 permissions:
   contents: read
