@@ -88,46 +88,13 @@
       "showControls": false,
       "presentationOnly": true,
       "order": [
-        2068,
-        2069,
-        2070,
-        2071,
-        2072,
-        2073,
-        2074,
-        2075,
-        2076,
-        2077,
-        2078,
-        2079,
-        2080,
-        2081,
-        2082,
-        2083,
-        2084,
-        2085,
-        2086,
-        2087,
-        2089,
-        2090,
-        2091,
-        2092,
-        2093,
-        2094,
-        2095,
-        2096,
-        2097,
-        2098,
-        2099,
-        2100,
-        2101,
-        2102,
-        2103,
-        2104,
-        2105,
-        2106,
-        2107,
-        2108
+        2048,
+        2049,
+        2050,
+        2051,
+        2052,
+        2053,
+        2054
       ],
       "additionalImages": [
         {
@@ -368,6 +335,48 @@
           "index": 2108,
           "title": "slot2",
           "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot60.png",
+          "enabled": true
+        },
+        {
+          "index": 2048,
+          "title": "slot0",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot0-c52dba012c57d795e536adb61b912b49dfaef5165992935025e316b09afd6c27.png",
+          "enabled": true
+        },
+        {
+          "index": 2049,
+          "title": "slot2",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot1-a8cec542f741008bfd515242090d6db8d4374ab430c23ed2c937240a2aaf2e07.png",
+          "enabled": true
+        },
+        {
+          "index": 2050,
+          "title": "slot0",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot2-f5a63e5813085044b4112055510639f46ea3303cb164bfcde5fc5bd633147c40.png",
+          "enabled": true
+        },
+        {
+          "index": 2051,
+          "title": "slot3",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot3-c4bf48fe7f316817403b0c34db9c4c5303712e35ceabb08826d55493c758e249.png",
+          "enabled": true
+        },
+        {
+          "index": 2052,
+          "title": "slot10",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot4-35d20a60c9eb6bc65a40f7ebd0f291d3be3e678140ad26aaa3bde8a9acd9f669.png",
+          "enabled": true
+        },
+        {
+          "index": 2053,
+          "title": "slot4",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot5-1f4c31460bd0f1326e47f2c1c7f26c1fa3b408bfaff1cfe95db67961d6b13d0c.png",
+          "enabled": true
+        },
+        {
+          "index": 2054,
+          "title": "slot2",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot6-472c83ced90e7e8b5d1a019ffd1c004d6954ad5d72f6205fc2fb8ae1fc135b56.png",
           "enabled": true
         }
       ],
