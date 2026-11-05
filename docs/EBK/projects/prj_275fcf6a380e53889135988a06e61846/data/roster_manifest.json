@@ -2310,7 +2310,7 @@
           "url": ""
         }
       },
-      "name": "ASU_1115",
+      "name": "おおかな",
       "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
       "roleType": "upperCast",
       "showArmband": true,
@@ -2366,69 +2366,13 @@
           "url": ""
         }
       },
-      "name": "おおかな",
+      "name": "AmakazeRin",
       "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
       "roleType": "upperCast",
       "showArmband": true,
       "showName": true,
       "showPortrait": true,
       "slot": 5,
-      "spawnKey": "staff_room"
-    },
-    {
-      "accessLevel": 2,
-      "category": "UpperCast",
-      "enabled": true,
-      "hasPermission": true,
-      "images": {
-        "icon": {
-          "crop": {
-            "height": 0.6,
-            "width": 0.6,
-            "x": 0.2,
-            "y": 0.36
-          },
-          "source": "portraitCrop",
-          "url": ""
-        },
-        "portrait": {
-          "crop": {
-            "height": 1,
-            "width": 1,
-            "x": 0,
-            "y": 0
-          },
-          "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png"
-        },
-        "profile": {
-          "crop": {
-            "height": 0.8,
-            "width": 0.8,
-            "x": 0.1,
-            "y": 0.16
-          },
-          "source": "portrait",
-          "url": ""
-        },
-        "standee": {
-          "crop": {
-            "height": 1,
-            "width": 1,
-            "x": 0,
-            "y": 0
-          },
-          "source": "portrait",
-          "url": ""
-        }
-      },
-      "name": "AmakazeRin",
-      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png",
-      "roleType": "upperCast",
-      "showArmband": true,
-      "showName": true,
-      "showPortrait": true,
-      "slot": 6,
       "spawnKey": "staff_room"
     },
     {
@@ -3221,324 +3165,324 @@
     {
       "category": "EventPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/main/slot0.png",
       "link": "https://vrchat.com/home/group/grp_5e923b7d-22a6-4244-8f92-12439c9f5571",
       "slot": 0,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/main/slot0.png",
       "title": "Clubコミュ症"
     },
     {
       "category": "EventPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/main/slot1.png",
       "link": "https://vrchat.com/home/group/grp_5e923b7d-22a6-4244-8f92-12439c9f5571",
       "slot": 1,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/main/slot1.png",
       "title": "Clubコミュ症"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot0.png",
       "link": "https://vrchat.com/home/group/grp_f62fd47e-0dd3-402b-8452-b020526c5919",
       "slot": 0,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot0.png",
       "title": "プレシャスストーンガーネット"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
-      "slot": 1,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot1.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot1.png",
+      "slot": 1
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot2.png",
       "link": "https://vrchat.com/home/group/grp_b5f2eb15-fa6d-476b-b9a8-6ba159d4a833",
       "slot": 2,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot2.png",
       "title": "ほのCafe"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot3.png",
       "link": "https://vrchat.com/home/group/grp_34ca87e0-7ab4-4a55-b9aa-5f502ad493d5",
       "slot": 3,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot3.png",
       "title": "ゆるゲMEET!"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot4.png",
       "link": "https://vrchat.com/home/group/grp_021a555c-6b8b-43ec-acd7-d9358eb19310",
       "slot": 4,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot4.png",
       "title": "幻会興行"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot5.png",
       "link": "https://vrchat.com/home/group/grp_2a6b7e51-2455-492b-b590-1ce61145c81a",
       "slot": 5,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot5.png",
       "title": "Cafeうさぎ「ともつく」"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot6.png",
       "link": "https://vrchat.com/home/group/grp_281723c9-967c-45c1-b428-fc6ac9b0ace8",
       "slot": 6,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot6.png",
       "title": "Cafeうさぎ「みにあにまるハウス」"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot7.png",
       "link": "https://vrchat.com/home/group/grp_c29458a5-7c98-4eb2-90c4-190bd99fa642",
       "slot": 7,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot7.png",
       "title": "スタイチ集会"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot8.png",
       "link": "https://vrchat.com/home/group/grp_0cc7a377-421e-4588-b9ad-31aa4161c66f",
       "slot": 8,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot8.png",
       "title": "Night Group NOA"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot9.png",
       "link": "https://vrchat.com/home/group/grp_755b7377-e193-48e3-8c8c-845cb6838fbd",
       "slot": 9,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot9.png",
       "title": "VRCお笑い道場"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot10.png",
       "link": "https://vrchat.com/home/group/grp_b93dbe88-7fe5-468e-97fe-26ba7b8a4547",
       "slot": 10,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot10.png",
       "title": "VRC北陸集会"
     },
     {
       "category": "FrontPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot11.png",
       "link": "https://vrchat.com/home/group/grp_d3a00c1f-4e42-419e-b8e3-9f14e74e95f2",
       "slot": 11,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/front/slot11.png",
       "title": "BAR MASANORI"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot0.png",
       "link": "https://vrchat.com/home/group/grp_782d86e2-5872-47cc-9f6f-152bfe22698e",
       "slot": 0,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot0.png",
       "title": "マカのにぃにねぇねになって"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot1.png",
       "link": "https://vrchat.com/home/group/grp_626ef2bd-9347-4384-bb22-cf884f8e06ac",
       "slot": 1,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot1.png",
       "title": "はちみがEWIでおすおす"
     },
     {
       "category": "SidePoster",
       "enabled": true,
-      "slot": 2,
       "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot2.png",
+      "slot": 2,
       "title": "PulsePlex"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot3.png",
       "link": "https://vrchat.com/home/group/grp_43565bcb-3e36-4285-b0ec-a78413376ca3",
       "slot": 3,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot3.png",
       "title": "V初組"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot4.png",
       "link": "https://vrchat.com/home/group/grp_ed0753a6-2743-475c-8cfc-22ea0072e072",
       "slot": 4,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot4.png",
       "title": "SingerKest"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot5.png",
       "link": "https://vrchat.com/home/group/grp_71ea74b5-4ea8-47c2-92c9-bc043b2b5ad8",
       "slot": 5,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot5.png",
       "title": "BAR SOA"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot6.png",
       "link": "https://vrchat.com/home/group/grp_0505b066-c941-4d1e-b6c0-8fb40f387720",
       "slot": 6,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot6.png",
       "title": "Leaf Ticket"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot7.png",
       "link": "https://vrchat.com/home/group/grp_432d45cf-cabf-4576-bbe9-38377f263ed1",
       "slot": 7,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot7.png",
       "title": "ぶいご"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot8.png",
       "link": "https://vrchat.com/home/group/grp_f262abcf-ae7a-4b67-8d5b-f5a171ca7e89",
       "slot": 8,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot8.png",
       "title": "ArsFieri"
     },
     {
       "category": "SidePoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot9.png",
       "link": "https://vrchat.com/home/group/grp_f5269431-3c49-47a1-bb9b-2602eb06f0a8",
       "slot": 9,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/side/slot9.png",
       "title": "バーチャル三条5分集会"
     },
     {
       "category": "BackPoster",
       "enabled": true,
-      "slot": 0,
       "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot0.png",
+      "slot": 0,
       "title": "IrohaLaboratory"
     },
     {
       "category": "BackPoster",
       "enabled": true,
-      "slot": 1,
       "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot1.png",
+      "slot": 1,
       "title": "LheureBleue"
     },
     {
       "category": "BackPoster",
       "enabled": true,
-      "slot": 2,
       "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot2.png",
+      "slot": 2,
       "title": "しまりすラボ"
     },
     {
       "category": "BackPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot3.png",
       "slot": 3,
-      "title": "くまきちの３Dのおみせ",
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot3.png"
+      "title": "くまきちの３Dのおみせ"
     },
     {
       "category": "BackPoster",
       "enabled": true,
-      "slot": 4,
       "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot4.png",
+      "slot": 4,
       "title": "オリジナル3Dモデル「キュウクマ」"
     },
     {
       "category": "BackPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot5.png",
       "link": "https://vrchat.com/home/group/grp_589d6611-19ad-4ff3-95cc-d7ad0b34f3d6",
       "slot": 5,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot5.png",
       "title": "ChocoYoi"
     },
     {
       "category": "BackPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot6.png",
       "link": "https://vrchat.com/home/group/grp_8b7a5a57-4e20-44bb-97ed-dcb62094507a",
       "slot": 6,
-      "title": "月華艶",
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot6.png"
+      "title": "月華艶"
     },
     {
       "category": "BackPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot7.png",
       "link": "https://vrchat.com/home/group/grp_7d59633d-383c-4623-a20d-57e5a28e49d9",
       "slot": 7,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot7.png",
       "title": "酔狂華"
     },
     {
       "category": "BackPoster",
       "enabled": true,
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot8.png",
       "link": "https://vrchat.com/home/group/grp_d63beb20-ff7e-45e9-920b-3861a6a4066f",
       "slot": 8,
-      "title": "リトルガールカフェ",
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot8.png"
+      "title": "リトルガールカフェ"
     },
     {
       "category": "BackPoster",
       "enabled": true,
-      "slot": 9,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot9.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/back/slot9.png",
+      "slot": 9
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 0,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot0.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot0.png",
+      "slot": 0
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 1,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot1.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot1.png",
+      "slot": 1
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 2,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot2.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot2.png",
+      "slot": 2
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 3,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot3.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot3.png",
+      "slot": 3
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 4,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot4.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot4.png",
+      "slot": 4
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 5,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot5.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot5.png",
+      "slot": 5
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 6,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot6.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot6.png",
+      "slot": 6
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 7,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot7.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot7.png",
+      "slot": 7
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 8,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot8.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot8.png",
+      "slot": 8
     },
     {
       "category": "Notice",
       "enabled": true,
-      "slot": 9,
-      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot9.png"
+      "imageUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/posters/notice/slot9.png",
+      "slot": 9
     },
     {
       "category": "Kanpe",
