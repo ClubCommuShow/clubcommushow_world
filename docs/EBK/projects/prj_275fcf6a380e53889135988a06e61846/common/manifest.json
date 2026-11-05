@@ -2119,7 +2119,7 @@
             "y": 0
           },
           "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png"
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot1.png"
         },
         "profile": {
           "crop": {
@@ -2175,7 +2175,7 @@
             "y": 0
           },
           "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png"
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot2.png"
         },
         "profile": {
           "crop": {
@@ -2231,7 +2231,7 @@
             "y": 0
           },
           "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png"
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot3.png"
         },
         "profile": {
           "crop": {
@@ -2287,7 +2287,7 @@
             "y": 0
           },
           "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png"
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png"
         },
         "profile": {
           "crop": {
@@ -2310,7 +2310,7 @@
           "url": ""
         }
       },
-      "name": "ASU_1115",
+      "name": "おおかな",
       "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png",
       "roleType": "upperCast",
       "showArmband": true,
@@ -2343,63 +2343,7 @@
             "y": 0
           },
           "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png"
-        },
-        "profile": {
-          "crop": {
-            "height": 0.8,
-            "width": 0.8,
-            "x": 0.1,
-            "y": 0.16
-          },
-          "source": "portrait",
-          "url": ""
-        },
-        "standee": {
-          "crop": {
-            "height": 1,
-            "width": 1,
-            "x": 0,
-            "y": 0
-          },
-          "source": "portrait",
-          "url": ""
-        }
-      },
-      "name": "おおかな",
-      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
-      "roleType": "upperCast",
-      "showArmband": true,
-      "showName": true,
-      "showPortrait": true,
-      "slot": 5,
-      "spawnKey": "staff_room"
-    },
-    {
-      "accessLevel": 2,
-      "category": "UpperCast",
-      "enabled": true,
-      "hasPermission": true,
-      "images": {
-        "icon": {
-          "crop": {
-            "height": 0.6,
-            "width": 0.6,
-            "x": 0.2,
-            "y": 0.36
-          },
-          "source": "portraitCrop",
-          "url": ""
-        },
-        "portrait": {
-          "crop": {
-            "height": 1,
-            "width": 1,
-            "x": 0,
-            "y": 0
-          },
-          "framing": "bust",
-          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot7.png"
+          "url": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png"
         },
         "profile": {
           "crop": {
@@ -2423,12 +2367,12 @@
         }
       },
       "name": "AmakazeRin",
-      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
+      "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
       "roleType": "upperCast",
       "showArmband": true,
       "showName": true,
       "showPortrait": true,
-      "slot": 6,
+      "slot": 5,
       "spawnKey": "staff_room"
     },
     {
