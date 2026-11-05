@@ -19,7 +19,7 @@ import warnings
 from pathlib import Path
 from urllib.parse import quote, urlsplit
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageDraw
 
 FPS = 30
 FRAMES = 3
@@ -280,6 +280,17 @@ document.querySelectorAll('button[data-url]').forEach(button => {
     (output / "index.html").write_text(document, encoding="utf-8")
 
 
+def write_generation_marker(path, generation, width, height):
+    bits = ''.join(f'{int(c,16):04b}' for c in 'eb4b26c1' + generation)
+    image = Image.new('RGB', (width,height), 'black')
+    draw = ImageDraw.Draw(image)
+    for i, bit in enumerate(bits):
+        x0=(i%20)*width//20;x1=(i%20+1)*width//20-1
+        y0=(i//20)*height//8;y1=(i//20+1)*height//8-1
+        draw.rectangle((x0,y0,x1,y1), fill='white' if bit=='1' else 'black')
+    image.save(path)
+
+
 def build(root: Path, config_path: Path):
     config = json.loads(config_path.read_text(encoding="utf-8-sig"))
     if config.get("schemaVersion") != 1:
@@ -333,8 +344,8 @@ def build(root: Path, config_path: Path):
                         oriented = ImageOps.exif_transpose(source)
                         source_width, source_height = oriented.size
                     image_rows.append({"file": p.name, "sourceBlobSha": git_blob_sha(p),
-                                       "sampleFrame": tile_geometry[i]['sheet'] * FRAMES + 1,
-                                       "sampleTimeSeconds": (tile_geometry[i]['sheet'] * FRAMES + 1.5) / FPS,
+                                       "sampleFrame": (tile_geometry[i]['sheet'] + 1) * FRAMES + 1,
+                                       "sampleTimeSeconds": ((tile_geometry[i]['sheet'] + 1) * FRAMES + 1.5) / FPS,
                                        "sourceWidth": source_width, "sourceHeight": source_height,
                                        "aspect": source_width / source_height,
                                        "fit": "contain", "uv":tile_geometry[i]['uv']})
@@ -350,17 +361,17 @@ def build(root: Path, config_path: Path):
                 generation = hashlib.sha256(json.dumps(
                     generation_payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
                 ).encode("utf-8")).hexdigest()[:32]
-                generated_name = name + "_" + generation + ".mp4"
+                generated_name = name + ".mp4"
                 video = videos / generated_name
-                encode(sheet_frames, video, width, height, dual_matte)
-                # Keep the old fixed name for existing worlds. New manifests use the
-                # content-addressed URL so a cached old video cannot be paired with new metadata.
-                shutil.copyfile(video, videos / (name + ".mp4"))
+                marker = Path(temporary) / ('marker-' + str(len(result)) + '.png')
+                write_generation_marker(marker,generation,width,height)
+                encode([marker] + sheet_frames, video, width, height, dual_matte)
                 url = base + "/ebk-room-media/videos/" + quote(generated_name, safe="")
-                slide_url = url + f"?ebk-slides=3x30&ebk-cols={columns}&ebk-rows={rows}&ebk-images={len(images)}&ebk-width={width}&ebk-height={height}" + ("&ebk-alpha=dual-matte-sbs-srgb-v1" if dual_matte else "")
+                slide_url = url
+                entry.update(liveMapVersion=1,generationMarkerFrame=1)
                 entry.update(videoUrl=url, slideUrl=slide_url,
                              generation=generation,
-                             frameCount=len(sheet_frames) * FRAMES,
+                             frameCount=(len(sheet_frames)+1) * FRAMES,
                              sheetCount=len(sheet_frames),sheetColumns=5,sheetRows=2,
                              sha256=hashlib.sha256(video.read_bytes()).hexdigest())
                 entry["images"] = image_rows
