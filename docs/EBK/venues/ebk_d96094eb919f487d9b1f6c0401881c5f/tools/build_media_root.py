@@ -397,6 +397,7 @@ def build(root):
         for directory in ['data', 'images', 'media', 'themes']:
             if (root / directory).is_dir():
                 shutil.copytree(root / directory, stage / directory)
+        slide_aliases = slides.synchronize_slide_image_aliases(stage)
         product_data_edits, obsolete_products = normalize_product_sources(stage, base)
         (stage / 'themes').mkdir(exist_ok=True)
         (stage / 'media/room-slides').mkdir(parents=True, exist_ok=True)
@@ -450,6 +451,8 @@ def build(root):
             if target.exists():
                 shutil.rmtree(target)
             shutil.copytree(src, target)
+        for relative in slide_aliases:
+            shutil.copy2(stage / relative, root / relative)
         for relative in product_data_edits:
             shutil.copy2(stage / relative, root / relative)
         for relative in obsolete_products:

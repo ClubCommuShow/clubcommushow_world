@@ -113,6 +113,53 @@ def delivery_settings(root):
     return {'enabled':value.get('enabled',True),'layout':value.get('layout','tile'),'alphaMode':value.get('alphaMode','dual-matte')}
 
 
+def synchronize_slide_image_aliases(root):
+    """Keep the world's pre-serialized slot URLs paired with OPS image revisions.
+
+    Run only in the staging tree. The authoring manifest and immutable uploads
+    stay unchanged, and aliases are published only after the full build succeeds.
+    """
+    root = Path(root)
+    manifest_path = root / 'data/slide_poster_manifest.json'
+    if not manifest_path.is_file():
+        return []
+    manifest = json.loads(manifest_path.read_text(encoding='utf-8-sig'))
+    aliases = []
+    seen_boards = set()
+    for board in manifest.get('boards', []):
+        board_id = board.get('boardId', '')
+        if not isinstance(board_id, str) or not board_id or board_id != board_id.strip() or board_id in seen_boards:
+            raise ValueError('Invalid or duplicate slide board ID')
+        seen_boards.add(board_id)
+        if not board.get('enabled', True):
+            continue
+        folder = 'images/slide-posters/' + hashlib.sha256(board_id.encode('utf-8')).hexdigest()
+        seen_slots = set()
+        for image in board.get('additionalImages', []):
+            index = image.get('index')
+            if type(index) is not int or not 2048 <= index < 2112 or index in seen_slots:
+                raise ValueError('Invalid or duplicate additional slide image index')
+            seen_slots.add(index)
+            if not image.get('enabled', True):
+                continue
+            stem = folder + '/slot' + str(index - 2048)
+            relative = image.get('imagePath', '')
+            if relative == stem + '.png':
+                continue
+            match = re.fullmatch(re.escape(stem) + r'-([0-9a-f]{64})\.png', relative)
+            if match is None:
+                raise ValueError('Invalid additional slide image revision: ' + board_id)
+            source = root / relative
+            if not source.is_file() or source.is_symlink():
+                raise ValueError('Missing additional slide image revision: ' + relative)
+            if hashlib.sha256(source.read_bytes()).hexdigest() != match.group(1):
+                raise ValueError('Additional slide image revision hash mismatch: ' + relative)
+            alias = stem + '.png'
+            shutil.copy2(source, root / alias)
+            aliases.append(alias)
+    return aliases
+
+
 def slide_records(root):
     path=root/'data/slide_poster_manifest.json'
     if not path.is_file(): return [],[]
