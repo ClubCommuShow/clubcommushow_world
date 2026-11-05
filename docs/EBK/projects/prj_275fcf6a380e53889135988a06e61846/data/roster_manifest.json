@@ -922,7 +922,7 @@
     {
       "accessLevel": 4,
       "category": "Owner",
-      "enabled": true,
+      "enabled": false,
       "hasPermission": true,
       "images": {
         "icon": {
