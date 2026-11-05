@@ -278,15 +278,32 @@ def build(root, base_url):
         'columns': SHEET_COLUMNS, 'rows': SHEET_ROWS, 'cardsPerSheet': CARDS_PER_SHEET,
         'assignmentMode': assignment_mode
     }
+    content_fingerprint = hashlib.sha256(json.dumps({
+        'cards':cards,'commonTextures':common_hashes,'sheetLayout':normalized_layout,
+        'format':'ebk-clubcards-v2','encoding':'ebk-dual-matte-sbs-srgb-v1'
+    },ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+    previous = None
+    for candidate in [root/'.ebk_previous_clubcards.json',root/'docs/ebk-clubcards/manifest.json',root/'ebk-clubcards/manifest.json']:
+        if candidate.is_file():
+            previous=json.loads(candidate.read_text(encoding='utf-8-sig'))
+            break
+    effective_revision=manifest['revision']
+    if isinstance(previous,dict) and type(previous.get('revision')) is int:
+        prior_revision=previous['revision']
+        effective_revision=max(effective_revision,prior_revision if previous.get('contentFingerprint')==content_fingerprint else prior_revision+1)
+    if not 1<=effective_revision<=1000000000:
+        raise ValueError('カード更新番号が範囲外です')
     generation = hashlib.sha256(json.dumps({
         'cards': cards,
         'commonTextures': common_hashes,
-        'revision': manifest['revision'],
+        'revision': effective_revision,
         'format': 'ebk-clubcards-v2',
         'encoding': 'ebk-dual-matte-sbs-srgb-v1',
         'sheetLayout': normalized_layout
     }, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()[:32]
     result = copy.deepcopy(manifest)
+    result['revision']=effective_revision
+    result['contentFingerprint']=content_fingerprint
     result['sheetLayout'] = normalized_layout
     result['cards'] = cards
     generated_common = {}
