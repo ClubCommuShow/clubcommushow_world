@@ -19,7 +19,7 @@ import warnings
 from pathlib import Path
 from urllib.parse import quote, urlsplit
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageDraw
 
 FPS = 30
 FRAMES = 3
@@ -111,6 +111,53 @@ def delivery_settings(root):
     if value.get('layout','tile') not in ('tile','single') or value.get('alphaMode','dual-matte') not in ('dual-matte','opaque'):
         raise ValueError('Unknown video layout or alpha mode')
     return {'enabled':value.get('enabled',True),'layout':value.get('layout','tile'),'alphaMode':value.get('alphaMode','dual-matte')}
+
+
+def synchronize_slide_image_aliases(root):
+    """Keep the world's pre-serialized slot URLs paired with OPS image revisions.
+
+    Run only in the staging tree. The authoring manifest and immutable uploads
+    stay unchanged, and aliases are published only after the full build succeeds.
+    """
+    root = Path(root)
+    manifest_path = root / 'data/slide_poster_manifest.json'
+    if not manifest_path.is_file():
+        return []
+    manifest = json.loads(manifest_path.read_text(encoding='utf-8-sig'))
+    aliases = []
+    seen_boards = set()
+    for board in manifest.get('boards', []):
+        board_id = board.get('boardId', '')
+        if not isinstance(board_id, str) or not board_id or board_id != board_id.strip() or board_id in seen_boards:
+            raise ValueError('Invalid or duplicate slide board ID')
+        seen_boards.add(board_id)
+        if not board.get('enabled', True):
+            continue
+        folder = 'images/slide-posters/' + hashlib.sha256(board_id.encode('utf-8')).hexdigest()
+        seen_slots = set()
+        for image in board.get('additionalImages', []):
+            index = image.get('index')
+            if type(index) is not int or not 2048 <= index < 2112 or index in seen_slots:
+                raise ValueError('Invalid or duplicate additional slide image index')
+            seen_slots.add(index)
+            if not image.get('enabled', True):
+                continue
+            stem = folder + '/slot' + str(index - 2048)
+            relative = image.get('imagePath', '')
+            if relative == stem + '.png':
+                continue
+            match = re.fullmatch(re.escape(stem) + r'-([0-9a-f]{64})\.png', relative)
+            if match is None:
+                raise ValueError('Invalid additional slide image revision: ' + board_id)
+            source = root / relative
+            if not source.is_file() or source.is_symlink():
+                raise ValueError('Missing additional slide image revision: ' + relative)
+            if hashlib.sha256(source.read_bytes()).hexdigest() != match.group(1):
+                raise ValueError('Additional slide image revision hash mismatch: ' + relative)
+            alias = stem + '.png'
+            shutil.copy2(source, root / alias)
+            aliases.append(alias)
+    return aliases
 
 
 def slide_records(root):
@@ -280,6 +327,17 @@ document.querySelectorAll('button[data-url]').forEach(button => {
     (output / "index.html").write_text(document, encoding="utf-8")
 
 
+def write_generation_marker(path, generation, width, height):
+    bits = ''.join(f'{int(c,16):04b}' for c in 'eb4b26c1' + generation)
+    image = Image.new('RGB', (width,height), 'black')
+    draw = ImageDraw.Draw(image)
+    for i, bit in enumerate(bits):
+        x0=(i%20)*width//20;x1=(i%20+1)*width//20-1
+        y0=(i//20)*height//8;y1=(i//20+1)*height//8-1
+        draw.rectangle((x0,y0,x1,y1), fill='white' if bit=='1' else 'black')
+    image.save(path)
+
+
 def build(root: Path, config_path: Path):
     config = json.loads(config_path.read_text(encoding="utf-8-sig"))
     if config.get("schemaVersion") != 1:
@@ -333,8 +391,8 @@ def build(root: Path, config_path: Path):
                         oriented = ImageOps.exif_transpose(source)
                         source_width, source_height = oriented.size
                     image_rows.append({"file": p.name, "sourceBlobSha": git_blob_sha(p),
-                                       "sampleFrame": tile_geometry[i]['sheet'] * FRAMES + 1,
-                                       "sampleTimeSeconds": (tile_geometry[i]['sheet'] * FRAMES + 1.5) / FPS,
+                                       "sampleFrame": (tile_geometry[i]['sheet'] + 1) * FRAMES + 1,
+                                       "sampleTimeSeconds": ((tile_geometry[i]['sheet'] + 1) * FRAMES + 1.5) / FPS,
                                        "sourceWidth": source_width, "sourceHeight": source_height,
                                        "aspect": source_width / source_height,
                                        "fit": "contain", "uv":tile_geometry[i]['uv']})
@@ -350,17 +408,17 @@ def build(root: Path, config_path: Path):
                 generation = hashlib.sha256(json.dumps(
                     generation_payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
                 ).encode("utf-8")).hexdigest()[:32]
-                generated_name = name + "_" + generation + ".mp4"
+                generated_name = name + ".mp4"
                 video = videos / generated_name
-                encode(sheet_frames, video, width, height, dual_matte)
-                # Keep the old fixed name for existing worlds. New manifests use the
-                # content-addressed URL so a cached old video cannot be paired with new metadata.
-                shutil.copyfile(video, videos / (name + ".mp4"))
+                marker = Path(temporary) / ('marker-' + str(len(result)) + '.png')
+                write_generation_marker(marker,generation,width,height)
+                encode([marker] + sheet_frames, video, width, height, dual_matte)
                 url = base + "/ebk-room-media/videos/" + quote(generated_name, safe="")
-                slide_url = url + f"?ebk-slides=3x30&ebk-cols={columns}&ebk-rows={rows}&ebk-images={len(images)}&ebk-width={width}&ebk-height={height}" + ("&ebk-alpha=dual-matte-sbs-srgb-v1" if dual_matte else "")
+                slide_url = url
+                entry.update(liveMapVersion=1,generationMarkerFrame=1)
                 entry.update(videoUrl=url, slideUrl=slide_url,
                              generation=generation,
-                             frameCount=len(sheet_frames) * FRAMES,
+                             frameCount=(len(sheet_frames)+1) * FRAMES,
                              sheetCount=len(sheet_frames),sheetColumns=5,sheetRows=2,
                              sha256=hashlib.sha256(video.read_bytes()).hexdigest())
                 entry["images"] = image_rows

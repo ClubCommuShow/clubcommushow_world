@@ -1,0 +1,4 @@
+# Python bytecode is local build state, never published source.
+__pycache__/
+*.pyc
+*.pyo

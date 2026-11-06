@@ -3,15 +3,16 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/data/**"
-      - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/**"
-      - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/media/**"
-      - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/themes/**"
-      - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/**"
+      # Every project file is projected, and venue activation is a build input.
+      - "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/**"
+      - "docs/EBK/venues/**"
       - ".github/workflows/ebk_project_275fcf6a380e5388.yml"
+      - ".gitignore"
   workflow_dispatch:
 permissions:
   contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
 concurrency:
   group: ebk-media-275fcf6a380e5388-${{ github.ref }}
   cancel-in-progress: false
@@ -23,6 +24,7 @@ jobs:
       contents: write
     outputs:
       publish: ${{ steps.save.outputs.publish }}
+      published_sha: ${{ steps.save.outputs.published_sha }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,9 +38,31 @@ jobs:
           python -m pip install pillow
           sudo apt-get update
           sudo apt-get install -y ffmpeg
+      - name: Refresh main and record the build snapshot
+        id: snapshot
+        env:
+          EBK_BRANCH: "main"
+          EBK_WORKFLOW_SHA: ${{ github.workflow_sha }}
+        run: |
+          set -euo pipefail
+          git fetch origin "$EBK_BRANCH"
+          # A newer workflow cannot replace the steps already loaded for this run.
+          if ! git diff --quiet "$EBK_WORKFLOW_SHA" "origin/$EBK_BRANCH" -- ".github/workflows/ebk_project_275fcf6a380e5388.yml"; then
+            echo "Workflow changed; skipping this older run."
+            echo "build=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git merge --ff-only "origin/$EBK_BRANCH"
+          echo "EBK_BUILD_BASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "build=true" >> "$GITHUB_OUTPUT"
+      - name: Run publication regression tests
+        if: steps.snapshot.outputs.build == 'true'
+        run: python -m unittest discover -s tests -v
       - name: Build only the selected folder
+        if: steps.snapshot.outputs.build == 'true'
         run: python "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846/tools/build_media_root.py" --root "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846"
       - name: Refresh fixed venue projections using this project
+        if: steps.snapshot.outputs.build == 'true'
         shell: bash
         env:
           EBK_MEDIA_ROOT: "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846"
@@ -66,6 +90,8 @@ jobs:
                       if not source.is_file():
                           continue
                       relative=source.relative_to(source_root)
+                      if '__pycache__' in relative.parts or source.suffix in {'.pyc', '.pyo'}:
+                          continue
                       if relative.as_posix() in {'venue.json','data/active_project.json'}:
                           continue
                       target=venue_root/relative
@@ -87,6 +113,7 @@ jobs:
                   print('updated full venue projection:',venue_root,'files=',copied)
           PY
       - name: Commit generated files with input freshness check
+        if: steps.snapshot.outputs.build == 'true'
         id: save
         env:
           EBK_BRANCH: "main"
@@ -95,23 +122,44 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          base_sha="$(git rev-parse HEAD)"
-          git add -- "$EBK_MEDIA_ROOT/data" "$EBK_MEDIA_ROOT/images"
-          git add -- "$EBK_MEDIA_ROOT/ebk_media_root.json" "$EBK_MEDIA_ROOT/themes/theme_catalog.json"
-          if [ -d docs/EBK/venues ]; then git add -- docs/EBK/venues; fi
+          base_sha="${EBK_BUILD_BASE_SHA:?Missing pre-build snapshot}"
+          stage_generated() {
+            git add -- "$@" \
+              ':(glob,exclude)**/__pycache__/**' \
+              ':(glob,exclude)**/*.pyc' \
+              ':(glob,exclude)**/*.pyo'
+          }
+          stage_generated "$EBK_MEDIA_ROOT/data" "$EBK_MEDIA_ROOT/images"
+          stage_generated "$EBK_MEDIA_ROOT/ebk_media_root.json" "$EBK_MEDIA_ROOT/themes/theme_catalog.json"
+          if [ -d docs/EBK/venues ]; then stage_generated docs/EBK/venues; fi
           for group in common ebk-clubcards ebk-room-media; do
-            if [ -d "$EBK_MEDIA_ROOT/$group" ]; then git add -- "$EBK_MEDIA_ROOT/$group"; fi
+            if [ -d "$EBK_MEDIA_ROOT/$group" ]; then stage_generated "$EBK_MEDIA_ROOT/$group"; fi
           done
+          # Ignore rules do not protect previously tracked files: fail visibly.
+          python - <<'CACHE'
+          from pathlib import PurePosixPath
+          import os, subprocess
+          caches = []
+          for raw in subprocess.check_output(['git', 'ls-files', '-z']).split(b'\0'):
+              if not raw:
+                  continue
+              path = PurePosixPath(os.fsdecode(raw))
+              if '__pycache__' in path.parts or path.suffix in {'.pyc', '.pyo'}:
+                  caches.append(str(path))
+          if caches:
+              raise SystemExit('Python cache files must not be tracked: ' + ', '.join(caches))
+          CACHE
           if ! git diff --cached --quiet; then git commit -m "build: isolated EBK media docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846"; fi
           for attempt in 1 2 3; do
             git fetch origin "$EBK_BRANCH"
-            if ! git diff --quiet "$base_sha" "origin/$EBK_BRANCH" -- "$EBK_MEDIA_ROOT/data" "$EBK_MEDIA_ROOT/images" "$EBK_MEDIA_ROOT/media" "$EBK_MEDIA_ROOT/themes" "$EBK_MEDIA_ROOT/tools" ".github/workflows/ebk_project_275fcf6a380e5388.yml"; then
-              echo "New input detected; a newer build will publish."
+            if ! git diff --quiet "$base_sha" "origin/$EBK_BRANCH" -- "$EBK_MEDIA_ROOT" "docs/EBK/venues" ".github/workflows/ebk_project_275fcf6a380e5388.yml" ".gitignore"; then
+              echo "Project or venue state changed; refusing to publish this stale build."
               echo "publish=false" >> "$GITHUB_OUTPUT"
               exit 0
             fi
             git rebase "origin/$EBK_BRANCH"
             if git push origin "HEAD:$EBK_BRANCH"; then
+              echo "published_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
               echo "publish=true" >> "$GITHUB_OUTPUT"
               exit 0
             fi
@@ -136,8 +184,24 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: "main"
+          fetch-depth: 0
+      - name: Check the publication snapshot after acquiring the Pages lock
+        id: freshness
+        env:
+          EBK_PUBLISHED_SHA: ${{ needs.build.outputs.published_sha }}
+          EBK_MEDIA_ROOT: "docs/EBK/projects/prj_275fcf6a380e53889135988a06e61846"
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet "$EBK_PUBLISHED_SHA" HEAD -- "$EBK_MEDIA_ROOT" "docs/EBK/venues" ".github/workflows/ebk_project_275fcf6a380e5388.yml" ".gitignore"; then
+            echo "Project or venue state changed while waiting for Pages; skipping this stale deployment."
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "publish=true" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v3
+        if: steps.freshness.outputs.publish == 'true'
         with:
           path: docs
       - uses: actions/deploy-pages@v4
+        if: steps.freshness.outputs.publish == 'true'
         id: publish
