@@ -1929,6 +1929,8 @@
     },
     {
       "accessLevel": 3,
+      "birthdayBadgeEnabled": true,
+      "birthdayMMDD": "11-06",
       "category": "CastLeader",
       "enabled": true,
       "hasPermission": true,
