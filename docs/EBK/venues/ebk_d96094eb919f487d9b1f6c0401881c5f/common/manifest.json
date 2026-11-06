@@ -1314,7 +1314,7 @@
     {
       "accessLevel": 4,
       "category": "Assistant",
-      "enabled": true,
+      "enabled": false,
       "hasPermission": true,
       "images": {
         "icon": {
@@ -5441,5 +5441,5 @@
     },
     "contentFingerprint": "773e219b4500dacd824554d17a52a975b59d64648d46e4bdb215eb98accbdac3"
   },
-  "cacheRevision": "0e0775c73cc955072318ed593d4a4c7f"
+  "cacheRevision": "4cdda050896c558f6f5c8b97896a9b50"
 }
