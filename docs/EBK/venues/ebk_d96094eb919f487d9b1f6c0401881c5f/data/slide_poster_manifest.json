@@ -89,11 +89,16 @@
       "presentationOnly": true,
       "order": [
         2048,
+        2057,
+        2055,
         2049,
         2050,
         2051,
-        2052,
+        2058,
+        2059,
         2053,
+        2056,
+        2052,
         2054
       ],
       "additionalImages": [
@@ -377,6 +382,36 @@
           "index": 2054,
           "title": "slot2",
           "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot6-472c83ced90e7e8b5d1a019ffd1c004d6954ad5d72f6205fc2fb8ae1fc135b56.png",
+          "enabled": true
+        },
+        {
+          "index": 2055,
+          "title": "slot1",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot7-1c419bb42166324d1c15cdcba318966e2bf131928bdfa24dd3bc997ff55e335e.png",
+          "enabled": true
+        },
+        {
+          "index": 2056,
+          "title": "slot8",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot8-8cfdf29f51dcbef57efdb455f24a509fcb4bbecc4cc0ac8a03f83e0619b77787.png",
+          "enabled": true
+        },
+        {
+          "index": 2057,
+          "title": "slot0",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot9-8f5689ed5ea5a703d8d1b192d0faba26f5b4ac1571016b842b45cde683f1477b.png",
+          "enabled": true
+        },
+        {
+          "index": 2058,
+          "title": "slot1",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot10-99b1e3bdd4a8f9722d9b639446e8ac990c9d04d9512f7ddfce04c688a6e8b646.png",
+          "enabled": true
+        },
+        {
+          "index": 2059,
+          "title": "slot0",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot11-1005afbe2359f306698b3c17db8c7cd846494a08f5a51434d1aa093954eab4b9.png",
           "enabled": true
         }
       ],
