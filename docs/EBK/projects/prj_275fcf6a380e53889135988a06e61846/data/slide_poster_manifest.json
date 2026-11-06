@@ -89,9 +89,11 @@
       "presentationOnly": true,
       "order": [
         2048,
+        2060,
         2057,
         2055,
         2049,
+        2061,
         2050,
         2051,
         2058,
@@ -412,6 +414,18 @@
           "index": 2059,
           "title": "slot0",
           "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot11-1005afbe2359f306698b3c17db8c7cd846494a08f5a51434d1aa093954eab4b9.png",
+          "enabled": true
+        },
+        {
+          "index": 2060,
+          "title": "slot0",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot12-41c2ff98f8dbca32b762ec8ba5680762d4c00a12da036d97574bbd7f7e47af0b.png",
+          "enabled": true
+        },
+        {
+          "index": 2061,
+          "title": "slot0",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot13-e322bf76a329c936fe386104c270c088ee86985ad2b58b70445f5ac0f31a02e9.png",
           "enabled": true
         }
       ],
