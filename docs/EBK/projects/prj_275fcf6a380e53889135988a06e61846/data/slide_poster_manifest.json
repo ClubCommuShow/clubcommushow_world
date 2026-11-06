@@ -4,6 +4,7 @@
   "boards": [
     {
       "boardId": "FeedPoster",
+      "sourceKind": "posterGallery",
       "enabled": true,
       "title": "ポスター一覧",
       "autoPlay": true,
@@ -50,7 +51,6 @@
         32
       ],
       "additionalImages": [],
-      "sourceKind": "posterGallery",
       "removedImageIndices": [
         34,
         35,
@@ -76,6 +76,7 @@
     },
     {
       "boardId": "FadePoster",
+      "sourceKind": "posterGallery",
       "enabled": true,
       "title": "スタッフキャスト一覧",
       "autoPlay": true,
@@ -429,7 +430,6 @@
           "enabled": true
         }
       ],
-      "sourceKind": "posterGallery",
       "removedImageIndices": [
         0,
         1,
@@ -487,6 +487,7 @@
     },
     {
       "boardId": "ClickPoster",
+      "sourceKind": "posterGallery",
       "enabled": true,
       "title": "ポスター一覧",
       "autoPlay": false,
@@ -533,7 +534,6 @@
         32
       ],
       "additionalImages": [],
-      "sourceKind": "posterGallery",
       "removedImageIndices": [
         3,
         33,
