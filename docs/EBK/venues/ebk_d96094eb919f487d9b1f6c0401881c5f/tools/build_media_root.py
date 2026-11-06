@@ -58,6 +58,11 @@ def retain_common_generations(previous, generated):
 
 
 def synchronize_roster_video_source(root, common_manifest):
+    # Roots predating delivery settings keep the authoring roster byte-identical.
+    # Their published descriptor lives in common/manifest.json. Explicit v1
+    # settings opt into the current authoring-URL/live-map publication contract.
+    if not (root / 'data/video_delivery_settings.json').is_file():
+        return
     # Keep the authoring roster usable by its existing URL without stale video/map paths.
     # Copy the complete generated descriptor so map, video and generation stay paired.
     roster_path = root / 'data/roster_manifest.json'
@@ -154,9 +159,11 @@ def build_common(root, output, base):
     from prepare_video_roster_manifest import discover, POSTER_FOLDERS
     posters = list(manifest.get('posters', []))
     known = {(r.get('category'), r.get('slot')) for r in posters if isinstance(r, dict)}
-    # A saved list (including []) is authoritative. Folder discovery is only for
-    # legacy inputs that have no poster configuration at all.
-    if 'posters' not in manifest:
+    # Explicit delivery settings select the current contract: a saved list,
+    # including [], is authoritative. Roots without those settings retain the
+    # legacy folder-discovery behavior without rewriting the authoring roster.
+    explicit_delivery = (root / 'data/video_delivery_settings.json').is_file()
+    if not explicit_delivery or 'posters' not in manifest:
         for folder, category in POSTER_FOLDERS:
             for slot in discover(root / 'images/posters' / folder):
                 if (category, slot) not in known:
@@ -386,6 +393,7 @@ def build(root):
         raise ValueError('Media root must be an existing regular directory')
     root = root.resolve()
     slides.checked_tree(root)
+    explicit_delivery = (root / 'data/video_delivery_settings.json').is_file()
     config = read_json(root / 'data/room_media_slides.json')
     base = config['pagesBaseUrl'].rstrip('/')
     url = urlsplit(base)
@@ -453,12 +461,16 @@ def build(root):
             shutil.copytree(src, target)
         for relative in slide_aliases:
             shutil.copy2(stage / relative, root / relative)
-        for relative in product_data_edits:
-            shutil.copy2(stage / relative, root / relative)
-        for relative in obsolete_products:
-            target = root / relative
-            if target.resolve().is_relative_to((root / 'images/products').resolve()) and target.is_file():
-                target.unlink()
+        # Fixed-slot publication is useful for both contracts, but legacy
+        # authoring documents and their referenced original images must survive.
+        # Only an explicitly configured delivery root opts into source migration.
+        if explicit_delivery:
+            for relative in product_data_edits:
+                shutil.copy2(stage / relative, root / relative)
+            for relative in obsolete_products:
+                target = root / relative
+                if target.resolve().is_relative_to((root / 'images/products').resolve()) and target.is_file():
+                    target.unlink()
         for image_group in ['menu', 'guide']:
             fixed_images = stage / 'images' / image_group
             if fixed_images.is_dir():
