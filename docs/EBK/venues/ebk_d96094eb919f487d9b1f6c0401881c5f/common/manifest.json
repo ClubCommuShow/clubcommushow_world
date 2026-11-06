@@ -922,7 +922,7 @@
     {
       "accessLevel": 4,
       "category": "Owner",
-      "enabled": false,
+      "enabled": true,
       "hasPermission": true,
       "images": {
         "icon": {
@@ -1314,7 +1314,7 @@
     {
       "accessLevel": 4,
       "category": "Assistant",
-      "enabled": false,
+      "enabled": true,
       "hasPermission": true,
       "images": {
         "icon": {
@@ -5441,5 +5441,5 @@
     },
     "contentFingerprint": "773e219b4500dacd824554d17a52a975b59d64648d46e4bdb215eb98accbdac3"
   },
-  "cacheRevision": "4cdda050896c558f6f5c8b97896a9b50"
+  "cacheRevision": "32449c8d969d6dced0fa1246e555d71d"
 }
