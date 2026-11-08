@@ -2312,7 +2312,7 @@
           "url": ""
         }
       },
-      "name": "おおかな",
+      "name": "୨୧ ookana",
       "portraitUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png",
       "roleType": "upperCast",
       "showArmband": true,
@@ -5443,5 +5443,5 @@
     },
     "contentFingerprint": "773e219b4500dacd824554d17a52a975b59d64648d46e4bdb215eb98accbdac3"
   },
-  "cacheRevision": "e8284b3f2878e46e2aaabfcbb79ca192"
+  "cacheRevision": "71bd20894e602988c8c365bd06af0c6a"
 }
