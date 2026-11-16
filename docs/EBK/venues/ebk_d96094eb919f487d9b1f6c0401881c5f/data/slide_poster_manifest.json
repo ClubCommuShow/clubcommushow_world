@@ -99,7 +99,9 @@
         2051,
         2058,
         2059,
+        2062,
         2053,
+        2063,
         2056,
         2052,
         2054
@@ -427,6 +429,18 @@
           "index": 2061,
           "title": "slot0",
           "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot13-e322bf76a329c936fe386104c270c088ee86985ad2b58b70445f5ac0f31a02e9.png",
+          "enabled": true
+        },
+        {
+          "index": 2062,
+          "title": "slot0",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot14-466476b38517baa485080695ac0236954db6eb7144d900c965af9a94fe38dc65.png",
+          "enabled": true
+        },
+        {
+          "index": 2063,
+          "title": "slot5",
+          "imagePath": "images/slide-posters/e9bc357f94910ff1419c5a578b6b631b1e5ad9eca6bb36608a1993a1702a952b/slot15-fd76e6712019ec6625b3e58eafbd3d4232732683c8c83c67c6982691b3458c85.png",
           "enabled": true
         }
       ],
