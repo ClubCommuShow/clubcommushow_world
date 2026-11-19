@@ -1,5 +1,5 @@
 {
-  "captured": 177,
+  "captured": 178,
   "fallbackKeys": [],
   "sourceHashes": [
     "c52dba012c57d795e536adb61b912b49dfaef5165992935025e316b09afd6c27",
@@ -178,7 +178,8 @@
     "41c2ff98f8dbca32b762ec8ba5680762d4c00a12da036d97574bbd7f7e47af0b",
     "e322bf76a329c936fe386104c270c088ee86985ad2b58b70445f5ac0f31a02e9",
     "466476b38517baa485080695ac0236954db6eb7144d900c965af9a94fe38dc65",
-    "fd76e6712019ec6625b3e58eafbd3d4232732683c8c83c67c6982691b3458c85"
+    "fd76e6712019ec6625b3e58eafbd3d4232732683c8c83c67c6982691b3458c85",
+    "44b0684ca7e87184a43ea9d332b5f97cc473cef7c0bfadad571b7323bcb12271"
   ],
   "ignoredPortraitUrls": [
     {
@@ -202,6 +203,6 @@
       "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png"
     }
   ],
-  "generation": "7f6ae301e5ef4ca689f3b9ec3d27ac9f",
-  "videoSha256": "52dd471ac6c48ad805b65a3a43e08866530e505c2734a7a38a5eccc5832460d5"
+  "generation": "2618ed7a1d892d930e5058a8705b4fd6",
+  "videoSha256": "d6560ae118bb29fd144df9eb22aba4a2f97ba373513812105739ad89ea1c4e43"
 }
