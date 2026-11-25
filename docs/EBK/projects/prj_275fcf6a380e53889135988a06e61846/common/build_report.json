@@ -20,13 +20,13 @@
     "411ea5e1ec775db480a4edcc1d1533d9bf866ad9c1c3dbecf3f9f99da6da9445",
     "99b1e3bdd4a8f9722d9b639446e8ac990c9d04d9512f7ddfce04c688a6e8b646",
     "1005afbe2359f306698b3c17db8c7cd846494a08f5a51434d1aa093954eab4b9",
-    "ac7260f40221ab36d55f040d4590b0904074a3f0d5d6a8c294dc5f1698a77614",
+    "691b98e7863442d6e147a6e74367c5832945e478f0410863434877e2cc07549a",
     "6098518f18c4e6a0dc8da48f1bface84482f7f11fd885f57f92157a52b38ad05",
     "66361ad07daf07afab3a271c36a24fb3f0ff09b733b1ed000122b48b2129254d",
     "c4bf8a6d4cee9f8853718e715a4f301daaa568e6108af9e094e852f573feeeb5",
     "95dcee228200244d078e3ee662c332be471ffe81c420ad6e2d7a8e61c122e476",
     "16867385e0f809c1cd2022a9a5c101cfcd9e55220dc87f581c7adc8525af0518",
-    "5dddff0aba418af4936a23a91c4ca1598710a872ea263b5924e0660613c91f7c",
+    "9b546141209fa0df9e050fa57222807ccbad8bbe2fc8aedb1d4fc7e45b39b886",
     "466476b38517baa485080695ac0236954db6eb7144d900c965af9a94fe38dc65",
     "4e73fbe7fc7453e29247bdd89fb651f072470a58cc291ea1b646597c31f16acd",
     "1a1f9f17ffc6f02fb4b5594876af7d27642e181cf212d621f64c88610624cb29",
@@ -196,13 +196,8 @@
       "key": "member|UpperCast|4",
       "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png",
       "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot4.png"
-    },
-    {
-      "key": "member|UpperCast|5",
-      "configuredUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot6.png",
-      "resolvedUrl": "https://clubcommushow.github.io/clubcommushow_world/EBK/projects/prj_275fcf6a380e53889135988a06e61846/images/portraits/uppercast/slot5.png"
     }
   ],
-  "generation": "2618ed7a1d892d930e5058a8705b4fd6",
-  "videoSha256": "d6560ae118bb29fd144df9eb22aba4a2f97ba373513812105739ad89ea1c4e43"
+  "generation": "15587bc2cb6aa3889ac765a42647e36c",
+  "videoSha256": "5444ab1a2dff95f199a64fcf52f1e1d60dfa6be93e4a4e78d2837df66d2fb406"
 }
